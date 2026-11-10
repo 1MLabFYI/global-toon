@@ -86,6 +86,9 @@ def cmd_make(args, cfg):
     tag = script.get("category_tag", "이슈")
     files, providers = [], []
     pics = []
+    if args.sample and not os.environ.get("CF_API_TOKEN"):
+        cfg["image"]["models"] = ["placeholder"]          # 키 없는 로컬 테스트
+    imagegen.ensure_cast_ref(cfg)
     for i, p in enumerate(panels):
         img, prov = imagegen.generate(p["scene"], cfg, f"{now:%Y%m%d}-{args.slot}-{i}")
         pics.append(img); providers.append(prov)
@@ -101,7 +104,8 @@ def cmd_make(args, cfg):
     with open(os.path.join(out, "caption.txt"), "w", encoding="utf-8") as f:
         f.write(caption)
     meta = {"slot": args.slot, "created": now.isoformat(), "files": files,
-            "image_providers": providers, "title": script["topic_title"]}
+            "image_providers": providers, "title": script["topic_title"],
+            "publishable": all(p in imagegen.PUBLISHABLE for p in providers)}
     with open(os.path.join(out, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=1)
     if not args.sample:
@@ -123,6 +127,8 @@ def cmd_publish(args, cfg):
         meta = json.load(f)
     with open(os.path.join(d, "caption.txt"), encoding="utf-8") as f:
         caption = f.read()
+    if not meta.get("publishable", False):
+        sys.exit(f"[publish] 대체 그림이 섞여 있어 게시하지 않습니다: {meta.get('image_providers')}")
     urls = [f"{args.base_url.rstrip('/')}/{p}" for p in meta["files"]]
     media_id = publish_carousel(urls, caption, cfg)
     hist = load_hist()

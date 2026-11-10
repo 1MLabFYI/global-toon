@@ -63,18 +63,30 @@ comic:
   jpeg_quality: 92
   theme_color: "#FF5A36"
   style_prompt: >-
-    funny korean gag webtoon style, cute chibi cartoon characters with big heads,
-    exaggerated comedic facial expressions, sweat drops and motion lines,
-    thick clean outlines, flat bright pastel colors, very simple uncluttered background,
-    one clear focal point, centered composition, easy to understand at a glance,
-    no text, no letters, no speech bubbles, no watermark
+    full color 2D comic book panel, korean webtoon illustration, hand-drawn cartoon style,
+    clean bold black ink outlines, flat cel shading, bright saturated colors,
+    expressive funny cartoon faces, slapstick comedy, simple clear composition,
+    NOT 3D, NOT CGI render, NOT toy figure, NOT photorealistic
+  layout_prompt: >-
+    characters in the lower two thirds of the frame, plain simple background in the top third,
+    one clear action, easy to understand at a glance, no text, no letters, no speech bubbles,
+    no watermark, no signature
 
-# 이미지 생성 (무료 우선, 실패 시 다음 공급자)
+# 이미지 생성 — Cloudflare Workers AI (무료 1만 뉴런/일)
+#  models: 앞에서부터 시도. flux-2-dev(고품질) → flux-2-klein-4b(빠름) → flux-1-schnell
+#  placeholder를 목록에 넣으면 테스트용 대체 그림이 생기지만, 섞이면 게시하지 않음
 image:
-  providers: [cloudflare, pollinations, placeholder]
-  cloudflare_model: "@cf/black-forest-labs/flux-1-schnell"   # 무료 1만 뉴런/일 ≈ 약 100장
-  steps: 6
-  size: 1024
+  models: [flux-2-dev, flux-2-klein-4b, flux-1-schnell]
+  width: 896
+  height: 1152               # 세로 컷(인스타 4:5에 맞춤)
+  steps_dev: 20
+  # 고정 등장인물 — 대본에서 영문 배역명(HANA, BOSS…)으로 부르면 아래 외모로 치환
+  #  첫 실행 때 assets/cast_ref.png(캐릭터 기준 그림)를 만들어 이후 매일 같은 얼굴로 그림
+  #  마음에 안 들면 GitHub에서 assets/cast_ref.png를 삭제 → 다음 실행 때 새로 생성
+  cast:
+    HANA: "a cheerful young korean woman in her late 20s, short black bob hair, big round eyes, yellow hoodie, blue jeans"
+    BOSS: "a chubby middle-aged korean man, bald head with a tiny tuft of hair, thick mustache, navy suit, red tie"
+    MINJUN: "a lanky young korean man, messy brown hair, round glasses, green cardigan, always sleepy"
 
 # 인스타그램 게시
 instagram:
@@ -88,7 +100,8 @@ instagram:
 safety:
   max_attempts: 2           # 팩트체크 탈락 시 다른 이슈로 재시도 횟수
   skip_topics:
-    - "정치·선거·정당·외교 갈등"
+    - "정치·선거·정당·외교·국가 간 갈등"
+    - "해킹·사이버 공격·보안 사고"
     - "전쟁·테러·재난·사망 사고"
     - "범죄·소송·수사·재판"
     - "젠더·종교·지역·세대·노사 갈등"
@@ -98,6 +111,8 @@ safety:
   avoid_keywords: [대통령, 국회, 여당, 야당, 정당, 선거, 탄핵, 의원, 장관, 검찰, 경찰, 수사, 재판, 기소, 구속,
     소송, 고소, 사망, 숨져, 숨진, 참사, 사고, 화재, 폭발, 전쟁, 공습, 미사일, 테러, 총격, 살해, 성폭, 학대,
     혐오, 젠더, 페미, 종교, 파업, 시위, 논란, 의혹, 단독, 북한, 트럼프, 푸틴, 하마스, 이스라엘, 우크라이나,
+    해킹, 해커, 사이버, 이란, 러시아, 제재, 군사, 관세, 무역전쟁, 간첩, 랜섬,
+    hack, hacker, hackers, hacked, cyber, cyberattack, sabotage, sabotaged, iran, iranian, russia, sanctions, military, tariff, spy,
     election, war, killed, dead, shooting, attack, trial, lawsuit, protest, scandal, president]
   rules:
     - "웃음은 상황·표정·생활 비유로 만들고, 특정 집단이나 피해자를 놀리지 않는다."

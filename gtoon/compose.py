@@ -144,37 +144,77 @@ def _header(d, W, cfg, tag, page, total):
     d.text((W - 36 - font("bold", 30).getlength(pg), 26), pg, font=font("bold", 30), fill=(200, 200, 210))
 
 
+CAPTION_BG = (255, 228, 92)
+
+
+def _caption_box(canvas, d, x, y, max_w, text, cfg):
+    """만화 내레이션 박스(노란 사각형) + 지구톤 얼굴."""
+    f, lines, size = fit_text(text, "bold", max_w - 120, 170, 34, 24)
+    lh = int(size * 1.32)
+    tw = max(f.getlength(l) for l in lines) if lines else 0
+    w, h = int(tw + 124), int(len(lines) * lh + 34)
+    d.rectangle([x + 6, y + 6, x + w + 6, y + h + 6], fill=INK)            # 그림자
+    d.rectangle([x, y, x + w, y + h], fill=CAPTION_BG, outline=INK, width=5)
+    m = draw_mascot(96, "happy")
+    canvas.paste(m, (x - 14, y + h // 2 - 52), m)
+    for i, l in enumerate(lines):
+        d.text((x + 96, y + 17 + i * lh), l, font=f, fill=INK)
+    return y + h
+
+
+def _comic_bubble(canvas, d, x_anchor, y0, max_w, text, side, speaker, cfg):
+    """둥근 말풍선 + 아래쪽(인물 방향) 꼬리 + 작은 화자 표시."""
+    f, lines, size = fit_text(text, "bold", max_w - 70, 190, 42, 28)
+    lh = int(size * 1.25)
+    tw = max(f.getlength(l) for l in lines)
+    w, h = int(tw + 76), int(len(lines) * lh + 50)
+    x0 = x_anchor if side == "left" else x_anchor - w
+    x1, y1 = x0 + w, y0 + h
+    tx = x0 + w * (0.62 if side == "left" else 0.38)
+    tip = (tx + (34 if side == "left" else -34), y1 + 70)
+    d.polygon([(tx - 24, y1 - 10), (tx + 24, y1 - 10), tip], fill="white", outline=INK, width=5)
+    d.rounded_rectangle([x0, y0, x1, y1], radius=h // 2, fill="white", outline=INK, width=6)
+    d.polygon([(tx - 18, y1 - 14), (tx + 18, y1 - 14), (tip[0] - (6 if side == "left" else -6), tip[1] - 14)],
+              fill="white")
+    for i, l in enumerate(lines):
+        d.text((x0 + (w - f.getlength(l)) / 2, y0 + 25 + i * lh), l, font=f, fill=INK)
+    if speaker == cfg["account"]["mascot_name"]:
+        m = draw_mascot(84, "surprised")
+        canvas.paste(m, (int(x1 - 40) if side == "left" else int(x0 - 44), int(y0 - 30)), m)
+    elif speaker:
+        sf = font("bold", 22)
+        sw = sf.getlength(speaker) + 20
+        sx = x0 + 26 if side == "left" else x1 - 26 - sw
+        d.rounded_rectangle([sx, y0 - 14, sx + sw, y0 + 16], radius=8, fill=INK)
+        d.text((sx + 10, y0 - 12), speaker, font=sf, fill="white")
+    return y1 + 90
+
+
 def render_panel(img: Image.Image, panel: dict, cfg: dict, tag: str, page: int, total: int) -> Image.Image:
+    """풀컬러 만화 컷: 굵은 테두리 컷 + 노란 내레이션 박스 + 둥근 말풍선."""
     W, H = cfg["comic"]["width"], cfg["comic"]["height"]
     theme = hex2rgb(cfg["comic"]["theme_color"])
-    mascot_name = cfg["account"]["mascot_name"]
-    canvas = Image.new("RGB", (W, H), BG)
+    canvas = Image.new("RGB", (W, H), "white")
     d = ImageDraw.Draw(canvas)
-    _header(d, W, cfg, tag, page, total)
+    px0, py0, px1, py1 = 22, 22, W - 22, H - 74
+    canvas.paste(cover_crop(img, px1 - px0, py1 - py0), (px0, py0))
+    d.rectangle([px0, py0, px1, py1], outline=INK, width=8)
 
-    # 그림 영역
-    pic_y, pic_h = 108, 930
-    _rounded_paste(canvas, cover_crop(img, W - 48, pic_h), (24, pic_y), 28)
-
-    # 말풍선
-    y = pic_y + 40
+    y = _caption_box(canvas, d, px0 + 46, py0 + 34, 760, panel.get("narration", ""), cfg) + 46
     for i, b in enumerate((panel.get("bubbles") or [])[:2]):
-        side = b.get("side") or ("left" if i % 2 == 0 else "right")
-        x = 56 if side == "left" else W - 56
-        spk = b.get("speaker", "")
-        y = _bubble(d, (x, y, 620), b.get("text", ""), side,
-                    spk if spk != mascot_name else mascot_name, theme)
+        side = b.get("side") or ("right" if i % 2 == 0 else "left")
+        x = px0 + 40 if side == "left" else px1 - 40
+        y = _comic_bubble(canvas, d, x, y, 640, b.get("text", ""), side, b.get("speaker", ""), cfg)
 
-    # 해설 박스 + 마스코트
-    ny = pic_y + pic_h + 22
-    d.rounded_rectangle([24, ny, W - 24, H - 24], radius=28, fill="white", outline=INK, width=5)
-    m = draw_mascot(170, "think" if page % 3 == 0 else "happy")
-    canvas.paste(m, (40, ny + 18), m)
-    f, lines, size = fit_text(panel.get("narration", ""), "regular", W - 290, H - 24 - ny - 50, 38, 26)
-    lh = int(size * 1.35)
-    ty = ny + ((H - 24 - ny) - len(lines) * lh) // 2
-    for i, l in enumerate(lines):
-        d.text((228, ty + i * lh), l, font=f, fill=INK)
+    # 하단 정보줄
+    ff = font("bold", 28)
+    d.text((px0 + 4, H - 58), cfg["account"]["handle"], font=ff, fill=INK)
+    tf = font("bold", 24)
+    tx = px0 + 18 + ff.getlength(cfg["account"]["handle"])
+    d.rounded_rectangle([tx, H - 56, tx + tf.getlength(tag) + 24, H - 22], radius=17, fill=theme)
+    d.text((tx + 12, H - 54), tag, font=tf, fill="white")
+    pg = f"{page} / {total}"
+    d.text((px1 - ff.getlength(pg) - 4, H - 58), pg, font=ff, fill=(110, 110, 120))
     return canvas
 
 
