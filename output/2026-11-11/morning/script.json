@@ -1,0 +1,121 @@
+{
+ "selected_index": 9,
+ "topic_title": "접히는 노트북의 습격",
+ "hook": "애플도 흠칫하게 만든 신기한 노트북!",
+ "category_tag": "테크",
+ "panels": [
+  {
+   "scene": "MINJUN holding an impossibly bendable laptop with a dazed expression, staring at it like it’s an alien artifact.",
+   "narration": "요즘 세상 돌아가는 게 심상치 않다. 접히는 노트북이 너무 신기해서 애플도 쳐다보는 중?",
+   "bubbles": [
+    {
+     "speaker": "민준",
+     "text": "이거 화면이 어디까지 접히는 거야?",
+     "side": "left"
+    },
+    {
+     "speaker": "지구톤",
+     "text": "김밥처럼 말아 먹을 기세지?",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "scene": "BOSS squinting at a folding laptop on his desk, holding a magnifying glass upside down in total confusion.",
+   "narration": "스마트폰 커버 화면까지 탑재한 괴랄한(?) 폴더블 노트북들이 속속 등장하고 있는데!",
+   "bubbles": [
+    {
+     "speaker": "부장님",
+     "text": "내 서류철보다 더 요상하게 생겼구만!",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "scene": "HANA typing furiously on a normal flat laptop, sweating and looking stressed by all the futuristic tech.",
+   "narration": "애플마저 이 너무 신기하고 와일드한 트렌드를 더는 무시할 수 없어서 땀 흘리는 중이라고.",
+   "bubbles": [
+    {
+     "speaker": "하나",
+     "text": "내 노트북은 왜 안 접히는 거야!",
+     "side": "left"
+    },
+    {
+     "speaker": "지구톤",
+     "text": "접으려다 부서지면 책임 못 져~",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "scene": "MINJUN and HANA holding a folded laptop like a sandwich and pretending to take a bite, laughing brightly.",
+   "narration": "다음엔 키보드까지 김밥처럼 말려서 나오는 거 아냐? 출근길에 가볍게 한 입 베어 물 기세!",
+   "bubbles": [
+    {
+     "speaker": "민준",
+     "text": "이거 진짜 바삭하게 생겼다!",
+     "side": "left"
+    },
+    {
+     "speaker": "지구톤",
+     "text": "디지털 맛이 나려나?",
+     "side": "right"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "Foldable ‘Laptops’ Are Getting Too Wacky for Apple to Ignore ([9], Foldable ‘Laptops’ Are Getting Too Wacky for Apple to Ignore)",
+  "Compact Huawei MateBook Fold S launches soon with big secondary display ([9], Compact Huawei MateBook Fold S launches soon with big secondary display)"
+ ],
+ "summary": [
+  "접히는 노트북이 너무 신기하게 진화 중",
+  "애플도 무시 못 할 만큼 독특한 형태 선봬",
+  "미래 기술 덕분에 출근길 소소한 웃음 충전"
+ ],
+ "question": "여러분의 노트북도 갑자기 반으로 접히면 어떨 것 같나요?",
+ "caption": "출근길에 스마트폰 보듯 가볍게 웃고 가세요! 📱💻\n\n요즘 세상이 너무 좋아져서 노트북이 아주 그냥 김밥처럼 접히는 시대가 왔습니다. 애플도 흠칫하게 만든 화제의 접히는 노트북 소식, 여러분도 하나 장만하고 싶으신가요? 😆\n\n#글로벌툰 #테크소식 #노트북 #잇템 #출근길 #직장인 #웃긴짤 #공감 #재미 #IT #트렌드",
+ "hashtags": [
+  "#글로벌툰",
+  "#테크",
+  "#노트북",
+  "#IT소식",
+  "#출근길",
+  "#직장인",
+  "#공감툰",
+  "#개그웹툰",
+  "#일상",
+  "#웃긴짤",
+  "#신기한세상",
+  "#테크트렌드"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Foldable ‘Laptops’ Are Getting Too Wacky for Apple to Ignore",
+  "source": "Gizmodo",
+  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5JOGQ1Ni1mMkR6M2pTRDhQV096SGR2SzBxUUQ5Sm0yZWtSMENNdmtLREZOZGVhYTlFb24xUVlLWDBlMWZQLXB3S1RRSk5jTzR4VlY5d2lnME5QUlJYaU5vTktBekxWYjJ2X0c3ZTBHbkRIYmRTMkZNMg?oc=5",
+  "category": "technology",
+  "n_sources": 17,
+  "sources": [
+   "9to5Google",
+   "Android Authority",
+   "Ars Technica",
+   "GSMArena.com",
+   "Gadget Review",
+   "Gizmodo",
+   "MacRumors",
+   "Motor1.com"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Foldable ‘Laptops’ Are Getting Too Wacky for Apple to Ignore",
+   "Huawei teases new MateBook Fold laptop with cover screen - GSMArena.com news",
+   "Compact Huawei MateBook Fold S launches soon with big secondary display",
+   "Huawei Put a Smartphone Cover Screen on a Folding Laptop and It Looks Crazy",
+   "\"It Fits in a Coat Pocket\"... Huawei Unveils Foldable Laptop"
+  ]
+ }
+}
