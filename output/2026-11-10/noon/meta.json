@@ -1,6 +1,6 @@
 {
  "slot": "noon",
- "created": "2026-11-10T22:45:37.830246+09:00",
+ "created": "2026-11-10T23:44:18.025130+09:00",
  "files": [
   "output/2026-11-10/noon/01.jpg",
   "output/2026-11-10/noon/02.jpg",
@@ -10,10 +10,11 @@
   "output/2026-11-10/noon/06.jpg"
  ],
  "image_providers": [
-  "pollinations",
-  "placeholder",
-  "placeholder",
-  "pollinations"
+  "flux-2-dev",
+  "flux-2-dev",
+  "flux-2-dev",
+  "flux-2-dev"
  ],
- "title": "냉장고의 반란?"
+ "title": "달나라로 이직 각?",
+ "publishable": true
 }
