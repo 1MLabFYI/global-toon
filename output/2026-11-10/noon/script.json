@@ -1,0 +1,109 @@
+{
+ "selected_index": 7,
+ "topic_title": "냉장고의 반란?",
+ "hook": "프랑스 마트 냉장고가 해킹당했어요!",
+ "category_tag": "세계",
+ "panels": [
+  {
+   "scene": "A cute earth character with a confused face standing in front of a modern supermarket refrigerator, simple background, cartoon style.",
+   "narration": "프랑스에서 발생한 황당한 사이버 테러 소식!",
+   "bubbles": [
+    {
+     "speaker": "지구톤",
+     "text": "아니, 마트 냉장고가 왜 이래?",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "scene": "An embarrassed grocery store manager scratching his head next to beeping refrigerators, clean vector art.",
+   "narration": "마트 슈퍼마켓의 냉장고들이 원인 불명의 해킹 공격을 받았대요.",
+   "bubbles": [
+    {
+     "speaker": "마트 직원",
+     "text": "아이스크림 다 녹게 생겼어유!",
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "scene": "A surprised security expert looking at a computer screen showing ice cream and refrigerator icons.",
+   "narration": "프랑스 당국은 이번 사태의 배후로 이란을 지목했어요.",
+   "bubbles": [
+    {
+     "speaker": "지구톤",
+     "text": "냉장고 온도까지 해킹하다니 신기하네",
+     "side": "left"
+    }
+   ]
+  },
+  {
+   "scene": "The earth character hugging a cold soda can happily with a funny smile, bright colors.",
+   "narration": "스마트한 세상, 이제 냉장고 안부도 물어야 할 판이네요!",
+   "bubbles": [
+    {
+     "speaker": "지구톤",
+     "text": "우리 집 냉장고도 안녕한가?",
+     "side": "right"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "프랑스 정부가 이란을 슈퍼마켓 냉장고 사이버 공격 배후로 지목함 (France says Iranian hackers sabotaged supermarket refrigerators)"
+ ],
+ "summary": [
+  "프랑스 슈퍼마켓 냉장고가 해킹됨",
+  "프랑스는 배후로 이란을 지목함"
+ ],
+ "question": "여러분의 스마트 냉장고는 오늘 안녕한가요?",
+ "caption": "프랑스 슈퍼마켓의 냉장고들이 사이버 공격을 받았다는 소식! 🥶\n\n냉장고까지 해킹당하는 세상이라니 정말 놀랍죠? 세계 소식을 전해드립니다.",
+ "hashtags": [
+  "#글로벌툰",
+  "#세계뉴스",
+  "#프랑스",
+  "#해킹",
+  "#냉장고",
+  "#사이버공격",
+  "#IT소식",
+  "#신기한이야기",
+  "#웃긴글",
+  "#공감",
+  "#직장인",
+  "#출퇴근",
+  "#데일리",
+  "#소통"
+ ],
+ "verify": {
+  "verdict": "fix",
+  "issues": [
+   "요약(summary)의 세 번째 항목 '유럽 차원의 사이버 안보 우려 확산'은 [근거]에 직접 언급되지 않은 내용이므로 수정이 필요합니다.",
+   "캡션(caption)의 '출퇴근길에 챙겨보는 세계 소식, 피식 웃었다면 팔로잉 필수!' 등은 근거 범위를 벗어난 표현이 포함되어 있습니다."
+  ]
+ },
+ "source": {
+  "title": "France says Iranian hackers sabotaged supermarket refrigerators",
+  "source": "Axios",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb05tSnJXbmNvWGJQdlI1a0c3MTBydWdEZHloT3h0S3B3NVFjSkc3bWlLQlVTRmgyZ2dPT1dpWHVCUm5jS2MweEdPUDZlSEhpT3FEQ1VjdEt3RllfbUpEZ05OZlVBSG1PaHFmZmg0ZDk2c0ZjZUtiMFQ1NWtwWElJZ1Fn?oc=5",
+  "category": "world",
+  "n_sources": 9,
+  "sources": [
+   "Axios",
+   "BBC",
+   "CNN",
+   "Meduza",
+   "Quartz",
+   "Reuters",
+   "The Atlantic",
+   "The Washington Post"
+  ],
+  "summary": "",
+  "related_titles": [
+   "France says Iranian hackers sabotaged supermarket refrigerators",
+   "France blames Iran for ‘unprecedented’ supermarket fridge cyberattack",
+   "Iran Suspected in Fridge Hacks",
+   "Perhaps Connecting Fridges to the Internet Was a Bad Idea",
+   "France blamed Iran's Revolutionary Guard for hacking hundreds of supermarket fridges"
+  ]
+ }
+}

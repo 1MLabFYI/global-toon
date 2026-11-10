@@ -1,0 +1,19 @@
+{
+ "slot": "noon",
+ "created": "2026-11-10T22:45:37.830246+09:00",
+ "files": [
+  "output/2026-11-10/noon/01.jpg",
+  "output/2026-11-10/noon/02.jpg",
+  "output/2026-11-10/noon/03.jpg",
+  "output/2026-11-10/noon/04.jpg",
+  "output/2026-11-10/noon/05.jpg",
+  "output/2026-11-10/noon/06.jpg"
+ ],
+ "image_providers": [
+  "pollinations",
+  "placeholder",
+  "placeholder",
+  "pollinations"
+ ],
+ "title": "냉장고의 반란?"
+}
