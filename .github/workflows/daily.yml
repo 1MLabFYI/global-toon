@@ -1,0 +1,109 @@
+name: Global Toon Daily
+
+on:
+  schedule:
+    # GitHub cron은 UTC 기준 (KST = UTC+9). 정각은 지연이 잦아 분을 비켜 둠
+    - cron: "41 22 * * *"   # KST 07:41  morning (국내)
+    - cron: "13 3 * * *"    # KST 12:13  noon    (세계)
+    - cron: "23 10 * * *"   # KST 19:23  evening (테크·트렌드)
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "morning | noon | evening"
+        default: "noon"
+      publish:
+        description: "인스타그램에 게시할까요? (false면 이미지만 생성)"
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: global-toon
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install fonts & deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum fonts-noto-cjk >/dev/null
+          pip install -q -r requirements.txt
+
+      - name: Pick slot
+        id: slot
+        run: |
+          case "${{ github.event.schedule }}" in
+            "41 22 * * *") S=morning ;;
+            "13 3 * * *")  S=noon ;;
+            "23 10 * * *") S=evening ;;
+            *) S="${{ github.event.inputs.slot || 'noon' }}" ;;
+          esac
+          echo "slot=$S" >> $GITHUB_OUTPUT
+
+      - name: Make webtoon
+        id: make
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
+        run: python -m gtoon.main make --slot ${{ steps.slot.outputs.slot }}
+
+      - name: Upload images (media branch → public URL)
+        id: media
+        if: ${{ steps.make.outputs.dir != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DIR="${{ steps.make.outputs.dir }}"
+          rm -rf /tmp/media && mkdir -p /tmp/media
+          cp --parents "$DIR"/*.jpg /tmp/media/
+          cd /tmp/media
+          git init -q -b media
+          git add .
+          git -c user.name=global-toon-bot -c user.email=bot@users.noreply.github.com commit -qm "media $DIR"
+          git push -fq "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" media
+          SHA=$(git rev-parse HEAD)
+          JS="https://cdn.jsdelivr.net/gh/${{ github.repository }}@${SHA}"
+          RAW="https://raw.githubusercontent.com/${{ github.repository }}/${SHA}"
+          BASE="$RAW"
+          for i in 1 2 3 4 5 6; do
+            if curl -sfI "$JS/$DIR/01.jpg" | grep -qi "content-type: image/jpeg"; then BASE="$JS"; break; fi
+            sleep 10
+          done
+          echo "base=$BASE" >> $GITHUB_OUTPUT
+          echo "이미지 기본 URL: $BASE"
+
+      - name: Publish to Instagram
+        if: ${{ steps.make.outputs.dir != '' && github.event.inputs.publish != 'false' && vars.AUTO_PUBLISH != 'false' }}
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: python -m gtoon.main publish --dir "${{ steps.make.outputs.dir }}" --base-url "${{ steps.media.outputs.base }}"
+
+      - name: Save script/history
+        if: always()
+        run: |
+          git config user.name global-toon-bot
+          git config user.email bot@users.noreply.github.com
+          git add data output || true
+          git commit -qm "toon ${{ steps.slot.outputs.slot }} $(date -u +%F)" || exit 0
+          git pull -q --rebase && git push -q
+
+      - name: Keep artifacts (7 days)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: toon-${{ steps.slot.outputs.slot }}-${{ github.run_id }}
+          path: output/
+          retention-days: 7
