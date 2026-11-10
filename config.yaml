@@ -1,0 +1,108 @@
+# =============================================================
+#  Global Toon 설정 파일
+#  - 비밀값(API 키, 토큰)은 여기에 쓰지 말고 GitHub Secrets에 넣으세요.
+# =============================================================
+
+account:
+  name: "글로벌툰"                 # 표지/마지막 컷에 표시될 계정 이름
+  handle: "@globaltoonstoday"      # 인스타그램 아이디
+  mascot_name: "지구톤"             # 해설 캐릭터 이름
+
+# 하루 3회 슬롯 (GitHub Actions cron과 이름을 맞춤)
+#  categories: 해당 슬롯에서 우선 고려할 뉴스 분야
+slots:
+  morning:
+    label: "아침 국내 생활·경제 화제"
+    categories: [business, nation, technology]
+  noon:
+    label: "점심 신기한 세계 소식"
+    categories: [world, science]
+  evening:
+    label: "저녁 테크·과학·문화·스포츠 화제"
+    categories: [technology, science, entertainment, sports]
+
+# 뉴스 수집 (모두 무료 RSS, 키 불필요)
+news:
+  max_items_per_feed: 30
+  lookback_hours: 30
+  min_sources: 3            # 서로 다른 언론사 3곳 이상이 보도한 이슈만 후보(교차 검증)
+  feeds:
+    nation:
+      - https://news.google.com/rss/headlines/section/topic/NATION?hl=ko&gl=KR&ceid=KR:ko
+    business:
+      - https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko
+    world:
+      - https://news.google.com/rss/headlines/section/topic/WORLD?hl=ko&gl=KR&ceid=KR:ko
+      - https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en
+      - https://feeds.bbci.co.uk/news/world/rss.xml
+    technology:
+      - https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=ko&gl=KR&ceid=KR:ko
+      - https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=en-US&gl=US&ceid=US:en
+    science:
+      - https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=ko&gl=KR&ceid=KR:ko
+    entertainment:
+      - https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?hl=ko&gl=KR&ceid=KR:ko
+    sports:
+      - https://news.google.com/rss/headlines/section/topic/SPORTS?hl=ko&gl=KR&ceid=KR:ko
+
+# 대본 작성 LLM (Google Gemini 무료 티어)
+#  - 앞에서부터 시도하고 429/오류면 다음 모델로 넘어감
+#  - 무료 한도는 프로젝트마다 다르니 Google AI Studio에서 확인
+llm:
+  models:
+    - gemini-flash-latest
+    - gemini-flash-lite-latest
+  temperature: 0.8
+
+# 웹툰 구성
+comic:
+  max_images: 6             # 게시물 전체 장수 상한 (표지 1 + 본문 + 요약 1)
+  panels: 4                 # 본문 컷 수 → 총 6장
+  width: 1080
+  height: 1350              # 4:5 세로형 (인스타 피드 최대 비율)
+  jpeg_quality: 92
+  theme_color: "#FF5A36"
+  style_prompt: >-
+    funny korean gag webtoon style, cute chibi cartoon characters with big heads,
+    exaggerated comedic facial expressions, sweat drops and motion lines,
+    thick clean outlines, flat bright pastel colors, very simple uncluttered background,
+    one clear focal point, centered composition, easy to understand at a glance,
+    no text, no letters, no speech bubbles, no watermark
+
+# 이미지 생성 (무료 우선, 실패 시 다음 공급자)
+image:
+  providers: [cloudflare, pollinations, placeholder]
+  cloudflare_model: "@cf/black-forest-labs/flux-1-schnell"   # 무료 1만 뉴런/일 ≈ 약 100장
+  steps: 6
+  size: 1024
+
+# 인스타그램 게시
+instagram:
+  # 2026년 신규 Meta 앱은 "통합 로그인(Unified login)" → 비즈니스 포트폴리오의 시스템 사용자 토큰(만료 없음) 사용
+  api: facebook_login         # facebook_login(graph.facebook.com) | instagram_login(graph.instagram.com, 구형 앱)
+  version: "v25.0"
+  # 이미지 공개 URL 방식: jsdelivr(권장) | raw
+  image_host: jsdelivr
+
+# 콘텐츠 안전 규칙 (대본 프롬프트에 그대로 들어감)
+safety:
+  max_attempts: 2           # 팩트체크 탈락 시 다른 이슈로 재시도 횟수
+  skip_topics:
+    - "정치·선거·정당·외교 갈등"
+    - "전쟁·테러·재난·사망 사고"
+    - "범죄·소송·수사·재판"
+    - "젠더·종교·지역·세대·노사 갈등"
+    - "확인되지 않은 의혹·루머·단독 보도"
+    - "특정 기업·인물 비난"
+  # 제목·관련 제목에 들어 있으면 후보에서 자동 제외 (1차 필터)
+  avoid_keywords: [대통령, 국회, 여당, 야당, 정당, 선거, 탄핵, 의원, 장관, 검찰, 경찰, 수사, 재판, 기소, 구속,
+    소송, 고소, 사망, 숨져, 숨진, 참사, 사고, 화재, 폭발, 전쟁, 공습, 미사일, 테러, 총격, 살해, 성폭, 학대,
+    혐오, 젠더, 페미, 종교, 파업, 시위, 논란, 의혹, 단독, 북한, 트럼프, 푸틴, 하마스, 이스라엘, 우크라이나,
+    election, war, killed, dead, shooting, attack, trial, lawsuit, protest, scandal, president]
+  rules:
+    - "웃음은 상황·표정·생활 비유로 만들고, 특정 집단이나 피해자를 놀리지 않는다."
+    - "그림 장면은 인물 1~2명, 동작 1개로 단순하게. 한눈에 이해되게."
+    - "실존 인물의 얼굴을 그리지 않는다. 인물은 직업·역할로만 묘사한다(예: '정부 관계자', 'CEO')."
+    - "제공된 기사 제목·요약에 없는 사실을 지어내지 않는다."
+    - "정치·외교·갈등 이슈는 다루지 않는다."
+    - "기사 문장을 그대로 베끼지 않고 쉬운 말로 다시 쓴다."
