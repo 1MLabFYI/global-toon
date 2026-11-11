@@ -38,7 +38,25 @@ for m in cfg["image"]["models"]:
         print(f"❌ Cloudflare {m}: {e}")
         ok = False if m == cfg["image"]["models"][0] else ok
 
-# 3) Gemini
+# 3) 배경 사진 (Pixabay 기본)
+prov = cfg.get("photos", {}).get("provider", "pixabay")
+if prov == "pixabay":
+    k = os.environ.get("PIXABAY_API_KEY")
+    if k:
+        px = requests.get("https://pixabay.com/api/", params={"key": k.strip(), "q": "coffee", "per_page": 3},
+                          timeout=30)
+        print("✅ Pixabay 키" if px.status_code == 200 else f"❌ Pixabay: {px.status_code} {px.text[:200]}")
+        ok = ok and px.status_code == 200
+    else:
+        print("❌ Pixabay: PIXABAY_API_KEY 비밀값 없음"); ok = False
+else:
+    k = os.environ.get("PEXELS_API_KEY")
+    px = requests.get("https://api.pexels.com/v1/search", params={"query": "coffee", "per_page": 1},
+                      headers={"Authorization": (k or "").strip()}, timeout=30)
+    print("✅ Pexels 키" if px.status_code == 200 else f"❌ Pexels: {px.status_code} {px.text[:200]}")
+    ok = ok and px.status_code == 200
+
+# 4) Gemini
 key = os.environ.get("GEMINI_API_KEY")
 if key:
     g = requests.get("https://generativelanguage.googleapis.com/v1beta/models",

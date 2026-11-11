@@ -15,7 +15,8 @@ from datetime import datetime, timedelta, timezone
 
 import yaml
 
-from . import compose, imagegen
+from . import characters, compose
+from .photos import get_photo
 from .news import fetch_news
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -47,7 +48,8 @@ def build_caption(s: dict, cfg: dict) -> str:
     return (f"{s.get('caption', '').strip()}\n\n"
             f"💬 {s.get('question', '')}\n\n"
             f"📰 참고: {src.get('source', '')} 등 {src.get('n_sources', '여러')}개 언론 보도 종합\n"
-            f"🎨 그림은 AI로 생성한 일러스트이며 실제 인물·장면과 다릅니다.\n\n{tags}")[:2200]
+            f"📷 배경 사진: {', '.join(c.replace('Photo: ', '') for c in s.get('photo_credits', [])) or '-'}\n"
+            f"🎨 진행자 캐릭터는 AI로 만든 일러스트입니다.\n\n{tags}")[:2200]
 
 
 def cmd_make(args, cfg):
@@ -84,28 +86,39 @@ def cmd_make(args, cfg):
     panels = script["panels"] = script["panels"][:n_body]
     total = len(panels) + 2
     tag = script.get("category_tag", "이슈")
-    files, providers = [], []
-    pics = []
-    if args.sample and not os.environ.get("CF_API_TOKEN"):
-        cfg["image"]["models"] = ["placeholder"]          # 키 없는 로컬 테스트
-    imagegen.ensure_cast_ref(cfg)
-    for i, p in enumerate(panels):
-        img, prov = imagegen.generate(p["scene"], cfg, f"{now:%Y%m%d}-{args.slot}-{i}")
-        pics.append(img); providers.append(prov)
-    pages = [compose.render_cover(pics[0], script, cfg, total)]
-    pages += [compose.render_panel(img, p, cfg, tag, i + 2, total) for i, (img, p) in enumerate(zip(pics, panels))]
+    files = []
+
+    # 진행자 표정·동작 이미지가 비어 있으면 1회 생성 (Cloudflare + rembg 필요)
+    if characters.missing_poses() and os.environ.get("CF_API_TOKEN"):
+        try:
+            characters.build_missing(cfg)
+        except Exception as e:
+            print(f"[char] 동작 생성 건너뜀: {e}")
+
+    # 배경 사진 (Pexels 무료 라이선스)
+    W, H = cfg["comic"]["width"], cfg["comic"]["height"]
+    used: set = set()
+    prov = cfg.get("photos", {}).get("provider", "pixabay")
+    cover = get_photo(script.get("cover_photo") or panels[0].get("photo", []), used, (W, H), prov)
+    pics = [get_photo(p.get("photo", []), used, (W, H), prov) for p in panels]
+    sources = [cover.source] + [p.source for p in pics]
+
+    pages = [compose.render_cover(cover, script, cfg, total)]
+    pages += [compose.render_panel(ph, p, cfg, tag, i + 2, total) for i, (ph, p) in enumerate(zip(pics, panels))]
     pages.append(compose.render_outro(script, cfg, total, total))
     for i, pg in enumerate(pages, 1):
         fn = os.path.join(out, f"{i:02d}.jpg")
         pg.convert("RGB").save(fn, "JPEG", quality=cfg["comic"]["jpeg_quality"], optimize=True)
         files.append(os.path.relpath(fn, ROOT).replace("\\", "/"))
+    script["photo_credits"] = sorted({p.credit for p in [cover, *pics] if p.credit})
 
     caption = build_caption(script, cfg)
     with open(os.path.join(out, "caption.txt"), "w", encoding="utf-8") as f:
         f.write(caption)
     meta = {"slot": args.slot, "created": now.isoformat(), "files": files,
-            "image_providers": providers, "title": script["topic_title"],
-            "publishable": all(p in imagegen.PUBLISHABLE for p in providers)}
+            "photo_sources": sources, "photo_urls": [p.url for p in [cover, *pics]],
+            "title": script["topic_title"],
+            "publishable": sources.count("fallback") <= 1}
     with open(os.path.join(out, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=1)
     if not args.sample:
@@ -113,7 +126,7 @@ def cmd_make(args, cfg):
                      "title": script["topic_title"], "link": script["source"]["link"],
                      "dir": os.path.relpath(out, ROOT).replace("\\", "/"), "status": "made"})
         save_hist(hist)
-    print(f"[make] 완료 → {out} ({len(files)}장, 이미지: {set(providers)})")
+    print(f"[make] 완료 → {out} ({len(files)}장, 사진: {sources})")
     # GitHub Actions 다음 단계로 경로 전달
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
@@ -128,7 +141,7 @@ def cmd_publish(args, cfg):
     with open(os.path.join(d, "caption.txt"), encoding="utf-8") as f:
         caption = f.read()
     if not meta.get("publishable", False):
-        sys.exit(f"[publish] 대체 그림이 섞여 있어 게시하지 않습니다: {meta.get('image_providers')}")
+        sys.exit(f"[publish] 배경 사진을 충분히 구하지 못해 게시하지 않습니다: {meta.get('photo_sources')}")
     urls = [f"{args.base_url.rstrip('/')}/{p}" for p in meta["files"]]
     media_id = publish_carousel(urls, caption, cfg)
     hist = load_hist()

@@ -1,18 +1,26 @@
 {
  "selected_index": 0,
- "topic_title": "커피값, 또 올랐다고?",
- "hook": "[샘플] 지구톤의 아침이 위험하다",
+ "topic_title": "커피값, 또 오른다고?",
+ "hook": "[샘플] 원두 가격이 들썩이는 이유",
  "category_tag": "경제",
+ "cover_photo": ["coffee beans", "coffee"],
  "panels": [
-  {"scene": "a chubby office worker hugging a coffee cup with teary sparkling eyes at a cafe counter, cute chibi", "narration": "[샘플 렌더링] 아침마다 마시는 커피, 원두 값이 오르면서 가격이 들썩이고 있어요.", "bubbles": [{"speaker": "직장인", "text": "내 커피… 지켜줄게!", "side": "left"}]},
-  {"scene": "a giant coffee bean character sitting on a throne wearing a tiny crown, smug face, simple background", "narration": "날씨 영향으로 원두 수확이 줄면 원두 몸값이 확 뛰어요. 마치 귀한 몸이 된 것처럼요.", "bubbles": [{"speaker": "원두", "text": "나 이제 귀하신 몸이야~", "side": "right"}]},
-  {"scene": "a shocked cartoon person looking at a long receipt flying in the wind, sweat drops, motion lines", "narration": "원두 값이 오르면 카페 가격에도 조금씩 반영될 수 있어요.", "bubbles": [{"speaker": "지구톤", "text": "영수증이 길어진다…!", "side": "left"}]},
-  {"scene": "a proud cartoon person making drip coffee at home with sparkles, kettle, cozy kitchen, funny confident pose", "narration": "그래서 요즘은 집에서 직접 내려 마시는 '홈카페'도 다시 인기래요.", "bubbles": [{"speaker": "지구톤", "text": "오늘부터 나도 바리스타!", "side": "right"}]}
+  {"photo": ["coffee shop counter", "cafe"], "lines": [
+   {"who": "F", "pose": "explain", "text": "[샘플] 원두 가격이 오르면서 커피값이 들썩이고 있대요."},
+   {"who": "M", "pose": "surprised", "text": "내 아아 지켜줘…!"}]},
+  {"photo": ["coffee plantation", "farm field"], "lines": [
+   {"who": "M", "pose": "point", "text": "날씨 영향으로 원두 수확이 줄면 원두 몸값이 확 뛰거든요."},
+   {"who": "F", "pose": "laugh", "text": "원두님이 귀하신 몸!"}]},
+  {"photo": ["receipt cafe", "shopping receipt"], "lines": [
+   {"who": "F", "pose": "worried", "text": "원두 값이 오르면 카페 가격에도 조금씩 반영될 수 있어요."}]},
+  {"photo": ["home drip coffee", "kitchen coffee"], "lines": [
+   {"who": "M", "pose": "thumbsup", "text": "그래서 요즘 집에서 내려 마시는 홈카페가 다시 인기래요!"},
+   {"who": "F", "pose": "think", "text": "오늘부터 바리스타?"}]}
  ],
  "facts": ["샘플 데이터"],
  "summary": ["원두 값이 오르고 있어요", "카페 가격에도 영향 가능", "홈카페가 다시 인기"],
  "question": "여러분의 하루 커피는 몇 잔인가요?",
- "caption": "커피 없이는 못 사는 분들 주목 ☕\n원두 값이 왜 오르는지, 웹툰으로 3초 만에 정리했어요 😆",
- "hashtags": ["#글로벌툰", "#시사웹툰", "#커피", "#원두", "#홈카페", "#오늘의이슈", "#경제툰", "#직장인공감"],
+ "caption": "커피 없이는 못 사는 분들 주목 ☕\n원두 값이 왜 오르는지 준·하나가 정리했어요 😆",
+ "hashtags": ["#글로벌툰", "#뉴스툰", "#커피", "#원두", "#홈카페", "#오늘의이슈"],
  "source": {"title": "샘플", "source": "샘플 데이터", "link": "sample"}
 }

@@ -1,4 +1,4 @@
-"""컷 이미지 + 한글 말풍선/해설/표지/마무리 컷 합성 (AI가 한글을 그리지 않도록 직접 렌더)."""
+"""뉴스툰 합성 — 실사 배경 사진 + 진행자 캐릭터 + 한글 말풍선 / 표지 / 요약 페이지."""
 from __future__ import annotations
 
 import glob
@@ -7,7 +7,7 @@ from datetime import datetime
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-from .mascot import draw_mascot
+from . import characters
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BG = (255, 248, 238)
@@ -96,202 +96,218 @@ def cover_crop(img: Image.Image, w: int, h: int) -> Image.Image:
     return img.crop((x, y, x + w, y + h))
 
 
-def _rounded_paste(base, img, xy, radius, border=5):
-    mask = Image.new("L", img.size, 0)
-    ImageDraw.Draw(mask).rounded_rectangle([0, 0, *img.size], radius=radius, fill=255)
-    base.paste(img, xy, mask)
-    x, y = xy
-    ImageDraw.Draw(base).rounded_rectangle([x, y, x + img.width, y + img.height],
-                                           radius=radius, outline=INK, width=border)
+CHAR_COLOR = {"M": (36, 52, 110), "F": (226, 92, 70)}
 
 
-def _bubble(d: ImageDraw.ImageDraw, box, text, side, speaker, theme):
-    x0, y0, max_w = box
-    f, lines, size = fit_text(text, "bold", max_w - 60, 200, 40, 26)
-    lh = int(size * 1.3)
-    tw = max(f.getlength(l) for l in lines)
-    w, h = int(tw + 64), int(len(lines) * lh + 44)
-    if side == "right":
-        x0 = x0 - w
-    x1, y1 = x0 + w, y0 + h
-    # 꼬리
-    tx = x0 + w * (0.3 if side == "left" else 0.7)
-    tail = [(tx - 22, y1 - 6), (tx + 22, y1 - 6), (tx + (-30 if side == "left" else 30), y1 + 46)]
-    d.polygon(tail, fill="white", outline=INK)
-    d.rounded_rectangle([x0, y0, x1, y1], radius=min(46, h // 2), fill="white", outline=INK, width=5)
-    d.polygon([(tail[0][0] + 5, tail[0][1] - 4), (tail[1][0] - 5, tail[1][1] - 4),
-               (tail[2][0] + (4 if side == 'left' else -4), tail[2][1] - 10)], fill="white")
-    # 화자 라벨
-    if speaker:
-        sf = font("bold", 24)
-        sw = sf.getlength(speaker) + 24
-        d.rounded_rectangle([x0 + 18, y0 - 18, x0 + 18 + sw, y0 + 16], radius=14, fill=theme)
-        d.text((x0 + 30, y0 - 15), speaker, font=sf, fill="white")
-    for i, l in enumerate(lines):
-        d.text((x0 + (w - f.getlength(l)) / 2, y0 + 22 + i * lh), l, font=f, fill=INK)
-    return y1 + 60
+def sticker(img: Image.Image, border: int = 7) -> Image.Image:
+    """캐릭터 외곽에 흰 테두리(스티커 효과) — 사진 위에서 또렷하게."""
+    pad = border * 2
+    base = Image.new("RGBA", (img.width + pad * 2, img.height + pad * 2), (0, 0, 0, 0))
+    base.paste(img, (pad, pad), img)
+    a = base.getchannel("A").filter(ImageFilter.MaxFilter(border * 2 + 1))
+    out = Image.new("RGBA", base.size, (255, 255, 255, 0))
+    out.putalpha(a.point(lambda v: 255 if v > 30 else 0))
+    shadow = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    shadow.putalpha(a.point(lambda v: 90 if v > 30 else 0).filter(ImageFilter.GaussianBlur(6)))
+    final = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    final.alpha_composite(shadow, (4, 6))
+    final.alpha_composite(out)
+    final.alpha_composite(base)
+    return final
 
 
-def _header(d, W, cfg, tag, page, total):
-    theme = hex2rgb(cfg["comic"]["theme_color"])
-    d.rectangle([0, 0, W, 86], fill=INK)
-    d.text((36, 22), cfg["account"]["name"], font=font("bold", 36), fill="white")
-    tf = font("bold", 26)
-    tx = 36 + font("bold", 36).getlength(cfg["account"]["name"]) + 20
-    d.rounded_rectangle([tx, 24, tx + tf.getlength(tag) + 28, 62], radius=19, fill=theme)
-    d.text((tx + 14, 27), tag, font=tf, fill="white")
-    pg = f"{page}/{total}"
-    d.text((W - 36 - font("bold", 30).getlength(pg), 26), pg, font=font("bold", 30), fill=(200, 200, 210))
+def place_char(canvas: Image.Image, who: str, pose: str, height: int, side: str, flip=False) -> tuple:
+    """캐릭터를 화면 아래쪽에 배치(아래 일부가 화면 밖으로 나가게). 머리 위치를 반환."""
+    W, H = canvas.size
+    ch = characters.load(who, pose)
+    if flip:
+        ch = ch.transpose(Image.FLIP_LEFT_RIGHT)
+    r = height / ch.height
+    ch = ch.resize((int(ch.width * r), height), Image.LANCZOS)
+    st = sticker(ch)
+    y = H - int(height * 0.90)
+    x = -int(st.width * 0.06) if side == "left" else W - st.width + int(st.width * 0.06)
+    canvas.alpha_composite(st, (x, y))
+    return (x + st.width // 2, y + 20, x, x + st.width)
 
 
-CAPTION_BG = (255, 228, 92)
-
-
-def _caption_box(canvas, d, x, y, max_w, text, cfg):
-    """만화 내레이션 박스(노란 사각형) + 지구톤 얼굴."""
-    f, lines, size = fit_text(text, "bold", max_w - 120, 170, 34, 24)
-    lh = int(size * 1.32)
-    tw = max(f.getlength(l) for l in lines) if lines else 0
-    w, h = int(tw + 124), int(len(lines) * lh + 34)
-    d.rectangle([x + 6, y + 6, x + w + 6, y + h + 6], fill=INK)            # 그림자
-    d.rectangle([x, y, x + w, y + h], fill=CAPTION_BG, outline=INK, width=5)
-    m = draw_mascot(96, "happy")
-    canvas.paste(m, (x - 14, y + h // 2 - 52), m)
-    for i, l in enumerate(lines):
-        d.text((x + 96, y + 17 + i * lh), l, font=f, fill=INK)
-    return y + h
-
-
-def _comic_bubble(canvas, d, x_anchor, y0, max_w, text, side, speaker, cfg):
-    """둥근 말풍선 + 아래쪽(인물 방향) 꼬리 + 작은 화자 표시."""
-    f, lines, size = fit_text(text, "bold", max_w - 70, 190, 42, 28)
-    lh = int(size * 1.25)
-    tw = max(f.getlength(l) for l in lines)
-    w, h = int(tw + 76), int(len(lines) * lh + 50)
-    x0 = x_anchor if side == "left" else x_anchor - w
-    x1, y1 = x0 + w, y0 + h
-    tx = x0 + w * (0.62 if side == "left" else 0.38)
-    tip = (tx + (34 if side == "left" else -34), y1 + 70)
-    d.polygon([(tx - 24, y1 - 10), (tx + 24, y1 - 10), tip], fill="white", outline=INK, width=5)
-    d.rounded_rectangle([x0, y0, x1, y1], radius=h // 2, fill="white", outline=INK, width=6)
-    d.polygon([(tx - 18, y1 - 14), (tx + 18, y1 - 14), (tip[0] - (6 if side == "left" else -6), tip[1] - 14)],
-              fill="white")
-    for i, l in enumerate(lines):
-        d.text((x0 + (w - f.getlength(l)) / 2, y0 + 25 + i * lh), l, font=f, fill=INK)
-    if speaker == cfg["account"]["mascot_name"]:
-        m = draw_mascot(84, "surprised")
-        canvas.paste(m, (int(x1 - 40) if side == "left" else int(x0 - 44), int(y0 - 30)), m)
-    elif speaker:
-        sf = font("bold", 22)
-        sw = sf.getlength(speaker) + 20
-        sx = x0 + 26 if side == "left" else x1 - 26 - sw
-        d.rounded_rectangle([sx, y0 - 14, sx + sw, y0 + 16], radius=8, fill=INK)
-        d.text((sx + 10, y0 - 12), speaker, font=sf, fill="white")
-    return y1 + 90
-
-
-def render_panel(img: Image.Image, panel: dict, cfg: dict, tag: str, page: int, total: int) -> Image.Image:
-    """풀컬러 만화 컷: 굵은 테두리 컷 + 노란 내레이션 박스 + 둥근 말풍선."""
-    W, H = cfg["comic"]["width"], cfg["comic"]["height"]
-    theme = hex2rgb(cfg["comic"]["theme_color"])
-    canvas = Image.new("RGB", (W, H), "white")
-    d = ImageDraw.Draw(canvas)
-    px0, py0, px1, py1 = 22, 22, W - 22, H - 74
-    canvas.paste(cover_crop(img, px1 - px0, py1 - py0), (px0, py0))
-    d.rectangle([px0, py0, px1, py1], outline=INK, width=8)
-
-    y = _caption_box(canvas, d, px0 + 46, py0 + 34, 760, panel.get("narration", ""), cfg) + 46
-    for i, b in enumerate((panel.get("bubbles") or [])[:2]):
-        side = b.get("side") or ("right" if i % 2 == 0 else "left")
-        x = px0 + 40 if side == "left" else px1 - 40
-        y = _comic_bubble(canvas, d, x, y, 640, b.get("text", ""), side, b.get("speaker", ""), cfg)
-
-    # 하단 정보줄
-    ff = font("bold", 28)
-    d.text((px0 + 4, H - 58), cfg["account"]["handle"], font=ff, fill=INK)
-    tf = font("bold", 24)
-    tx = px0 + 18 + ff.getlength(cfg["account"]["handle"])
-    d.rounded_rectangle([tx, H - 56, tx + tf.getlength(tag) + 24, H - 22], radius=17, fill=theme)
-    d.text((tx + 12, H - 54), tag, font=tf, fill="white")
-    pg = f"{page} / {total}"
-    d.text((px1 - ff.getlength(pg) - 4, H - 58), pg, font=ff, fill=(110, 110, 120))
-    return canvas
-
-
-def render_cover(img: Image.Image, script: dict, cfg: dict, total: int) -> Image.Image:
-    W, H = cfg["comic"]["width"], cfg["comic"]["height"]
-    theme = hex2rgb(cfg["comic"]["theme_color"])
-    bg = cover_crop(img, W, H)
-    canvas = bg.copy()
-    # 하단 어둡게
+def bottom_shade(img: Image.Image, start=0.45, strength=200) -> Image.Image:
+    W, H = img.size
     grad = Image.new("L", (1, H))
     for y in range(H):
-        grad.putpixel((0, y), int(max(0, (y - H * .35) / (H * .65)) * 235))
-    dark = Image.new("RGB", (W, H), (12, 14, 24))
-    canvas.paste(dark, (0, 0), grad.resize((W, H)))
-    d = ImageDraw.Draw(canvas)
+        grad.putpixel((0, y), int(max(0, (y - H * start) / (H * (1 - start))) ** 1.4 * strength))
+    dark = Image.new("RGBA", (W, H), (10, 12, 22, 255))
+    dark.putalpha(grad.resize((W, H)))
+    out = img.convert("RGBA")
+    out.alpha_composite(dark)
+    return out
 
-    # 상단 라벨
+
+def top_shade(img: Image.Image, h=260, strength=150) -> Image.Image:
+    W, _ = img.size
+    grad = Image.new("L", (1, h))
+    for y in range(h):
+        grad.putpixel((0, y), int((1 - y / h) * strength))
+    dark = Image.new("RGBA", (W, h), (10, 12, 22, 255))
+    dark.putalpha(grad.resize((W, h)))
+    img.alpha_composite(dark, (0, 0))
+    return img
+
+
+def news_chip(d, cfg, tag, page=None, total=None, x=34, y=30):
+    theme = hex2rgb(cfg["comic"]["theme_color"])
+    f1, f2 = font("bold", 30), font("bold", 26)
+    name = cfg["account"]["name"]
+    w1 = f1.getlength(name) + 34
+    d.rounded_rectangle([x, y, x + w1, y + 52], radius=10, fill=theme)
+    d.text((x + 17, y + 8), name, font=f1, fill="white")
+    w2 = f2.getlength(tag) + 28
+    d.rounded_rectangle([x + w1 + 8, y + 4, x + w1 + 8 + w2, y + 48], radius=10, fill=(255, 255, 255))
+    d.text((x + w1 + 22, y + 10), tag, font=f2, fill=INK)
+    if page:
+        pg = f"{page} / {total}"
+        pw = f2.getlength(pg) + 28
+        W = d.im.size[0]
+        d.rounded_rectangle([W - 34 - pw, y + 4, W - 34, y + 48], radius=22, fill=(0, 0, 0, 160))
+        d.text((W - 34 - pw + 14, y + 10), pg, font=f2, fill="white")
+
+
+def speech(d, cx, top, max_w, text, who, name, tail_to, big=True):
+    """말풍선: 위쪽에 배치, 꼬리는 화자 머리(tail_to) 쪽으로."""
+    f, lines, size = fit_text(text, "bold", max_w - 80, 330 if big else 150, 48 if big else 36, 26, 1.28)
+    lh = int(size * 1.28)
+    tw = max(f.getlength(l) for l in lines)
+    w, h = int(tw + 84), int(len(lines) * lh + 62)
+    x0 = int(min(max(cx - w / 2, 28), d.im.size[0] - 28 - w))
+    y0, x1, y1 = top, x0 + w, top + h
+    # 꼬리
+    bx = min(max(tail_to[0], x0 + 70), x1 - 70)
+    tip = (tail_to[0] * 0.5 + bx * 0.5, min(tail_to[1], y1 + 120))
+    d.polygon([(bx - 30, y1 - 8), (bx + 30, y1 - 8), tip], fill="white", outline=INK, width=5)
+    d.rounded_rectangle([x0 + 6, y0 + 8, x1 + 6, y1 + 8], radius=38, fill=(0, 0, 0, 90))
+    d.rounded_rectangle([x0, y0, x1, y1], radius=38, fill="white", outline=INK, width=5)
+    d.polygon([(bx - 24, y1 - 12), (bx + 24, y1 - 12), (tip[0], tip[1] - 14)], fill="white")
+    # 화자 이름표
+    nf = font("bold", 26)
+    nw = nf.getlength(name) + 30
+    d.rounded_rectangle([x0 + 28, y0 - 22, x0 + 28 + nw, y0 + 20], radius=21, fill=CHAR_COLOR[who])
+    d.text((x0 + 43, y0 - 17), name, font=nf, fill="white")
+    for i, l in enumerate(lines):
+        d.text((x0 + (w - f.getlength(l)) / 2, y0 + 32 + i * lh), l, font=f, fill=INK)
+    return y1
+
+
+def credit(d, text, W, H, color=(235, 235, 240)):
+    if text:
+        cf = font("regular", 22)
+        d.text((W - 26 - cf.getlength(text), H - 40), text, font=cf, fill=color,
+               stroke_width=2, stroke_fill=(0, 0, 0))
+
+
+def render_panel(photo, panel: dict, cfg: dict, tag: str, page: int, total: int) -> Image.Image:
+    W, H = cfg["comic"]["width"], cfg["comic"]["height"]
+    names = {k: v["name"] for k, v in cfg["characters"].items()}
+    canvas = bottom_shade(cover_crop(photo.image, W, H), 0.55, 150)
+    canvas = top_shade(canvas)
+    lines = (panel.get("lines") or [])[:2]
+    if not lines:
+        lines = [{"who": "F", "pose": "explain", "text": panel.get("narration", "")}]
+    main = lines[0]
+    main_who = main.get("who", "F") if main.get("who") in ("M", "F") else "F"
+    main_side = "left" if main_who == "M" else "right"
+    other = lines[1] if len(lines) > 1 and lines[1].get("who") in ("M", "F") else None
+
+    # 리액션 캐릭터(작게) 먼저, 메인 캐릭터(크게) 나중
+    heads = {}
+    if other and other["who"] != main_who:
+        heads[other["who"]] = place_char(canvas, other["who"], other.get("pose", "laugh"), int(H * 0.40),
+                                         "left" if main_side == "right" else "right")
+    heads[main_who] = place_char(canvas, main_who, main.get("pose", "explain"), int(H * 0.58), main_side)
+
+    d = ImageDraw.Draw(canvas, "RGBA")
+    news_chip(d, cfg, tag, page, total)
+    y = speech(d, W // 2, 130, W - 70, main.get("text", ""), main_who, names[main_who],
+               heads[main_who][:2], big=True)
+    if other:
+        who = other["who"]
+        tgt = heads.get(who, heads[main_who])[:2]
+        cx = W * (0.30 if (who == "M") else 0.70)
+        speech(d, int(cx), y + 70, 520, other.get("text", ""), who, names[who], tgt, big=False)
+    credit(d, photo.credit, W, H)
+    return canvas.convert("RGB")
+
+
+def render_cover(photo, script: dict, cfg: dict, total: int) -> Image.Image:
+    W, H = cfg["comic"]["width"], cfg["comic"]["height"]
+    theme = hex2rgb(cfg["comic"]["theme_color"])
+    canvas = bottom_shade(cover_crop(photo.image, W, H), 0.25, 225)
+    canvas = top_shade(canvas)
+    place_char(canvas, "M", "intro", int(H * 0.47), "left")
+    place_char(canvas, "F", "intro", int(H * 0.45), "right")
+    d = ImageDraw.Draw(canvas, "RGBA")
     tag = script.get("category_tag", "이슈")
     date = datetime.now().strftime("%Y.%m.%d")
-    d.rounded_rectangle([40, 40, 40 + font("bold", 34).getlength(f"오늘의 {tag} 이슈") + 48, 104],
-                        radius=32, fill=theme)
-    d.text((64, 50), f"오늘의 {tag} 이슈", font=font("bold", 34), fill="white")
-    d.text((W - 40 - font("bold", 30).getlength(date), 56), date, font=font("bold", 30), fill="white",
-           stroke_width=3, stroke_fill=INK)
+    news_chip(d, cfg, f"오늘의 {tag}")
+    df = font("bold", 28)
+    d.text((W - 36 - df.getlength(date), 40), date, font=df, fill="white", stroke_width=2, stroke_fill=INK)
 
-    # 제목
-    f, lines, size = fit_text(script["topic_title"], "bold", W - 380, 330, 92, 52, 1.18)
-    y = H - 140 - 90 - len(lines) * int(size * 1.18)
+    # 제목 블록 (상단~중단)
+    f, lines, size = fit_text(script["topic_title"], "bold", W - 110, 300, 100, 60, 1.15)
+    y = 190
     for l in lines:
-        d.text((60, y), l, font=f, fill="white", stroke_width=6, stroke_fill=INK)
-        y += int(size * 1.18)
-    d.rectangle([60, y + 24, 200, y + 34], fill=theme)
-    hf, hl, hs = fit_text(script.get("hook", ""), "regular", W - 360, 120, 40, 28)
+        d.text((56, y), l, font=f, fill="white", stroke_width=7, stroke_fill=INK)
+        y += int(size * 1.15)
+    d.rectangle([58, y + 16, 230, y + 28], fill=theme)
+    hf, hl, hs = fit_text(script.get("hook", ""), "bold", W - 120, 130, 42, 28)
     for i, l in enumerate(hl):
-        d.text((60, y + 56 + i * int(hs * 1.3)), l, font=hf, fill=(235, 235, 240))
-
-    m = draw_mascot(260, "surprised")
-    canvas.paste(m, (W - 290, H - 330), m)
-    d.text((60, H - 70), f"{cfg['account']['handle']} · 넘겨서 보기 →", font=font("bold", 30), fill=(210, 210, 220))
-    return canvas
+        d.text((58, y + 50 + i * int(hs * 1.3)), l, font=hf, fill="white", stroke_width=4, stroke_fill=INK)
+    sw = font("bold", 30)
+    msg = "넘겨서 보기 →"
+    d.rounded_rectangle([W / 2 - sw.getlength(msg) / 2 - 26, H - 112, W / 2 + sw.getlength(msg) / 2 + 26, H - 58],
+                        radius=27, fill=theme)
+    d.text((W / 2 - sw.getlength(msg) / 2, H - 104), msg, font=sw, fill="white")
+    credit(d, photo.credit, W, H)
+    return canvas.convert("RGB")
 
 
 def render_outro(script: dict, cfg: dict, page: int, total: int) -> Image.Image:
     W, H = cfg["comic"]["width"], cfg["comic"]["height"]
     theme = hex2rgb(cfg["comic"]["theme_color"])
-    canvas = Image.new("RGB", (W, H), BG)
-    d = ImageDraw.Draw(canvas)
-    _header(d, W, cfg, script.get("category_tag", "이슈"), page, total)
+    canvas = Image.new("RGBA", (W, H), (255, 248, 238, 255))
+    place_char(canvas, "M", "thumbsup", int(H * 0.40), "left")
+    place_char(canvas, "F", "laugh", int(H * 0.38), "right")
+    d = ImageDraw.Draw(canvas, "RGBA")
+    news_chip(d, cfg, script.get("category_tag", "이슈"), page, total)
 
-    d.text((60, 140), "3줄 요약", font=font("bold", 72), fill=INK)
-    d.rectangle([60, 236, 240, 248], fill=theme)
-    y = 300
+    d.text((60, 120), "3줄 요약", font=font("bold", 70), fill=INK)
+    d.rectangle([60, 212, 240, 224], fill=theme)
+    y = 262
     for i, s in enumerate(script.get("summary", [])[:3]):
-        d.ellipse([60, y, 124, y + 64], fill=theme)
-        d.text((80, y + 6), str(i + 1), font=font("bold", 42), fill="white")
-        f, lines, size = fit_text(s, "bold", W - 220, 140, 44, 30)
+        d.ellipse([60, y, 122, y + 62], fill=theme)
+        d.text((80, y + 6), str(i + 1), font=font("bold", 40), fill="white")
+        f, lines, size = fit_text(s, "bold", W - 210, 130, 42, 30)
         for j, l in enumerate(lines):
-            d.text((150, y + 4 + j * int(size * 1.3)), l, font=f, fill=INK)
-        y += max(110, len(lines) * int(size * 1.3) + 46)
+            d.text((146, y + 6 + j * int(size * 1.3)), l, font=f, fill=INK)
+        y += max(100, len(lines) * int(size * 1.3) + 40)
 
-    # 질문 카드
-    qy = y + 40
-    d.rounded_rectangle([40, qy, W - 40, qy + 250], radius=30, fill="white", outline=INK, width=5)
-    d.text((80, qy + 30), "여러분 생각은?", font=font("bold", 36), fill=theme)
-    f, lines, size = fit_text(script.get("question", ""), "regular", W - 400, 150, 38, 26)
+    qy = y + 20
+    f, lines, size = fit_text(script.get("question", ""), "bold", W - 180, 120, 38, 26)
+    qh = 80 + len(lines) * int(size * 1.35)
+    d.rounded_rectangle([40, qy, W - 40, qy + qh], radius=28, fill="white", outline=INK, width=5)
+    d.text((76, qy + 22), "여러분 생각은?", font=font("bold", 32), fill=theme)
     for j, l in enumerate(lines):
-        d.text((80, qy + 90 + j * int(size * 1.35)), l, font=f, fill=INK)
-    m = draw_mascot(230, "happy")
-    canvas.paste(m, (W - 280, qy + 10), m)
+        d.text((76, qy + 66 + j * int(size * 1.35)), l, font=f, fill=INK)
 
     src = script.get("source", {})
     n = src.get("n_sources")
-    stext = (f"참고: {src.get('source', '')} 등 {n}개 언론 보도 종합" if n else f"참고: {src.get('source', '')}") + " · 그림은 AI 생성 일러스트"
-    sf = font("regular", 24)
-    d.text((40, H - 150), stext, font=sf, fill=(120, 120, 130))
-    d.rounded_rectangle([40, H - 110, W - 40, H - 30], radius=40, fill=INK)
-    cta = f"매일 세계 이슈를 웹툰으로  {cfg['account']['handle']}  팔로우"
-    cf = font("bold", 32)
-    d.text(((W - cf.getlength(cta)) / 2, H - 92), cta, font=cf, fill="white")
-    return canvas
+    site = "Pixabay" if cfg.get("photos", {}).get("provider", "pixabay") == "pixabay" else "Pexels"
+    stext = f"참고: {src.get('source', '')} 등 {n}개 언론 보도 종합 · 배경 사진: {site}" if n else f"배경 사진: {site}"
+    cf = font("regular", 22)
+    d.text(((W - cf.getlength(stext)) / 2, qy + qh + 14), stext, font=cf, fill=(110, 110, 120))
+    cta = f"매일 세계 이슈를 쉽고 재밌게  {cfg['account']['handle']}"
+    tf = font("bold", 30)
+    cy = qy + qh + 60
+    d.rounded_rectangle([W / 2 - tf.getlength(cta) / 2 - 30, cy, W / 2 + tf.getlength(cta) / 2 + 30, cy + 56],
+                        radius=28, fill=INK)
+    d.text((W / 2 - tf.getlength(cta) / 2, cy + 8), cta, font=tf, fill="white")
+    return canvas.convert("RGB")

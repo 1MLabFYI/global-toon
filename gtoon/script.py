@@ -6,9 +6,11 @@ import json
 from .llm import ask_json
 from .news import NewsItem
 
-SYSTEM = """너는 인스타그램 웹툰 '{account}'의 개그 웹툰 작가다.
-해설 캐릭터 '{mascot}'(지구 모양 머리의 귀엽고 엉뚱한 캐릭터)가 오늘의 화제를 가볍고 웃기게 소개한다.
-독자는 20~40대 한국인. 출퇴근길에 3초 만에 이해되고 피식 웃을 수 있어야 한다.
+SYSTEM = """너는 인스타그램 뉴스툰 '{account}'의 작가다.
+두 명의 진행자가 오늘의 뉴스를 실제 사진 배경 위에서 말풍선 대화로 쉽고 재미있게 설명한다.
+- {m_name}(남, 뉴스 신문을 든 기자): {m_char}
+- {f_name}(여, 마이크를 든 앵커): {f_char}
+독자는 20~40대 한국인. 3초 만에 이해되고, 두 사람의 티키타카에 피식 웃을 수 있어야 한다.
 반드시 지킬 규칙:
 {rules}
 다음 주제는 절대 선택하지 않는다: {skips}
@@ -25,12 +27,14 @@ PROMPT = """[오늘 슬롯] {slot_label}
    - 논쟁·갈등 소지가 적은 것 (정치·외교·국가 간 갈등, 해킹·보안사고, 젠더·종교·지역·세대 갈등, 사건사고, 소송, 전쟁 제외)
    - 누가 봐도 웃으며 공유할 수 있는 밝은 소식
    - 여러 언론사 보도로 사실관계가 분명한 것
-   - 웃기게 풀 수 있는 생활·경제·과학·기술·문화·스포츠·신기한 세계 소식
    조건을 만족하는 후보가 없으면 "selected_index": -1.
-2) 본문 {n}컷 개그 웹툰 대본을 쓴다.
-   흐름: 1컷 상황(무슨 일?) → 중간 컷 핵심 정보를 생활 비유로 → 마지막 컷 반전/펀치라인.
+2) 본문 {n}컷 대본을 쓴다. 각 컷 = 배경 사진 1장 + 진행자 대사 1~2개.
+   흐름: 1컷 무슨 일? → 2~3컷 핵심 사실과 배경(왜 화제?) → 마지막 컷 의미·전망 + 재치 있는 마무리.
    - 사실 정보는 '후보 뉴스'에 적힌 내용만 쓴다. 숫자·날짜·이름을 새로 만들지 않는다.
-   - 웃음은 과장된 표정, 생활 비유, 지구톤의 엉뚱한 반응으로 만든다. 누군가를 조롱하지 않는다.
+   - 한 컷의 첫 대사가 뉴스 설명(정보), 두 번째 대사는 상대의 짧은 리액션·드립(선택).
+   - 두 진행자가 컷마다 번갈아 설명한다.
+
+pose 선택지: explain(설명), point(가리키기), surprised(놀람), laugh(웃음), think(생각), worried(난감), thumbsup(최고), shrug(글쎄)
 
 JSON 형식:
 {{
@@ -38,11 +42,14 @@ JSON 형식:
   "topic_title": "표지 제목, 16자 이내, 재치있게",
   "hook": "표지 부제, 25자 이내",
   "category_tag": "국내|세계|경제|테크|과학|문화|스포츠 중 하나",
+  "cover_photo": ["표지 배경 사진 영어 검색어(구체적)", "더 일반적인 검색어"],
   "panels": [
     {{
-      "scene": "영어 이미지 묘사 1~2문장. 고정 배역 HANA/BOSS/MINJUN 중 1~2명이 등장하는 웃긴 상황(과장된 표정·몸개그). 소품·장소를 구체적으로. 지구톤·실존 인물·로고·국기·글자 금지.",
-      "narration": "컷 하단 해설, 60자 이내",
-      "bubbles": [{{"speaker": "하나|부장님|민준|{mascot}", "text": "말풍선 22자 이내", "side": "left|right"}}]
+      "photo": ["배경 사진 영어 검색어 2~4단어(장소·사물·풍경 위주, 인물 얼굴이 주인공인 사진 피하기)", "더 일반적인 대체 검색어"],
+      "lines": [
+        {{"who": "M|F", "pose": "위 선택지 중 하나", "text": "설명 대사 55자 이내"}},
+        {{"who": "M|F", "pose": "위 선택지 중 하나", "text": "리액션 20자 이내"}}
+      ]
     }}
   ],
   "facts": ["대본에 쓴 사실 주장 목록 — 각각 후보 뉴스의 어느 문장에 근거하는지 괄호로 표시"],
@@ -51,9 +58,7 @@ JSON 형식:
   "caption": "인스타 본문 350자 이내, 줄바꿈, 이모지 2~4개",
   "hashtags": ["#해시태그 12~16개"]
 }}
-고정 배역(그림에 등장): HANA=하나(20대 직장인, 밝고 호기심 많음), BOSS=부장님(배 나온 중년 부장, 허세), MINJUN=민준(늘 졸린 막내).
-{mascot}는 그림에 나오지 않는 해설자다. narration과 가끔 말풍선으로만 등장한다.
-panels는 정확히 {n}개, 각 컷 bubbles 1~2개. 대사는 짧고 웃기게."""
+panels는 정확히 {n}개, 각 컷 lines 1~2개."""
 
 VERIFY = """너는 깐깐한 팩트체커이자 리스크 검토자다. 아래 [근거]만을 사실로 인정한다.
 
@@ -74,8 +79,11 @@ JSON: {{"verdict": "pass|fix|reject", "issues": ["..."],
 
 
 def _system(cfg):
+    ch = cfg["characters"]
     return SYSTEM.format(
-        account=cfg["account"]["name"], mascot=cfg["account"]["mascot_name"],
+        account=cfg["account"]["name"],
+        m_name=ch["M"]["name"], m_char=ch["M"]["personality"],
+        f_name=ch["F"]["name"], f_char=ch["F"]["personality"],
         rules="\n".join("- " + r for r in cfg["safety"]["rules"]),
         skips=", ".join(cfg["safety"]["skip_topics"]))
 
@@ -120,7 +128,7 @@ def build_script(cfg: dict, slot: str, items: list[NewsItem], recent: list[str])
         if not pool:
             break
         prompt = PROMPT.format(slot_label=s["label"], recent=json.dumps(recent[-20:], ensure_ascii=False),
-                               candidates=_cand_text(pool), n=n, mascot=cfg["account"]["mascot_name"])
+                               candidates=_cand_text(pool), n=n)
         data = ask_json(prompt, cfg, _system(cfg))
         if isinstance(data, list):
             data = data[0]

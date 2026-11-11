@@ -41,26 +41,32 @@ def ask_json(prompt: str, cfg: dict, system: str = "") -> dict | list:
     if system:
         body["systemInstruction"] = {"parts": [{"text": system}]}
 
-    last = None
-    for model in cfg["llm"]["models"]:
-        for attempt in range(3):
-            try:
-                r = requests.post(API.format(model=model), json=body, timeout=120,
-                                  headers={"x-goog-api-key": key})
-                if r.status_code == 429:           # 무료 한도 초과 → 다음 모델
-                    last = f"{model}: 429 quota"
-                    break
-                if r.status_code >= 500:
-                    last = f"{model}: {r.status_code}"
-                    time.sleep(5 * (attempt + 1))
-                    continue
-                r.raise_for_status()
-                data = r.json()
-                text = "".join(p.get("text", "") for p in
-                               data["candidates"][0]["content"]["parts"])
-                print(f"[llm] {model} OK")
-                return _extract_json(text)
-            except (requests.RequestException, KeyError, json.JSONDecodeError) as e:
-                last = f"{model}: {e}"
-                time.sleep(3)
-    raise LLMError(f"모든 모델 실패 — {last}")
+    errors = []
+    for cycle in range(2):                      # 전체 모델을 2바퀴까지 시도 (일시 과부하 대비)
+        if cycle:
+            print("[llm] 모든 모델 실패 → 90초 후 한 번 더 시도")
+            time.sleep(90)
+        for model in cfg["llm"]["models"]:
+            for attempt in range(3):
+                try:
+                    r = requests.post(API.format(model=model), json=body, timeout=180,
+                                      headers={"x-goog-api-key": key})
+                    if r.status_code in (429, 404):     # 무료 한도 초과 / 모델 없음 → 다음 모델
+                        errors.append(f"{model}: {r.status_code}")
+                        print(f"[llm] {model} {r.status_code} → 다음 모델")
+                        break
+                    if r.status_code >= 500:            # 구글 서버 과부하(503) → 잠시 후 재시도
+                        errors.append(f"{model}: {r.status_code}")
+                        print(f"[llm] {model} {r.status_code} 재시도 {attempt + 1}/3")
+                        time.sleep(15 * (attempt + 1))
+                        continue
+                    r.raise_for_status()
+                    data = r.json()
+                    text = "".join(p.get("text", "") for p in
+                                   data["candidates"][0]["content"]["parts"])
+                    print(f"[llm] {model} OK")
+                    return _extract_json(text)
+                except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as e:
+                    errors.append(f"{model}: {str(e)[:120]}")
+                    time.sleep(5)
+    raise LLMError("모든 모델 실패 — " + " | ".join(errors[-6:]))

@@ -73,7 +73,7 @@ def _flux2(model: str, prompt: str, cfg: dict, seed: int, ref: bytes | None) -> 
 def _schnell(prompt: str, cfg: dict, seed: int) -> Image.Image:
     url, hdr = _cf_url("@cf/black-forest-labs/flux-1-schnell")
     return _decode(requests.post(url, headers=hdr, timeout=120,
-                                 json={"prompt": prompt[:2000], "steps": 8, "seed": seed}))
+                                 json={"prompt": prompt[:2000], "steps": 8}))  # schnell은 seed 미지원
 
 
 def placeholder(cfg: dict, seed: int) -> Image.Image:

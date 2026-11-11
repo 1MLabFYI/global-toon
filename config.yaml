@@ -52,6 +52,8 @@ llm:
   models:
     - gemini-flash-latest
     - gemini-flash-lite-latest
+    - gemini-2.5-flash-lite
+    - gemini-2.5-flash
   temperature: 0.8
 
 # 웹툰 구성
@@ -73,20 +75,28 @@ comic:
     no watermark, no signature
 
 # 이미지 생성 — Cloudflare Workers AI (무료 1만 뉴런/일)
-#  models: 앞에서부터 시도. flux-2-dev(고품질) → flux-2-klein-4b(빠름) → flux-1-schnell
-#  placeholder를 목록에 넣으면 테스트용 대체 그림이 생기지만, 섞이면 게시하지 않음
+#  배경은 실사 사진을 쓰므로, 이 설정은 진행자 표정·동작 이미지를 처음 1회 만들 때만 사용
 image:
   models: [flux-2-dev, flux-2-klein-4b, flux-1-schnell]
   width: 896
   height: 1152               # 세로 컷(인스타 4:5에 맞춤)
   steps_dev: 20
-  # 고정 등장인물 — 대본에서 영문 배역명(HANA, BOSS…)으로 부르면 아래 외모로 치환
-  #  첫 실행 때 assets/cast_ref.png(캐릭터 기준 그림)를 만들어 이후 매일 같은 얼굴로 그림
-  #  마음에 안 들면 GitHub에서 assets/cast_ref.png를 삭제 → 다음 실행 때 새로 생성
-  cast:
-    HANA: "a cheerful young korean woman in her late 20s, short black bob hair, big round eyes, yellow hoodie, blue jeans"
-    BOSS: "a chubby middle-aged korean man, bald head with a tiny tuft of hair, thick mustache, navy suit, red tie"
-    MINJUN: "a lanky young korean man, messy brown hair, round glasses, green cardigan, always sleepy"
+
+# 진행자 캐릭터 (assets/characters/ 의 그림 사용) — 이름·성격은 자유롭게 수정
+characters:
+  M:
+    name: "준"
+    look: "a young korean man with fluffy dark brown hair, big brown eyes, navy blazer over white t-shirt"
+    personality: "호기심 많고 장난기 있는 기자. 신문을 들고 다니며 드립을 잘 친다"
+  F:
+    name: "하나"
+    look: "a young korean woman with wavy shoulder-length brown hair, pearl earrings, beige blazer over white top"
+    personality: "똑 부러지고 친절한 앵커. 마이크를 들고 핵심을 쉽게 정리한다"
+
+# 배경 실사 사진 — 무료 라이선스(상업 이용 가능, 사진가·사이트 출처 자동 표기)
+#  pixabay(기본, 키: PIXABAY_API_KEY) | pexels(키: PEXELS_API_KEY — 2026년 신규 발급 중단)
+photos:
+  provider: pixabay
 
 # 인스타그램 게시
 instagram:
@@ -112,12 +122,15 @@ safety:
     소송, 고소, 사망, 숨져, 숨진, 참사, 사고, 화재, 폭발, 전쟁, 공습, 미사일, 테러, 총격, 살해, 성폭, 학대,
     혐오, 젠더, 페미, 종교, 파업, 시위, 논란, 의혹, 단독, 북한, 트럼프, 푸틴, 하마스, 이스라엘, 우크라이나,
     해킹, 해커, 사이버, 이란, 러시아, 제재, 군사, 관세, 무역전쟁, 간첩, 랜섬,
+    혐의, 피소, 고발, 체포, 성추행, 성희롱, 폭행, 갑질, 불륜, 마약, 실종, 부상, 피해자, 사기, 횡령,
+    accused, allegation, allegations, alleged, grooming, abuse, assault, harassment, injunction, arrest, arrested,
+    charged, sued, court, police, affair, sexual, rape, drug, drugs, fraud, missing, injured, victim, victims, dies, died, death,
     hack, hacker, hackers, hacked, cyber, cyberattack, sabotage, sabotaged, iran, iranian, russia, sanctions, military, tariff, spy,
     election, war, killed, dead, shooting, attack, trial, lawsuit, protest, scandal, president]
   rules:
     - "웃음은 상황·표정·생활 비유로 만들고, 특정 집단이나 피해자를 놀리지 않는다."
     - "그림 장면은 인물 1~2명, 동작 1개로 단순하게. 한눈에 이해되게."
-    - "실존 인물의 얼굴을 그리지 않는다. 인물은 직업·역할로만 묘사한다(예: '정부 관계자', 'CEO')."
+    - "배경 사진 검색어에는 실존 인물 이름·브랜드·로고를 넣지 않는다(장소·사물·풍경 위주)."
     - "제공된 기사 제목·요약에 없는 사실을 지어내지 않는다."
     - "정치·외교·갈등 이슈는 다루지 않는다."
     - "기사 문장을 그대로 베끼지 않고 쉬운 말로 다시 쓴다."
