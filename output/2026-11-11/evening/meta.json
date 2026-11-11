@@ -1,0 +1,28 @@
+{
+ "slot": "evening",
+ "created": "2026-11-11T22:31:42.357755+09:00",
+ "files": [
+  "output/2026-11-11/evening/01.jpg",
+  "output/2026-11-11/evening/02.jpg",
+  "output/2026-11-11/evening/03.jpg",
+  "output/2026-11-11/evening/04.jpg",
+  "output/2026-11-11/evening/05.jpg",
+  "output/2026-11-11/evening/06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/girl-casual-purse-smartphone-9488045/",
+  "https://pixabay.com/photos/beautiful-face-fashion-female-girl-1845578/",
+  "https://pixabay.com/photos/music-rock-marshall-amplifier-8559592/",
+  "https://pixabay.com/photos/smartphone-screen-room-wall-sunset-8057248/",
+  "https://pixabay.com/photos/male-model-smile-man-young-2634974/"
+ ],
+ "title": "스포티파이 AI DJ의 변신",
+ "publishable": true
+}

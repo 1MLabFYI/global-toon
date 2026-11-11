@@ -1,84 +1,112 @@
 {
- "selected_index": 2,
- "topic_title": "AI DJ야, 제발 말 좀 줄여줘",
- "hook": "스포티파이 AI DJ에게 생긴 '조용히 해' 기능?",
+ "selected_index": 3,
+ "topic_title": "스포티파이 AI DJ의 변신",
+ "hook": "내 취향을 읽어주는 AI DJ가 새로운 목소리로 찾아왔어요!",
  "category_tag": "테크",
+ "cover_photo": [
+  "smartphone playing music with headphones on table",
+  "modern smartphone audio app screen"
+ ],
  "panels": [
   {
-   "scene": "HANA sitting at her office desk wearing huge headphones, looking extremely overwhelmed with swirls around her head as soundwaves explode from her smartphone.",
-   "narration": "신나게 노래 들으려는데 혼자 끝없이 수다 떠는 AI DJ!",
-   "bubbles": [
+   "photo": [
+    "person listening to music with headphones walking outside",
+    "close up of smartphone music playlist screen"
+   ],
+   "lines": [
     {
-     "speaker": "하나",
-     "text": "노래 듣게 말 좀 그만해!",
-     "side": "left"
-    }
-   ]
-  },
-  {
-   "scene": "MINJUN holding his smartphone with an intensely focused expression, pointing a dramatic finger at the screen.",
-   "narration": "드디어 스포티파이가 AI DJ의 말수를 줄이는 옵션을 출시했대요!",
-   "bubbles": [
-    {
-     "speaker": "지구톤",
-     "text": "새 목소리와 성격도 추가 완료!",
-     "side": "right"
-    }
-   ]
-  },
-  {
-   "scene": "MINJUN aggressively tapping the smartphone screen with a relieved and blissful smile.",
-   "narration": "새로운 9가지 성격과 함께 '수다 줄이기' 기능이 쏙!",
-   "bubbles": [
-    {
-     "speaker": "민준",
-     "text": "AI야, 오늘부터 침묵 모드다.",
-     "side": "left"
-    }
-   ]
-  },
-  {
-   "scene": "BOSS talking endlessly with a proud smile, while HANA and MINJUN stare at him sideways with unamused faces.",
-   "narration": "이 기능… 인간 세상에도 시급히 도입되어야 할 텐데요?",
-   "bubbles": [
-    {
-     "speaker": "부장님",
-     "text": "내 훈화 말씀도 옵션이 있나?",
-     "side": "left"
+     "who": "F",
+     "pose": "explain",
+     "text": "스포티파이의 AI DJ가 새로운 목소리와 개성들을 얻게 되었어요!"
     },
     {
-     "speaker": "하나",
-     "text": "부장님 입에 음소거 버튼 좀…",
-     "side": "right"
+     "who": "M",
+     "pose": "surprised",
+     "text": "오, 목소리가 여러 개로 늘어난 건가요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "audio sound wave equalizer studio lights",
+    "modern music streaming app interface"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "맞아요! 새롭게 합류한 9가지 페르소나 덕분에 선택의 폭이 훨씬 넓어졌답니다."
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "내 취향에 맞는 목소리를 고를 수 있겠네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "person tapping smartphone screen in cozy room",
+    "modern phone with colorful abstract wallpaper"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "게다가 음악 사이사이에 나오는 수다를 줄일 수 있는 옵션도 추가되었어요."
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "말 많은 DJ가 조금 부담스러웠다면 반가운 소식이네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "happy person relaxing on sofa with earphones",
+    "cozy living room with warm lighting"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "나만의 맞춤형 음악 비서와 함께 더 즐겁게 음악을 감상해 보세요!"
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "오늘 저녁 플레이리스트 바로 확인해 볼까요?"
     }
    ]
   }
  ],
  "facts": [
-  "스포티파이의 AI DJ에 새로운 목소리와 성격(페르소나)이 추가되었다 (후보 뉴스 [2] Spotify’s AI DJ gets new voices, personalities... 근거)",
-  "AI DJ가 말을 덜 하게 만드는 수다 줄이기(less chatter/mute) 옵션이 도입되었다 (후보 뉴스 [2] ...and an option for less chatter 근거)",
-  "새로운 페르소나는 9가지가 포함되어 있다 (후보 뉴스 [2] here are the 9 new personas joining the mix 근거)"
+  "스포티파이 AI DJ가 새로운 목소리와 개성을 얻었다 (Spotify’s AI DJ gets new voices, personalities, and an option for less chatter)",
+  "수다를 줄일 수 있는 옵션이 추가되었다 (Spotify’s AI DJ gets new voices, personalities, and an option for less chatter)",
+  "새롭게 합류한 9가지 페르소나가 있다 (Spotify’s AI DJ voice is jarring, but that’s about to change — here are the 9 new personas joining the mix)"
  ],
  "summary": [
-  "스포티파이 AI DJ 업데이트",
-  "새 목소리와 9가지 성격 추가",
-  "말수 줄이는 옵션 도입 완료"
+  "스포티파이 AI DJ에 새로운 목소리 추가",
+  "새로운 페르소나와 취향 맞춤형 선택지 제공",
+  "수다를 줄일 수 있는 옵션으로 편리함 향상"
  ],
- "question": "여러분의 일상에서 가장 '수다 줄이기' 버튼을 누르고 싶은 순간은 언제인가요?",
- "caption": "노래 듣고 싶은데 혼자 TMI 쏟아내던 스포티파이 AI DJ! 🎧\n드디어 새로운 9가지 목소리·성격과 함께 '말수 줄이기(Less Chatter)' 옵션이 생겼습니다.\n\n이제 도입 시급한 건... 월요일 아침 부장님 훈화 말씀 음소거 버튼뿐인가요? 😂",
+ "question": "여러분은 음악 들을 때 DJ가 말을 많이 하는 편이 좋으신가요, 아니면 바로 음악이 나오는 게 좋으신가요?",
+ "caption": "음악 감상의 재미를 더해주는 스포티파이 AI DJ 업데이트 소식! 🎧\n\n새로운 목소리와 페르소나들이 추가되면서 내 취향에 맞게 더 디테일하게 설정할 수 있게 되었어요. 특히 수다를 줄이는 옵션까지 생겨서 음악에 더 집중할 수 있답니다. 🎵\n\n오늘 퇴근길, 새로운 목소리의 AI DJ와 함께 좋아하는 음악을 즐겨보세요! ✨",
  "hashtags": [
-  "#글로벌툰",
   "#스포티파이",
-  "#스포티파이DJ",
   "#AIDJ",
-  "#인공지능",
+  "#음악앱",
+  "#음악스트리밍",
+  "#플레이리스트",
+  "#테크",
+  "#IT뉴스",
+  "#글로벌툰",
+  "#뉴스툰",
   "#음악추천",
-  "#직장인공감",
-  "#직장인일상",
-  "#출근길웹툰",
-  "#테크뉴스",
-  "#4컷만화",
-  "#인스타툰"
+  "#앱추천",
+  "#생활정보",
+  "#문화생활"
  ],
  "verify": {
   "verdict": "pass",
@@ -89,14 +117,14 @@
   "source": "TechCrunch",
   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV1Y1MGRRRVE4aS03c2VsZFRDc0ExTWpuNW5rcWdFWVJtUlcyNEpuOGZsamx1dllUbk9pOVVQS01QeGtxRFNLTGYtNFBzODlqLThUQWhwd052bmdZVVRQYV8yU2Z3ejZCeWItX0VtTDAtS2EzdG02YkpZT1R4a1pSdzhYZzlMRERqT0twejBFZk5vRGJETF8wWk9GQkpkeHJpMTJxZjgyNzRuWUt4UjJz?oc=5",
   "category": "technology",
-  "n_sources": 19,
+  "n_sources": 21,
   "sources": [
    "9to5Google",
-   "9to5Mac",
    "Android Central",
    "Ars Technica",
-   "BleepingComputer",
+   "CDM Create Digital Music",
    "CNET",
+   "CyberSecurityNews",
    "Engadget",
    "Eurogamer.net"
   ],
@@ -104,9 +132,9 @@
   "related_titles": [
    "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
    "Spotify Adds New Voices For Its AI DJ",
+   "Make Spotify’s DJ Your Own With New Voices and Even More Control",
    "Spotify’s AI DJ voice is jarring, but that’s about to change — here are the 9 new personas joining the mix",
-   "Spotify DJ Adds Nine New Voices and a Mute Option",
-   "Spotify DJ gets new voices, and the ability to stop yammering."
+   "Spotify DJ Adds Nine New Voices and a Mute Option"
   ]
  }
 }
