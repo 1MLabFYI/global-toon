@@ -1,0 +1,138 @@
+{
+ "selected_index": 6,
+ "topic_title": "지진 속보 '생얼' 비결",
+ "hook": "10분 만에 맨얼굴로 나타난 아나운서의 비밀",
+ "category_tag": "세계",
+ "cover_photo": [
+  "television news studio desk",
+  "newsroom background"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "empty television studio",
+    "news broadcast room"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "일본에서 규모 5.7 지진이 났을 때, TV 속 아나운서의 모습이 화제였대요!"
+    },
+    {
+     "who": "F",
+     "pose": "question",
+     "text": "어떤 모습이었는데요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern broadcasting microphone",
+    "news microphone"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "지진 발생 10분 만에 생방송에 투입되면서 화장도 못 하고 맨얼굴에 안경을 쓰고 나왔다고 해요."
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "출근 전 꿀잠 자던 내 모습 같은데요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "tokyo street view day",
+    "city street scenery"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "다행히 이번 지진은 커다란 난카이 대지진의 전조는 아니라고 전문가들이 밝혔어요."
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "정말 다행이네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "office desk with glasses",
+    "desk lamp and glasses"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "알고 보니 재난 방송 때마다 신속하게 달려와 맨얼굴로 전하는 게 원칙이었다고 합니다."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "꾸밈없는 모습에서 진정한 프로의 신속함이 느껴지네요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "일본 덮친 규모 5.7 지진 (일본 덮친 규모 5.7 지진…'난카이 대지진 전조는 아냐')",
+  "난카이 대지진 전조는 아님 (일본 덮친 규모 5.7 지진…'난카이 대지진 전조는 아냐')",
+  "지진 10분 만에 맨얼굴에 안경 쓰고 속보 진행 (지진 10분 만에 맨얼굴에 안경 쓰고 속보…日 아나운서 화제)"
+ ],
+ "summary": [
+  "일본에서 규모 5.7 지진 발생",
+  "아나운서가 10분 만에 맨얼굴로 속보 진행",
+  "난카이 대지진 전조는 아니라고 밝혀짐"
+ ],
+ "question": "여러분이 급하게 방송에 나간다면 어떤 모습일 것 같나요?",
+ "caption": "🌍 오늘의 신기한 세계 소식!\n\n일본에서 규모 5.7 지진이 발생했을 때, 한 아나운서가 지진 발생 불과 10분 만에 맨얼굴과 안경 차림으로 속보를 진행해 큰 화제가 되었습니다. 😲\n\n꾸밈없는 모습으로 신속하게 소식을 전한 아나운서의 프로페셔널한 모습에 많은 이들이 공감과 찬사를 보냈는데요! 다행히 이번 지진은 큰 대지진의 전조는 아니라고 합니다. 😌\n\n앞으로도 빠른 뉴스를 부탁해요!\n\n#글로벌툰 #세계뉴스 #일본지진 #속보 #아나운서 #이슈 #뉴스툰 #데일리뉴스 #시사 #상식 #해외소식 #소통 #공감",
+ "hashtags": [
+  "#글로벌툰",
+  "#세계뉴스",
+  "#일본지진",
+  "#속보",
+  "#아나운서",
+  "#이슈",
+  "#뉴스툰",
+  "#데일리뉴스",
+  "#시사",
+  "#상식",
+  "#해외소식",
+  "#소통",
+  "#공감",
+  "#세계소식"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "일본 덮친 규모 5.7 지진…\"난카이 대지진 전조는 아냐\" - 머니투데이",
+  "source": "머니투데이",
+  "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ySVYzMHo5MW4ySWZVMWhNaDRjSGpPMWVjUGRkdlE2eTVyVUh2OU5JdlRBQ1E1MUJUTXl3LXJHblNzN1BwVFZobGt0blhxbkhHcmVGb1FESnZON0NRQ2NhSTJyX0NZSzdr0gFuQVVfeXFMT2NrX3hYY21YYmw5RUpSS1FIYzA2NkxxRVNrVlQxTThpbVFGVWV3cFFhY2NTaWQ4WVFvdkdySWlpM0xOTXVzTGxQaU0tT1hmMFZWYkJxMWRMMF9ETGlReDJuWVJHaktPVElFT3EyRGc?oc=5",
+  "category": "world",
+  "n_sources": 5,
+  "sources": [
+   "동아일보",
+   "머니투데이",
+   "미주중앙일보",
+   "서울신문",
+   "연합뉴스"
+  ],
+  "summary": "",
+  "related_titles": [
+   "일본 덮친 규모 5.7 지진…\"난카이 대지진 전조는 아냐\" - 머니투데이",
+   "“10분만에 달려와”…민낯으로 지진 속보 진행한 日아나운서",
+   "지진 10분 만에 맨얼굴에 안경 쓰고 속보…日 아나운서 화제",
+   "지진 발생 10분만에 ‘생얼’로 등장한 日 아나운서…“재난 때마다 그랬다” [월드픽]",
+   "[영상] 日 시즈오카현 규모 5.7 지진…\"2∼3일 내 큰 지진 가능성\""
+  ]
+ }
+}

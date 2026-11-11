@@ -1,0 +1,28 @@
+{
+ "slot": "noon",
+ "created": "2026-11-11T22:13:08.267919+09:00",
+ "files": [
+  "output/2026-11-11/noon/01.jpg",
+  "output/2026-11-11/noon/02.jpg",
+  "output/2026-11-11/noon/03.jpg",
+  "output/2026-11-11/noon/04.jpg",
+  "output/2026-11-11/noon/05.jpg",
+  "output/2026-11-11/noon/06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/vintage-bogota-ancient-retro-3567130/",
+  "https://pixabay.com/photos/glass-bottle-empty-wine-glass-565914/",
+  "https://pixabay.com/photos/mic-podcast-microphone-broadcasting-3774927/",
+  "https://pixabay.com/photos/street-autumn-japan-city-travel-6884534/",
+  "https://pixabay.com/photos/business-professional-office-10096664/"
+ ],
+ "title": "지진 속보 '생얼' 비결",
+ "publishable": true
+}
