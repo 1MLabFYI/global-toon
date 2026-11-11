@@ -38,6 +38,10 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum fonts-noto-cjk >/dev/null
           pip install -q -r requirements.txt
+          # 진행자 동작 이미지가 비어 있을 때만(최초 1회) 배경 제거 도구 설치
+          if python -c "import sys; from gtoon.characters import missing_poses; sys.exit(0 if missing_poses() else 1)"; then
+            pip install -q "rembg[cpu]"
+          fi
 
       - name: Pick slot
         id: slot
@@ -56,7 +60,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python -m gtoon.main make --slot ${{ steps.slot.outputs.slot }}
 
       - name: Upload images (media branch → public URL)
