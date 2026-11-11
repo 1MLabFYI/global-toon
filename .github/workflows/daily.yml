@@ -36,7 +36,7 @@ jobs:
 
       - name: Install fonts & deps
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-nanum fonts-noto-cjk >/dev/null
+          # 한글 폰트는 assets/fonts에 내장 (외부 설치 불필요)
           pip install -q -r requirements.txt
           # 진행자 동작 이미지가 비어 있을 때만(최초 1회) 배경 제거 도구 설치
           if python -c "import sys; from gtoon.characters import missing_poses; sys.exit(0 if missing_poses() else 1)"; then
