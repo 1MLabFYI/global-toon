@@ -1,6 +1,6 @@
 {
  "slot": "evening",
- "created": "2026-11-11T22:31:42.357755+09:00",
+ "created": "2026-11-11T23:06:56.828037+09:00",
  "files": [
   "output/2026-11-11/evening/01.jpg",
   "output/2026-11-11/evening/02.jpg",
@@ -17,12 +17,12 @@
   "pixabay"
  ],
  "photo_urls": [
-  "https://pixabay.com/photos/girl-casual-purse-smartphone-9488045/",
-  "https://pixabay.com/photos/beautiful-face-fashion-female-girl-1845578/",
-  "https://pixabay.com/photos/music-rock-marshall-amplifier-8559592/",
-  "https://pixabay.com/photos/smartphone-screen-room-wall-sunset-8057248/",
-  "https://pixabay.com/photos/male-model-smile-man-young-2634974/"
+  "https://pixabay.com/photos/ipad-ipad-pro-laptop-tablet-pro-4550306/",
+  "https://pixabay.com/photos/woman-business-corporate-designer-7607345/",
+  "https://pixabay.com/photos/linux-code-coding-program-computer-4259595/",
+  "https://pixabay.com/photos/engineer-engineering-broadcast-4922420/",
+  "https://pixabay.com/photos/house-interior-design-table-chair-2601876/"
  ],
- "title": "스포티파이 AI DJ의 변신",
+ "title": "포토샵에 AI 에이전트 등장?",
  "publishable": true
 }

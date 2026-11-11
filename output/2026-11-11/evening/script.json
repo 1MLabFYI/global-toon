@@ -1,140 +1,134 @@
 {
  "selected_index": 3,
- "topic_title": "스포티파이 AI DJ의 변신",
- "hook": "내 취향을 읽어주는 AI DJ가 새로운 목소리로 찾아왔어요!",
+ "topic_title": "포토샵에 AI 에이전트 등장?",
+ "hook": "디자이너들의 칼퇴를 부를까?",
  "category_tag": "테크",
  "cover_photo": [
-  "smartphone playing music with headphones on table",
-  "modern smartphone audio app screen"
+  "digital design workspace",
+  "creative studio desk"
  ],
  "panels": [
   {
    "photo": [
-    "person listening to music with headphones walking outside",
-    "close up of smartphone music playlist screen"
+    "graphic design studio",
+    "modern workspace"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "스포티파이의 AI DJ가 새로운 목소리와 개성들을 얻게 되었어요!"
+     "text": "어도비가 포토샵과 프리미어 등에 새로운 AI 에이전트 기능을 추가했어요."
     },
     {
      "who": "M",
      "pose": "surprised",
-     "text": "오, 목소리가 여러 개로 늘어난 건가요?"
+     "text": "내 손을 대신해 준다고요?"
     }
    ]
   },
   {
    "photo": [
-    "audio sound wave equalizer studio lights",
-    "modern music streaming app interface"
+    "computer screen with creative software",
+    "design software interface"
    ],
    "lines": [
     {
      "who": "M",
-     "pose": "explain",
-     "text": "맞아요! 새롭게 합류한 9가지 페르소나 덕분에 선택의 폭이 훨씬 넓어졌답니다."
+     "pose": "point",
+     "text": "전문가들이 기대하는 정교한 제어 기능은 그대로 유지하면서 작업 시간을 줄여준대요."
     },
     {
      "who": "F",
      "pose": "thumbsup",
-     "text": "내 취향에 맞는 목소리를 고를 수 있겠네요!"
+     "text": "창작에만 집중할 수 있겠네요!"
     }
    ]
   },
   {
    "photo": [
-    "person tapping smartphone screen in cozy room",
-    "modern phone with colorful abstract wallpaper"
+    "video editing suite setup",
+    "editing desk"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "게다가 음악 사이사이에 나오는 수다를 줄일 수 있는 옵션도 추가되었어요."
+     "text": "영상 편집용 파이어플라이 기능도 대폭 강화되었다고 합니다."
     },
     {
      "who": "M",
      "pose": "laugh",
-     "text": "말 많은 DJ가 조금 부담스러웠다면 반가운 소식이네요!"
+     "text": "편집실 야근 수호천사가 될까요?"
     }
    ]
   },
   {
    "photo": [
-    "happy person relaxing on sofa with earphones",
-    "cozy living room with warm lighting"
+    "modern creative office",
+    "bright workspace"
    ],
    "lines": [
     {
      "who": "M",
      "pose": "thumbsup",
-     "text": "나만의 맞춤형 음악 비서와 함께 더 즐겁게 음악을 감상해 보세요!"
-    },
-    {
-     "who": "F",
-     "pose": "laugh",
-     "text": "오늘 저녁 플레이리스트 바로 확인해 볼까요?"
+     "text": "더 정교해진 AI와 함께 크리에이터들의 작업이 훨씬 편리해질 전망이에요!"
     }
    ]
   }
  ],
  "facts": [
-  "스포티파이 AI DJ가 새로운 목소리와 개성을 얻었다 (Spotify’s AI DJ gets new voices, personalities, and an option for less chatter)",
-  "수다를 줄일 수 있는 옵션이 추가되었다 (Spotify’s AI DJ gets new voices, personalities, and an option for less chatter)",
-  "새롭게 합류한 9가지 페르소나가 있다 (Spotify’s AI DJ voice is jarring, but that’s about to change — here are the 9 new personas joining the mix)"
+  "어도비가 포토샵, 프리미어, 파이어플라이에 AI 에이전트와 새로운 크리에이티브 도구를 추가함 (Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly)",
+  "전문가들이 기대하는 정교함과 제어력을 갖춘 에이전틱 워크플로우를 제공함 (Adobe Transforms its Creative Cloud Tools into Agentic Workflows Built with the Precision and Control Pros Expect)",
+  "새로운 파이어플라이 AI는 비디오 편집에 초점을 맞추고 있음 (The New Adobe Firefly AI Is All About Video Editing)"
  ],
  "summary": [
-  "스포티파이 AI DJ에 새로운 목소리 추가",
-  "새로운 페르소나와 취향 맞춤형 선택지 제공",
-  "수다를 줄일 수 있는 옵션으로 편리함 향상"
+  "어도비, 포토샵 등에 AI 에이전트 도입",
+  "전문가 수준의 정교한 제어 기능 유지",
+  "비디오 편집 기능 대폭 강화로 효율성 향상"
  ],
- "question": "여러분은 음악 들을 때 DJ가 말을 많이 하는 편이 좋으신가요, 아니면 바로 음악이 나오는 게 좋으신가요?",
- "caption": "음악 감상의 재미를 더해주는 스포티파이 AI DJ 업데이트 소식! 🎧\n\n새로운 목소리와 페르소나들이 추가되면서 내 취향에 맞게 더 디테일하게 설정할 수 있게 되었어요. 특히 수다를 줄이는 옵션까지 생겨서 음악에 더 집중할 수 있답니다. 🎵\n\n오늘 퇴근길, 새로운 목소리의 AI DJ와 함께 좋아하는 음악을 즐겨보세요! ✨",
+ "question": "여러분의 작업 속도를 확 높여줄 AI 기능, 어떤 것이 가장 탐나시나요?",
+ "caption": "어도비가 포토샵과 프리미어, 파이어플라이에 새로운 AI 에이전트 기능을 선보였습니다! 🎨✨\n\n전문가들이 기대하는 정교한 제어력은 그대로 유지하면서, 크리에이터들이 창작에 더 집중할 수 있도록 돕는다고 해요. 특히 비디오 편집에 초점을 맞춘 새로운 파이어플라이 기능도 주목받고 있답니다.\n\n작업의 효율을 높여줄 똑똑한 AI 도구 소식, 여러분은 어떻게 보시나요? 👀💬\n\n#글로벌툰 #테크뉴스 #어도비 #포토샵AI #프리미어 #크리에이터 #AI에이전트 #디자인툴 #IT뉴스 #신기술 #트렌드",
  "hashtags": [
-  "#스포티파이",
-  "#AIDJ",
-  "#음악앱",
-  "#음악스트리밍",
-  "#플레이리스트",
-  "#테크",
-  "#IT뉴스",
   "#글로벌툰",
-  "#뉴스툰",
-  "#음악추천",
-  "#앱추천",
-  "#생활정보",
-  "#문화생활"
+  "#테크뉴스",
+  "#어도비",
+  "#포토샵AI",
+  "#프리미어",
+  "#크리에이터",
+  "#AI에이전트",
+  "#디자인툴",
+  "#IT뉴스",
+  "#신기술",
+  "#트렌드",
+  "#작업효율"
  ],
  "verify": {
   "verdict": "pass",
   "issues": []
  },
  "source": {
-  "title": "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
+  "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
   "source": "TechCrunch",
-  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV1Y1MGRRRVE4aS03c2VsZFRDc0ExTWpuNW5rcWdFWVJtUlcyNEpuOGZsamx1dllUbk9pOVVQS01QeGtxRFNLTGYtNFBzODlqLThUQWhwd052bmdZVVRQYV8yU2Z3ejZCeWItX0VtTDAtS2EzdG02YkpZT1R4a1pSdzhYZzlMRERqT0twejBFZk5vRGJETF8wWk9GQkpkeHJpMTJxZjgyNzRuWUt4UjJz?oc=5",
+  "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRk1iWnBiRk80V2l2bE5vdnVQYVU5LUdUdUhaMHFVdU90czRPZ3RoWnBhLWlVeVNXdzlFX2EtaWtPSnUteU1CQ2pBZHJsWlNIZWZMNV9idjh5VmxZZ2huaV9UWFVNQXJhRUlWMjJJQW9GY3A3RTlReDhzNEdlVTRFQ3h1MHFDa1ZVOG5XQTZGMmM4UTA?oc=5",
   "category": "technology",
-  "n_sources": 21,
+  "n_sources": 20,
   "sources": [
    "9to5Google",
-   "Android Central",
+   "Adobe Newsroom",
    "Ars Technica",
    "CDM Create Digital Music",
    "CNET",
-   "CyberSecurityNews",
-   "Engadget",
-   "Eurogamer.net"
+   "Eurogamer.net",
+   "Game Informer",
+   "Gear Patrol"
   ],
   "summary": "",
   "related_titles": [
-   "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
-   "Spotify Adds New Voices For Its AI DJ",
-   "Make Spotify’s DJ Your Own With New Voices and Even More Control",
-   "Spotify’s AI DJ voice is jarring, but that’s about to change — here are the 9 new personas joining the mix",
-   "Spotify DJ Adds Nine New Voices and a Mute Option"
+   "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+   "Adobe Transforms its Creative Cloud Tools into Agentic Workflows Built with the Precision and Control Pros Expect, Giving Creatives More Time for Their Craft",
+   "Adobe Is Adding AI Agent Features Across Its Product Lines, but Execs Emphasize Creators Have Choices for How They Use AI",
+   "The New Adobe Firefly AI Is All About Video Editing",
+   "Adobe MAX 2026: Local MCP Integrations Coming to Creative Cloud Tools (Like Premiere)"
   ]
  }
 }
