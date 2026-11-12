@@ -66,5 +66,14 @@
   "dir": "output/2026-11-12/evening",
   "status": "published",
   "media_id": "18224832166340504"
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "morning",
+  "title": "내 게임 취향 결산?",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQnhlWWRXVDRBMWQ3bnMtUGVXWHhKaEJhdUkwenNXeE1IMWJuSUtLRXJiMUpHYUs0SHNVLTRQMTQ2a2pITG5qSV9Sd3FuaC1XaUp4M2o3MWpoSGdKR25vVFQ0RllsRzVmZTBKTnBadnIzb3lIdDJWalBhY21fQ1MzVUVYTVF4ZEN4MXlBSUNXczBfYmxoSmNteGV0Z3Z0RndYcXFfZVpFYVVZUWJpY2stbHA1bWJucjBOSjV6RG1rVnVSZ0lodFJn?oc=5",
+  "dir": "output/2026-11-13/morning",
+  "status": "published",
+  "media_id": "18038933822846680"
  }
 ]

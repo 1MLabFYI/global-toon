@@ -1,0 +1,28 @@
+{
+ "slot": "morning",
+ "created": "2026-11-13T08:17:21.152617+09:00",
+ "files": [
+  "output/2026-11-13/morning/01.jpg",
+  "output/2026-11-13/morning/02.jpg",
+  "output/2026-11-13/morning/03.jpg",
+  "output/2026-11-13/morning/04.jpg",
+  "output/2026-11-13/morning/05.jpg",
+  "output/2026-11-13/morning/06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/girl-street-walk-person-mono-4820225/",
+  "https://pixabay.com/photos/woman-silenced-silence-no-speak-2868727/",
+  "https://pixabay.com/photos/diagrams-graphs-charts-trading-4900983/",
+  "https://pixabay.com/photos/books-bookcase-old-books-historical-378903/",
+  "https://pixabay.com/photos/cozy-living-room-rustic-interior-10505991/"
+ ],
+ "title": "내 게임 취향 결산?",
+ "publishable": true
+}

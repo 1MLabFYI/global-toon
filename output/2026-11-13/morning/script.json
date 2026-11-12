@@ -1,0 +1,142 @@
+{
+ "selected_index": 5,
+ "topic_title": "내 게임 취향 결산?",
+ "topic_subtitle": "올해 내 게임 기록 한눈에 보기",
+ "category_tag": "테크",
+ "cover_photo": [
+  "modern gaming room with neon lights and controller",
+  "gaming setup"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "person holding game controller on couch",
+    "gaming room"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "마이크로소프트가 나의 게임 플레이 기록을 정리해 주는 '엑스박스 플레이백' 서비스를 출시했어요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "드디어 내가 얼마나 게임에 진심이었나 들통나는 건가요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "computer screen showing statistics and graphs",
+    "data dashboard"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "웹이나 콘솔을 통해 내 게임 역사와 추억을 한눈에 볼 수 있다고 해요."
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "올해 보낸 시간이 화면으로 고스란히 나오겠네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "vintage video game cartridges on wooden shelf",
+    "retro games"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "마치 음악 앱의 연말 결산처럼 나의 게임 인생을 되돌아보는 기능이랍니다."
+    },
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "조금 부끄럽지만 제 플레이 기록도 당장 확인해 봐야겠어요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "gamepad resting on a cozy sofa",
+    "living room"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "이번 주말에는 나의 게임 기록을 구경하며 추억에 잠겨보세요!"
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "레벨업 소리가 들리는 것 같네요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "마이크로소프트가 '엑스박스 플레이백' 서비스를 웹과 콘솔에 출시했다 ('Xbox Launches ‘Playback’ Recap Experience on the Web and Consoles')",
+  "이용자는 자신의 게임 스토리와 플레이 기록을 돌아볼 수 있다 ('Look Back at Your XBOX Story')",
+  "음악 스트리밍 서비스의 연말 결산과 유사한 형태의 요약 경험을 제공한다 ('gaming Spotify Wrapped on steroids')"
+ ],
+ "summary": [
+  "마이크로소프트가 게임 기록 결산 서비스 출시",
+  "웹과 콘솔에서 나의 플레이 역사 확인 가능",
+  "음악 연말 결산처럼 게임 추억을 되돌아보는 기능"
+ ],
+ "question": "올해 가장 많이 플레이한 게임은 무엇인가요?",
+ "caption": "마이크로소프트가 나의 게임 플레이 역사를 한눈에 보여주는 '엑스박스 플레이백' 서비스를 출시했어요! 🎮\n\n음악 앱의 연말 결산처럼 올해 내가 어떤 게임과 시간을 보냈는지 웹과 콘솔에서 바로 확인할 수 있답니다. 이번 주말, 나의 게임 추억을 가볍게 돌아보는 건 어떨까요? ✨\n\n👇 여러분의 올해 최애 게임은 무엇인가요?",
+ "hashtags": [
+  "#글로벌툰",
+  "#엑스박스",
+  "#XboxPlayback",
+  "#게임기록",
+  "#플레이백",
+  "#마이크로소프트",
+  "#게임추천",
+  "#취미생활",
+  "#주말일상",
+  "#IT뉴스",
+  "#테크소식",
+  "#게임라이프",
+  "#연말결산",
+  "#콘솔게임",
+  "#게임스타그램"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "'Xbox Playback' is Microsoft's gaming Spotify Wrapped on steroids — Here's how to get yours",
+  "source": "Windows Central",
+  "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQnhlWWRXVDRBMWQ3bnMtUGVXWHhKaEJhdUkwenNXeE1IMWJuSUtLRXJiMUpHYUs0SHNVLTRQMTQ2a2pITG5qSV9Sd3FuaC1XaUp4M2o3MWpoSGdKR25vVFQ0RllsRzVmZTBKTnBadnIzb3lIdDJWalBhY21fQ1MzVUVYTVF4ZEN4MXlBSUNXczBfYmxoSmNteGV0Z3Z0RndYcXFfZVpFYVVZUWJpY2stbHA1bWJucjBOSjV6RG1rVnVSZ0lodFJn?oc=5",
+  "category": "technology",
+  "n_sources": 14,
+  "sources": [
+   "9to5Mac",
+   "ABC News - Breaking News, Latest News and Videos",
+   "Engadget",
+   "GameSpot",
+   "PCMag",
+   "PhoneArena",
+   "Pure Xbox",
+   "Reuters"
+  ],
+  "summary": "",
+  "related_titles": [
+   "'Xbox Playback' is Microsoft's gaming Spotify Wrapped on steroids — Here's how to get yours",
+   "XBOX Playback is Here: Look Back at Your XBOX Story",
+   "My Trip Down Xbox Memory Lane Should Be Celebratory, But Instead It’s Just Depressing",
+   "Xbox Launches ‘Playback’ Recap Experience on the Web and Consoles",
+   "Xbox Playback Is Now Available, Take A Look Back At Your Xbox History"
+  ]
+ }
+}
