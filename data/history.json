@@ -57,5 +57,14 @@
   "dir": "output/2026-11-12/noon",
   "status": "published",
   "media_id": "18248139724313797"
+ },
+ {
+  "date": "2026-11-12",
+  "slot": "evening",
+  "title": "직장인들의 합법적 농땡이?",
+  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQy1TTDJhRkFGWnlPQUs5OS1rdmJqSUVDV3NRV3NXUVBlMTI3eDdWZTg0NTRhQm5YM0U2aUNOM3Y3SDlUNHpHTkVwTnFidnZjMHZOSVEzaEFzMWs5d3c1TzFtWHhJWnVNMy1ETGlyWkJ1RlVSSEN2RVpPMVEtbmxSbFQxUERMbWt6NHBLSg?oc=5",
+  "dir": "output/2026-11-12/evening",
+  "status": "published",
+  "media_id": "18224832166340504"
  }
 ]

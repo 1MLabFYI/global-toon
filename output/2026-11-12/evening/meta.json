@@ -1,0 +1,28 @@
+{
+ "slot": "evening",
+ "created": "2026-11-12T20:23:12.751879+09:00",
+ "files": [
+  "output/2026-11-12/evening/01.jpg",
+  "output/2026-11-12/evening/02.jpg",
+  "output/2026-11-12/evening/03.jpg",
+  "output/2026-11-12/evening/04.jpg",
+  "output/2026-11-12/evening/05.jpg",
+  "output/2026-11-12/evening/06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/working-work-space-table-desk-791175/",
+  "https://pixabay.com/photos/office-open-space-office-room-room-945348/",
+  "https://pixabay.com/photos/game-strategy-computer-289470/",
+  "https://pixabay.com/photos/xbox-games-controller-fun-leisure-6046546/",
+  "https://pixabay.com/photos/family-together-parents-people-838239/"
+ ],
+ "title": "직장인들의 합법적 농땡이?",
+ "publishable": true
+}

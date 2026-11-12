@@ -1,0 +1,140 @@
+{
+ "selected_index": 7,
+ "topic_title": "직장인들의 합법적 농땡이?",
+ "hook": "게임 하라고 하루 휴가 주는 회사 등장!",
+ "category_tag": "테크",
+ "cover_photo": [
+  "modern bright office interior desk",
+  "office workspace"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "empty modern office desk with chair",
+    "office workspace"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "로지텍이 직원들에게 대작 게임 출시일에 맞춰 하루 유급 휴가를 준대요!"
+    },
+    {
+     "who": "F",
+     "pose": "surprised",
+     "text": "진짜요? 7천 명 전원한테요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "gaming setup with glowing keyboard",
+    "gaming pc desk"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "맞아요, 전 세계 7천 명의 직원들에게 게임을 맘껏 즐기라고 하루를 통째로 줬다네요."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "와, 대표님 충성충성!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "person playing video game on screen",
+    "gaming room"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "회사는 게임을 즐기는 문화가 오히려 업무에도 좋은 영감을 준다고 믿는대요."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "놀면서 일하라는 깊은 뜻이네요~"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "calendar with weekend highlighted",
+    "office desk calendar"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "이런 복지라면 월요병도 거뜬히 이겨낼 수 있겠어요!"
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "우리 회사도 당장 도입 시급합니다!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "로지텍이 직원들에게 게임 출시일에 맞춰 하루 휴가를 준다 (Logitech offers employees a day off to play 'GTA 6' at launch)",
+  "전 세계 7천 명의 직원들이 대상이다 (Logitech Gives 7,000 Employees The Day Off to Play GTA VI)",
+  "게임 경험이 업무에 긍정적이라는 철학을 가지고 있다 (Logitech gives employees a day off to play video games, says gaming is good for work)"
+ ],
+ "summary": [
+  "로지텍이 직원 7천 명에게 게임 출시일 휴가 제공",
+  "게임을 즐기는 문화가 업무에 긍정적이라 판단",
+  "전 세계 직장인들의 부러움을 한 몸에 받는 중"
+ ],
+ "question": "여러분이 다니는 회사에 이런 복지가 생긴다면 어떤 게임을 하고 싶으신가요?",
+ "caption": "로지텍이 대작 게임 출시일에 맞춰 전 세계 7천 명의 직원들에게 과감하게 하루 유급 휴가를 선물했습니다! 🎮✨\n\n게임과 노는 문화도 업무의 연장선이자 영감의 원천으로 본다는 대표의 철학이 담겨 있다는데요. 덕분에 전 세계 직장인들의 부러움과 환호가 이어지고 있습니다. 🤩\n\n이런 복지라면 월요일도 두렵지 않을 것 같지 않나요? 여러분의 생각은 어떠신가요?",
+ "hashtags": [
+  "#글로벌툰",
+  "#로지텍",
+  "#직장인복지",
+  "#게임휴가",
+  "#이색복지",
+  "#직장인스타그램",
+  "#회사생활",
+  "#꿀복지",
+  "#게임추천",
+  "#취미생활",
+  "#오늘의뉴스",
+  "#트렌드",
+  "#공감",
+  "#소통"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Logitech offers employees a day off to play 'GTA 6' at launch",
+  "source": "Mashable",
+  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQy1TTDJhRkFGWnlPQUs5OS1rdmJqSUVDV3NRV3NXUVBlMTI3eDdWZTg0NTRhQm5YM0U2aUNOM3Y3SDlUNHpHTkVwTnFidnZjMHZOSVEzaEFzMWs5d3c1TzFtWHhJWnVNMy1ETGlyWkJ1RlVSSEN2RVpPMVEtbmxSbFQxUERMbWt6NHBLSg?oc=5",
+  "category": "technology",
+  "n_sources": 11,
+  "sources": [
+   "Hromadske",
+   "IGN",
+   "Kotaku",
+   "Mashable",
+   "Nexus Hub",
+   "PCMag",
+   "Polygon.com",
+   "Push Square"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Logitech offers employees a day off to play 'GTA 6' at launch",
+   "Logitech Gives Its Employees a Day Off for Grand Theft Auto VI Launch",
+   "Logitech gives employees a day off to play video games, says gaming is good for work",
+   "Logitech Gives 7,000 Employees The Day Off to Play GTA VI"
+  ]
+ }
+}
