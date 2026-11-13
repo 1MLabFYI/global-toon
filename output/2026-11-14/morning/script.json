@@ -1,0 +1,139 @@
+{
+ "selected_index": 6,
+ "topic_title": "GTA 6의 시대가 온다",
+ "hook": "전 세계 게임계가 주목하는 역대급 신작",
+ "category_tag": "테크",
+ "music_mood": "bright",
+ "cover_photo": [
+  "modern city night skyline",
+  "futuristic neon street"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "empty gaming chair with monitor",
+    "dark gaming room setup"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "출시를 앞둔 대형 신작 게임 때문에 전 세계 게임계가 들썩이고 있어요!"
+    },
+    {
+     "who": "F",
+     "pose": "surprised",
+     "text": "벌써부터 영향력이 어마어마하네요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "large city street downtown",
+    "busy urban intersection"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "수년간의 연구 끝에 완성된 엄청나게 디테일한 세계관을 담았다고 합니다."
+    },
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "디테일에 진심인 게임이죠 정말."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "crowded electronics store",
+    "gaming convention hall"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "팝 문화 전반에 큰 파장을 일으킬 것으로 기대되며 업계의 큰 관심을 받고 있어요."
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "기록을 얼마나 갈아치울지 궁금해요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "neon sign glowing in dark",
+    "modern digital art display"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "과연 게임 역사에 어떤 발자취를 남길지 함께 지켜보시죠."
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "제 지갑도 미리 준비해야겠어요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "GTA 6 출시를 앞두고 게임 업계가 주목하고 있다 ('Unlike Anything Else': As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover)",
+  "수년간의 연구로 디테일한 세계관을 구축했다 (How years of research built Grand Theft Auto VI’s obsessively detailed world)"
+ ],
+ "summary": [
+  "출시 앞둔 GTA 6에 쏠린 전 세계의 눈",
+  "수년간의 연구로 완성된 디테일한 세계관",
+  "팝 문화 전반에 미칠 파급력에 기대 집중"
+ ],
+ "question": "여러분이 가장 기다리고 있는 게임은 무엇인가요?",
+ "caption": "전 세계가 주목하는 역대급 신작 소식! 🎮\n\n출시를 앞둔 대형 기대작 때문에 게임계가 벌써부터 들썩이고 있는데요. 과연 어떤 놀라운 모습을 보여줄지 정말 기대됩니다!\n\n오늘의 뉴스, 쉽고 빠르게 확인해 보세요 ✨\n\n#글로벌툰 #게임뉴스 #테크뉴스 #신작게임 #문화 #게임추천 #글로벌이슈 #트렌드",
+ "hashtags": [
+  "#글로벌툰",
+  "#게임뉴스",
+  "#테크뉴스",
+  "#신작게임",
+  "#문화",
+  "#게임추천",
+  "#글로벌이슈",
+  "#트렌드",
+  "#IT뉴스",
+  "#게임계소식",
+  "#화제작",
+  "#데일리뉴스"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "‘Unlike Anything Else’: As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover",
+  "source": "Variety",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVWx6NElrYi1Ka0pJM194cUpNLW1BYnNjX3R1TzE4OVdKdlcxVnQ2cGMtZm41SjNqS1ZjYVUtLW5vVGtrZXVKZWpiNEQ3am9lWFlCdzc5ckNua01ObUppZVJIVUdsVlR2YllFUWVHaUxqakVSaThWcFJodUZSZlFNVEdqenhtbTVBbVk0c0F4SDk?oc=5",
+  "category": "technology",
+  "n_sources": 16,
+  "sources": [
+   "9to5Google",
+   "9to5Mac",
+   "AP News",
+   "Android Authority",
+   "BBC",
+   "Bloomberg.com",
+   "DC Rainmaker",
+   "Digital Foundry"
+  ],
+  "summary": "",
+  "related_titles": [
+   "‘Unlike Anything Else’: As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover",
+   "'Grand Theft Auto VI' is almost here. What to know about the characters, music and billions at stake",
+   "How years of research built Grand Theft Auto VI’s obsessively detailed world",
+   "The Global Story | GTA 6: A mirror of America?",
+   "The $1 Billion Video Game About to Swallow the World Whole"
+  ]
+ }
+}

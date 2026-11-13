@@ -16,5 +16,14 @@
   "dir": "output/2026-11-13/evening",
   "status": "made",
   "music": "calm_02.mp3"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "morning",
+  "title": "GTA 6의 시대가 온다",
+  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVWx6NElrYi1Ka0pJM194cUpNLW1BYnNjX3R1TzE4OVdKdlcxVnQ2cGMtZm41SjNqS1ZjYVUtLW5vVGtrZXVKZWpiNEQ3am9lWFlCdzc5ckNua01ObUppZVJIVUdsVlR2YllFUWVHaUxqakVSaThWcFJodUZSZlFNVEdqenhtbTVBbVk0c0F4SDk?oc=5",
+  "dir": "output/2026-11-14/morning",
+  "status": "made",
+  "music": "bright_02.mp3"
  }
 ]
