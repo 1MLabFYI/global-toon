@@ -24,7 +24,7 @@ def _call(method: str, url: str, **params) -> dict:
     return data
 
 
-def _wait(base: str, cid: str, token: str, limit_s: int = 300):
+def _wait(base: str, cid: str, token: str, limit_s: int = 600):
     t0 = time.time()
     while time.time() - t0 < limit_s:
         st = _call("GET", f"{base}/{cid}", fields="status_code", access_token=token).get("status_code")
@@ -54,6 +54,22 @@ def publish_carousel(image_urls: list[str], caption: str, cfg: dict) -> str:
     _wait(base, car["id"], token)
     pub = _call("POST", f"{base}/{uid}/media_publish", creation_id=car["id"], access_token=token)
     print(f"[ig] published media id {pub['id']}")
+    return pub["id"]
+
+
+def publish_reel(video_url: str, cover_url: str, caption: str, cfg: dict) -> str:
+    """릴스 게시: 영상 컨테이너 생성 → 처리 완료 대기(최대 10분) → 게시. 피드에도 함께 노출."""
+    token = os.environ.get("IG_ACCESS_TOKEN")
+    uid = os.environ.get("IG_USER_ID")
+    if not (token and uid):
+        raise IGError("IG_ACCESS_TOKEN / IG_USER_ID 환경변수가 없습니다.")
+    base = _base(cfg)
+    c = _call("POST", f"{base}/{uid}/media", media_type="REELS", video_url=video_url,
+              cover_url=cover_url, caption=caption[:2200], share_to_feed="true", access_token=token)
+    print(f"[ig] reel container {c['id']}")
+    _wait(base, c["id"], token)
+    pub = _call("POST", f"{base}/{uid}/media_publish", creation_id=c["id"], access_token=token)
+    print(f"[ig] published reel id {pub['id']}")
     return pub["id"]
 
 

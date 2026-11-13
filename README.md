@@ -1,11 +1,11 @@
 # 글로벌툰 (Global Toon) — 시사 웹툰 인스타그램 자동화
 
-매일 3회, 국내·세계 핫이슈를 골라 **최대 6장 개그 웹툰 캐러셀**(표지 + 본문 4컷 + 3줄 요약)로 만들어 인스타그램에 자동 게시합니다.
+매일 3회, 국내·세계 핫이슈를 골라 **최대 6장 뉴스툰 캐러셀**(표지 + 본문 4컷 + 3줄 요약) — 실사 배경 사진 위에서 진행자 '준'(기자)·'하나'(앵커)가 말풍선으로 뉴스를 설명로 만들어 인스타그램에 자동 게시합니다.
 **운영비 0원**(모두 무료 티어) / 실행은 **GitHub Actions**(PC 꺼져 있어도 동작).
 
 ```
-[RSS 뉴스 수집] → [교차보도 검증·민감주제 제외] → [Gemini: 이슈 선정+대본] → [Gemini: 2차 팩트체크] → [Cloudflare FLUX: 컷 그림]
-      → [Pillow: 한글 말풍선·해설·표지 합성] → [media 브랜치 업로드(공개 URL)] → [Instagram API 캐러셀 게시]
+[RSS 뉴스 수집] → [교차보도 검증·민감주제 제외] → [Gemini: 이슈 선정+대본] → [Gemini: 2차 팩트체크] → [Pixabay: 무료 라이선스 실사 배경]
+      → [Pillow: 진행자 캐릭터 + 한글 말풍선 합성] → [media 브랜치 업로드(공개 URL)] → [Instagram API 캐러셀 게시]
 ```
 
 | 시간(KST) | 슬롯 | 주제 |
@@ -86,6 +86,16 @@ aistudio.google.com → Get API key → 키 복사
 | `GH_PAT` | (선택) 구형 60일 토큰 사용 시에만 필요 |
 
 4. **Variables** 탭에 `AUTO_PUBLISH` = `false` 추가 → 처음 며칠은 **이미지 생성만** 하고 게시 안 함
+
+### ⑤-1 Pixabay API 키 (배경 사진)
+1. pixabay.com 무료 가입 → 로그인 후 pixabay.com/api/docs 의 **Parameters → key** 항목에 표시된 키 복사
+2. GitHub Secrets에 `PIXABAY_API_KEY`로 등록 (Pexels는 2026년 신규 키 발급 중단)
+3. 사진 출처(사진가·Pixabay)는 이미지 하단과 캡션에 자동 표기됩니다. 실제 보도사진은 저작권 문제로 사용하지 않습니다.
+
+### 진행자 캐릭터
+- `assets/characters/M_intro.png`, `F_intro.png`: 원본 그림에서 오려낸 기본 모습
+- 첫 실행 때 Cloudflare AI로 동작 8종(설명·가리키기·놀람·웃음·생각·난감·최고·글쎄)을 1회 생성해 `assets/characters/`에 저장
+- 마음에 안 드는 동작 파일은 GitHub에서 삭제 → 다음 실행 때 다시 생성
 
 ### ⑥ 시험 실행
 Actions → **Global Toon Daily** → Run workflow (slot `noon`, publish `false`)

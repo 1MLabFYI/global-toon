@@ -12,13 +12,13 @@ account:
 #  categories: 해당 슬롯에서 우선 고려할 뉴스 분야
 slots:
   morning:
-    label: "아침 국내 생활·경제 화제"
+    label: "아침 국내 주요 이슈(경제·사회·생활)"
     categories: [business, nation, technology]
   noon:
-    label: "점심 신기한 세계 소식"
+    label: "점심 세계 주요 뉴스"
     categories: [world, science]
   evening:
-    label: "저녁 테크·과학·문화·스포츠 화제"
+    label: "저녁 테크·과학·문화·스포츠 이슈"
     categories: [technology, science, entertainment, sports]
 
 # 뉴스 수집 (모두 무료 RSS, 키 불필요)
@@ -56,7 +56,29 @@ llm:
     - gemini-2.5-flash
   temperature: 0.8
 
-# 웹툰 구성
+# 게시 형식: reels(세로 영상 + 배경음악, 권장) | carousel(이미지 여러 장)
+output:
+  format: reels
+
+# 릴스 영상 설정
+reels:
+  width: 1080
+  height: 1920             # 9:16 세로 영상
+  safe_top: 220            # 인스타 상단 UI에 가리지 않도록 내용 시작 위치
+  fps: 30
+  cover_sec: 2.5           # 표지 노출 시간
+  base_sec: 2.2            # 장면 기본 시간 + 글자당 시간 → 3.5~6.5초 사이
+  sec_per_char: 0.07
+  min_sec: 3.5
+  max_sec: 6.5
+  outro_sec: 4.5
+  transition: fade         # 장면 전환 효과 (fade | slideleft | smoothleft 등)
+  transition_sec: 0.4
+  zoom: 0.06               # 장면마다 천천히 6% 확대
+  music_volume: 0.35       # 배경음악 크기 (0~1)
+  crf: 22                  # 화질(낮을수록 고화질·대용량)
+
+# 웹툰 구성 (carousel일 때 크기, reels일 때는 위 reels 크기로 자동 변경)
 comic:
   max_images: 6             # 게시물 전체 장수 상한 (표지 1 + 본문 + 요약 1)
   panels: 4                 # 본문 컷 수 → 총 6장
@@ -109,28 +131,26 @@ instagram:
 # 콘텐츠 안전 규칙 (대본 프롬프트에 그대로 들어감)
 safety:
   max_attempts: 2           # 팩트체크 탈락 시 다른 이슈로 재시도 횟수
+  # [중간 완화] 정치·외교·통상·경제정책·기업 뉴스는 허용(사실 위주·중립). 아래만 제외
   skip_topics:
-    - "정치·선거·정당·외교·국가 간 갈등"
-    - "해킹·사이버 공격·보안 사고"
-    - "전쟁·테러·재난·사망 사고"
-    - "범죄·소송·수사·재판"
-    - "젠더·종교·지역·세대·노사 갈등"
-    - "확인되지 않은 의혹·루머·단독 보도"
-    - "특정 기업·인물 비난"
+    - "사망·사고·재난 희생, 테러·전투·폭격 등 전쟁 참상"
+    - "범죄·성범죄·아동 관련 사건, 수사·재판 중인 형사 사건"
+    - "확인되지 않은 의혹·루머"
+    - "정당 간 공방, 특정 정당·정치인 지지 또는 비난"
+    - "젠더·종교·지역 혐오 갈등"
   # 제목·관련 제목에 들어 있으면 후보에서 자동 제외 (1차 필터)
-  avoid_keywords: [대통령, 국회, 여당, 야당, 정당, 선거, 탄핵, 의원, 장관, 검찰, 경찰, 수사, 재판, 기소, 구속,
-    소송, 고소, 사망, 숨져, 숨진, 참사, 사고, 화재, 폭발, 전쟁, 공습, 미사일, 테러, 총격, 살해, 성폭, 학대,
-    혐오, 젠더, 페미, 종교, 파업, 시위, 논란, 의혹, 단독, 북한, 트럼프, 푸틴, 하마스, 이스라엘, 우크라이나,
-    해킹, 해커, 사이버, 이란, 러시아, 제재, 군사, 관세, 무역전쟁, 간첩, 랜섬,
-    혐의, 피소, 고발, 체포, 성추행, 성희롱, 폭행, 갑질, 불륜, 마약, 실종, 부상, 피해자, 사기, 횡령,
-    accused, allegation, allegations, alleged, grooming, abuse, assault, harassment, injunction, arrest, arrested,
-    charged, sued, court, police, affair, sexual, rape, drug, drugs, fraud, missing, injured, victim, victims, dies, died, death,
-    hack, hacker, hackers, hacked, cyber, cyberattack, sabotage, sabotaged, iran, iranian, russia, sanctions, military, tariff, spy,
-    election, war, killed, dead, shooting, attack, trial, lawsuit, protest, scandal, president]
+  avoid_keywords: [사망, 숨져, 숨진, 참사, 희생자, 사상자, 사고, 화재, 폭발, 공습, 폭격, 미사일, 교전, 테러, 총격, 살해,
+    성폭, 성추행, 성희롱, 학대, 아동, 마약, 실종, 피해자, 혐의, 피소, 기소, 구속, 체포, 수사, 재판, 의혹, 루머,
+    공방, 막말, 혐오, 젠더, 페미, 해킹, 사이버공격, 난사, 간첩, 불륜, 횡령,
+    killed, dead, death, dies, died, shooting, gunman, airstrike, missile, bombing, terror, terrorist, attack,
+    rape, sexual, abuse, assault, harassment, grooming, accused, allegation, allegations, alleged, arrest, arrested,
+    charged, trial, drug, drugs, victim, victims, injured, missing, hack, hacked, cyberattack, spy, scandal, war]
+  # 위 금지어를 포함해도 허용하는 표현 (예: 무역전쟁은 경제 뉴스)
+  allow_phrases: [무역전쟁, 관세전쟁, 가격전쟁, 환율전쟁, 쩐의 전쟁, trade war, price war, tariff war, chip war, 사고팔]
   rules:
-    - "웃음은 상황·표정·생활 비유로 만들고, 특정 집단이나 피해자를 놀리지 않는다."
+    - "가벼운 소식은 유머 있게, 무거운 소식(외교·경제위기 등)은 차분한 해설 톤으로. 특정 집단·인물을 놀리지 않는다."
     - "그림 장면은 인물 1~2명, 동작 1개로 단순하게. 한눈에 이해되게."
     - "배경 사진 검색어에는 실존 인물 이름·브랜드·로고를 넣지 않는다(장소·사물·풍경 위주)."
     - "제공된 기사 제목·요약에 없는 사실을 지어내지 않는다."
-    - "정치·외교·갈등 이슈는 다루지 않는다."
+    - "정치·외교·통상 이슈는 사실과 각 측 입장만 균형 있게 전달하고, 평가·조롱·편들기를 하지 않는다."
     - "기사 문장을 그대로 베끼지 않고 쉬운 말로 다시 쓴다."

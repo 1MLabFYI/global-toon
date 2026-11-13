@@ -197,10 +197,16 @@ def speech(d, cx, top, max_w, text, who, name, tail_to, big=True):
     return y1
 
 
-def credit(d, text, W, H, color=(235, 235, 240)):
+def T(cfg) -> int:
+    """릴스는 화면 위·아래를 인스타 UI가 가리므로 안전 여백만큼 내용을 내림."""
+    return cfg["comic"].get("safe_top", 0)
+
+
+def credit(d, text, W, H, color=(235, 235, 240), cfg=None):
     if text:
         cf = font("regular", 22)
-        d.text((W - 26 - cf.getlength(text), H - 40), text, font=cf, fill=color,
+        y = H - 40 if not cfg or not T(cfg) else T(cfg) + 92   # 릴스: 상단 칩 아래
+        d.text((W - 26 - cf.getlength(text), y), text, font=cf, fill=color,
                stroke_width=2, stroke_fill=(0, 0, 0))
 
 
@@ -225,15 +231,15 @@ def render_panel(photo, panel: dict, cfg: dict, tag: str, page: int, total: int)
     heads[main_who] = place_char(canvas, main_who, main.get("pose", "explain"), int(H * 0.58), main_side)
 
     d = ImageDraw.Draw(canvas, "RGBA")
-    news_chip(d, cfg, tag, page, total)
-    y = speech(d, W // 2, 130, W - 70, main.get("text", ""), main_who, names[main_who],
+    news_chip(d, cfg, tag, page, total, y=30 + T(cfg))
+    y = speech(d, W // 2, 150 + T(cfg), W - 70, main.get("text", ""), main_who, names[main_who],
                heads[main_who][:2], big=True)
     if other:
         who = other["who"]
         tgt = heads.get(who, heads[main_who])[:2]
         cx = W * (0.30 if (who == "M") else 0.70)
         speech(d, int(cx), y + 70, 520, other.get("text", ""), who, names[who], tgt, big=False)
-    credit(d, photo.credit, W, H)
+    credit(d, photo.credit, W, H, cfg=cfg)
     return canvas.convert("RGB")
 
 
@@ -247,13 +253,13 @@ def render_cover(photo, script: dict, cfg: dict, total: int) -> Image.Image:
     d = ImageDraw.Draw(canvas, "RGBA")
     tag = script.get("category_tag", "이슈")
     date = datetime.now().strftime("%Y.%m.%d")
-    news_chip(d, cfg, f"오늘의 {tag}")
+    news_chip(d, cfg, f"오늘의 {tag}", y=30 + T(cfg))
     df = font("bold", 28)
-    d.text((W - 36 - df.getlength(date), 40), date, font=df, fill="white", stroke_width=2, stroke_fill=INK)
+    d.text((W - 36 - df.getlength(date), 40 + T(cfg)), date, font=df, fill="white", stroke_width=2, stroke_fill=INK)
 
     # 제목 블록 (상단~중단)
     f, lines, size = fit_text(script["topic_title"], "bold", W - 110, 300, 100, 60, 1.15)
-    y = 190
+    y = 190 + T(cfg) + (60 if T(cfg) else 0)
     for l in lines:
         d.text((56, y), l, font=f, fill="white", stroke_width=7, stroke_fill=INK)
         y += int(size * 1.15)
@@ -262,11 +268,12 @@ def render_cover(photo, script: dict, cfg: dict, total: int) -> Image.Image:
     for i, l in enumerate(hl):
         d.text((58, y + 50 + i * int(hs * 1.3)), l, font=hf, fill="white", stroke_width=4, stroke_fill=INK)
     sw = font("bold", 30)
-    msg = "넘겨서 보기 →"
-    d.rounded_rectangle([W / 2 - sw.getlength(msg) / 2 - 26, H - 112, W / 2 + sw.getlength(msg) / 2 + 26, H - 58],
-                        radius=27, fill=theme)
-    d.text((W / 2 - sw.getlength(msg) / 2, H - 104), msg, font=sw, fill="white")
-    credit(d, photo.credit, W, H)
+    msg = "넘겨서 보기 →" if not T(cfg) else ""
+    if msg:
+        d.rounded_rectangle([W / 2 - sw.getlength(msg) / 2 - 26, H - 112, W / 2 + sw.getlength(msg) / 2 + 26,
+                             H - 58], radius=27, fill=theme)
+        d.text((W / 2 - sw.getlength(msg) / 2, H - 104), msg, font=sw, fill="white")
+    credit(d, photo.credit, W, H, cfg=cfg)
     return canvas.convert("RGB")
 
 
@@ -277,11 +284,12 @@ def render_outro(script: dict, cfg: dict, page: int, total: int) -> Image.Image:
     place_char(canvas, "M", "thumbsup", int(H * 0.40), "left")
     place_char(canvas, "F", "laugh", int(H * 0.38), "right")
     d = ImageDraw.Draw(canvas, "RGBA")
-    news_chip(d, cfg, script.get("category_tag", "이슈"), page, total)
+    t = T(cfg)
+    news_chip(d, cfg, script.get("category_tag", "이슈"), page, total, y=30 + t)
 
-    d.text((60, 120), "3줄 요약", font=font("bold", 70), fill=INK)
-    d.rectangle([60, 212, 240, 224], fill=theme)
-    y = 262
+    d.text((60, 120 + t), "3줄 요약", font=font("bold", 70), fill=INK)
+    d.rectangle([60, 212 + t, 240, 224 + t], fill=theme)
+    y = 262 + t
     for i, s in enumerate(script.get("summary", [])[:3]):
         d.ellipse([60, y, 122, y + 62], fill=theme)
         d.text((80, y + 6), str(i + 1), font=font("bold", 40), fill="white")

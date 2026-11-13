@@ -15,7 +15,7 @@ from datetime import datetime, timedelta, timezone
 
 import yaml
 
-from . import characters, compose
+from . import characters, compose, video
 from .photos import get_photo
 from .news import fetch_news
 
@@ -26,7 +26,11 @@ HIST = os.path.join(ROOT, "data", "history.json")
 
 def load_cfg() -> dict:
     with open(os.path.join(ROOT, "config.yaml"), encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        cfg = yaml.safe_load(f)
+    if cfg.get("output", {}).get("format") == "reels":      # 릴스: 세로 9:16 크기로 전환
+        r = cfg["reels"]
+        cfg["comic"].update(width=r["width"], height=r["height"], safe_top=r["safe_top"])
+    return cfg
 
 
 def load_hist() -> list:
@@ -49,14 +53,15 @@ def build_caption(s: dict, cfg: dict) -> str:
             f"💬 {s.get('question', '')}\n\n"
             f"📰 참고: {src.get('source', '')} 등 {src.get('n_sources', '여러')}개 언론 보도 종합\n"
             f"📷 배경 사진: {', '.join(c.replace('Photo: ', '') for c in s.get('photo_credits', [])) or '-'}\n"
-            f"🎨 진행자 캐릭터는 AI로 만든 일러스트입니다.\n\n{tags}")[:2200]
+            + (f"🎵 {s['music_credit']}\n" if s.get("music_credit") else "")
+            + f"🎨 진행자 캐릭터는 AI로 만든 일러스트입니다.\n\n{tags}")[:2200]
 
 
 def cmd_make(args, cfg):
     now = datetime.now(KST)
     out = os.path.join(ROOT, "output", now.strftime("%Y-%m-%d"), args.slot)
     os.makedirs(out, exist_ok=True)
-    for old in glob.glob(os.path.join(out, "*.jpg")):   # 같은 슬롯 재실행 시 이전 이미지 정리
+    for old in glob.glob(os.path.join(out, "*.jpg")) + glob.glob(os.path.join(out, "*.mp4")):   # 같은 슬롯 재실행 시 이전 이미지 정리
         os.remove(old)
     hist = load_hist()
 
@@ -112,10 +117,21 @@ def cmd_make(args, cfg):
         files.append(os.path.relpath(fn, ROOT).replace("\\", "/"))
     script["photo_credits"] = sorted({p.credit for p in [cover, *pics] if p.credit})
 
+    fmt = cfg.get("output", {}).get("format", "carousel")
+    if fmt == "reels":
+        music = video.pick_music(script.get("music_mood", "calm"), [h.get("music", "") for h in hist])
+        durs = video.scene_durations(script, cfg)
+        mp4 = os.path.join(out, "reel.mp4")
+        length = video.make_reel([os.path.join(ROOT, f) for f in files], durs, music, mp4, cfg)
+        script["music"] = os.path.basename(music) if music else ""
+        script["music_credit"] = video.music_credit(music)
+        print(f"[video] {length:.1f}초, 음악: {script['music'] or '없음'}, {os.path.getsize(mp4) / 1e6:.1f}MB")
+        files = [os.path.relpath(mp4, ROOT).replace("\\", "/"), files[0]]   # [영상, 표지]
+
     caption = build_caption(script, cfg)
     with open(os.path.join(out, "caption.txt"), "w", encoding="utf-8") as f:
         f.write(caption)
-    meta = {"slot": args.slot, "created": now.isoformat(), "files": files,
+    meta = {"slot": args.slot, "created": now.isoformat(), "files": files, "format": fmt,
             "photo_sources": sources, "photo_urls": [p.url for p in [cover, *pics]],
             "title": script["topic_title"],
             "publishable": sources.count("fallback") <= 1}
@@ -124,9 +140,10 @@ def cmd_make(args, cfg):
     if not args.sample:
         hist.append({"date": now.strftime("%Y-%m-%d"), "slot": args.slot,
                      "title": script["topic_title"], "link": script["source"]["link"],
-                     "dir": os.path.relpath(out, ROOT).replace("\\", "/"), "status": "made"})
+                     "dir": os.path.relpath(out, ROOT).replace("\\", "/"), "status": "made",
+                     "music": script.get("music", "")})
         save_hist(hist)
-    print(f"[make] 완료 → {out} ({len(files)}장, 사진: {sources})")
+    print(f"[make] 완료 → {out} ({fmt}, 사진: {sources})")
     # GitHub Actions 다음 단계로 경로 전달
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as f:
@@ -134,7 +151,7 @@ def cmd_make(args, cfg):
 
 
 def cmd_publish(args, cfg):
-    from .instagram import publish_carousel
+    from .instagram import publish_carousel, publish_reel
     d = os.path.join(ROOT, args.dir)
     with open(os.path.join(d, "meta.json"), encoding="utf-8") as f:
         meta = json.load(f)
@@ -143,7 +160,10 @@ def cmd_publish(args, cfg):
     if not meta.get("publishable", False):
         sys.exit(f"[publish] 배경 사진을 충분히 구하지 못해 게시하지 않습니다: {meta.get('photo_sources')}")
     urls = [f"{args.base_url.rstrip('/')}/{p}" for p in meta["files"]]
-    media_id = publish_carousel(urls, caption, cfg)
+    if meta.get("format") == "reels":
+        media_id = publish_reel(urls[0], urls[1], caption, cfg)
+    else:
+        media_id = publish_carousel(urls, caption, cfg)
     hist = load_hist()
     for h in reversed(hist):
         if h.get("dir") == args.dir.replace("\\", "/"):
