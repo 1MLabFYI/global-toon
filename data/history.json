@@ -7,5 +7,14 @@
   "dir": "output/2026-11-13/noon",
   "status": "made",
   "music": "serious_01.mp3"
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "evening",
+  "title": "신형 애플TV 4K 등장!",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jWU84d0tMQVBGUkV2b0FPSkJzNzQ1aTdoSDk2MWJ2ZWZXYnR5TkhieE1rVjVhOHBvNDlETkRQd2xyZjNUYzRMLXFOdTh5d1l4STNONVBoWFV5Zw?oc=5",
+  "dir": "output/2026-11-13/evening",
+  "status": "made",
+  "music": "calm_02.mp3"
  }
 ]

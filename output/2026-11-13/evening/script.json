@@ -1,0 +1,140 @@
+{
+ "selected_index": 6,
+ "topic_title": "신형 애플TV 4K 등장!",
+ "hook": "300달러 값어치를 할까?",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "modern living room streaming device",
+  "living room TV interior"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "living room TV screen streaming",
+    "modern television display"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "애플TV 4K 신제품 리뷰가 공개됐어요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "벌써 나온 거야? 시간 참 빠르네!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "smart home remote control living room",
+    "remote control on table"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "핸즈프리 시리와 A19 칩이 탑재됐대요."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "성능이 확실히 좋아졌겠는걸요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "luxury modern living room interior",
+    "home theater setup"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "가격은 300달러로 책정되었습니다."
+    },
+    {
+     "who": "M",
+     "pose": "shrug",
+     "text": "가격이 살짝 무게감이 있네!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "streaming media device on wooden shelf",
+    "modern tech gadget"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "여전히 최고의 스트리밍 기기라는 평이에요."
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "집콕 생활 필수품이 되겠어요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "애플TV 4K 신제품 리뷰가 여러 언론사를 통해 보도되었습니다 (Apple TV 4K (2026) Review: Hands-Free Siri and an A19 Chip Justify the $300 Price Tag)",
+  "핸즈프리 시리와 A19 칩이 탑재되었습니다 (Apple TV 4K (2026) Review: Hands-Free Siri and an A19 Chip Justify the $300 Price Tag)",
+  "출고 가격은 300달러입니다 (Apple TV 4K (2026) Review: Hands-Free Siri and an A19 Chip Justify the $300 Price Tag)"
+ ],
+ "summary": [
+  "애플TV 4K 신제품 리뷰 공개",
+  "핸즈프리 시리·A19 칩 탑재",
+  "가격은 300달러로 책정됨"
+ ],
+ "question": "여러분이 생각하는 최고의 스트리밍 기기는 무엇인가요?",
+ "caption": "새롭게 공개된 애플TV 4K 소식! 📺\n\n핸즈프리 시리와 A19 칩을 탑재해 성능을 높였고 가격은 300달러로 책정되었습니다. 과연 집콕 생활을 어떻게 바꿀지 주목되네요!\n\n재미있게 보셨다면 팔로우와 좋아요 부탁드려요! ✨",
+ "hashtags": [
+  "#글로벌툰",
+  "#애플TV",
+  "#AppleTV",
+  "#애플",
+  "#테크",
+  "#IT뉴스",
+  "#스마트홈",
+  "#스트리밍",
+  "#가젯",
+  "#신제품",
+  "#테크뉴스",
+  "#IT"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Apple TV 4K (2026) Review: Hands-Free Siri and an A19 Chip Justify the $300 Price Tag",
+  "source": "PCMag",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jWU84d0tMQVBGUkV2b0FPSkJzNzQ1aTdoSDk2MWJ2ZWZXYnR5TkhieE1rVjVhOHBvNDlETkRQd2xyZjNUYzRMLXFOdTh5d1l4STNONVBoWFV5Zw?oc=5",
+  "category": "technology",
+  "n_sources": 14,
+  "sources": [
+   "9to5Mac",
+   "CNET",
+   "Forbes",
+   "Gear Patrol",
+   "IGN",
+   "MacRumors",
+   "Nintendo Life",
+   "PCMag"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Apple TV 4K (2026) Review: Hands-Free Siri and an A19 Chip Justify the $300 Price Tag",
+   "The pricey new Apple TV 4K is still the best streamer around",
+   "The Apple TV 4K Made Me Question Every Other Streaming Device—Here’s Why",
+   "Hands-On With the New Apple TV 4K and Siri AI",
+   "The New Apple TV 4K Unlocks a Key Feature for Home Theater Enthusiasts"
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "slot": "evening",
+ "created": "2026-11-13T20:57:58.376053+09:00",
+ "files": [
+  "output/2026-11-13/evening/reel.mp4",
+  "output/2026-11-13/evening/01.jpg"
+ ],
+ "format": "reels",
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/sofa-side-table-aesthetic-wall-9181557/",
+  "https://pixabay.com/photos/children-tv-child-television-home-403583/",
+  "https://pixabay.com/photos/hue-smarthome-light-smart-lamp-6001935/",
+  "https://pixabay.com/photos/real-estate-interior-house-luxury-9265386/",
+  "https://pixabay.com/photos/books-bookcase-old-books-historical-378903/"
+ ],
+ "title": "신형 애플TV 4K 등장!",
+ "publishable": true
+}
