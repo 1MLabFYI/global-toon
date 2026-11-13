@@ -73,6 +73,7 @@ jobs:
           DIR="${{ steps.make.outputs.dir }}"
           rm -rf /tmp/media && mkdir -p /tmp/media
           cp --parents "$DIR"/*.jpg /tmp/media/
+          if ls "$DIR"/*.mp4 >/dev/null 2>&1; then cp --parents "$DIR"/*.mp4 /tmp/media/; fi
           cd /tmp/media
           git init -q -b media
           git add .
