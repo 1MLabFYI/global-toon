@@ -1,14 +1,11 @@
 {
  "slot": "noon",
- "created": "2026-11-13T12:56:22.977686+09:00",
+ "created": "2026-11-13T20:42:15.433639+09:00",
  "files": [
-  "output/2026-11-13/noon/01.jpg",
-  "output/2026-11-13/noon/02.jpg",
-  "output/2026-11-13/noon/03.jpg",
-  "output/2026-11-13/noon/04.jpg",
-  "output/2026-11-13/noon/05.jpg",
-  "output/2026-11-13/noon/06.jpg"
+  "output/2026-11-13/noon/reel.mp4",
+  "output/2026-11-13/noon/01.jpg"
  ],
+ "format": "reels",
  "photo_sources": [
   "pixabay",
   "pixabay",
@@ -17,12 +14,12 @@
   "pixabay"
  ],
  "photo_urls": [
-  "https://pixabay.com/photos/dalmatian-dog-park-meadow-grass-6240485/",
-  "https://pixabay.com/photos/woman-dog-walk-pooch-dog-leash-7308033/",
-  "https://pixabay.com/photos/nature-forest-landscape-tree-9899712/",
-  "https://pixabay.com/photos/girl-street-walk-person-mono-4820225/",
-  "https://pixabay.com/photos/multi-storey-parking-garage-building-7228120/"
+  "https://pixabay.com/photos/boardroom-london-office-5453288/",
+  "https://pixabay.com/photos/man-running-moscow-the-kremlin-5077131/",
+  "https://pixabay.com/photos/pub-irish-pub-ireland-facade-5631898/",
+  "https://pixabay.com/photos/museum-architecture-london-landmark-458321/",
+  "https://pixabay.com/photos/woman-standing-sky-blue-view-10552477/"
  ],
- "title": "로봇 개가 개를 산책?",
+ "title": "우크라 평화 협상 막전막후",
  "publishable": true
 }

@@ -1,138 +1,143 @@
 {
- "selected_index": 5,
- "topic_title": "로봇 개가 개를 산책?",
- "hook": "미국에서 포착된 신기한 로봇 개 풍경",
- "category_tag": "테크",
+ "selected_index": 1,
+ "topic_title": "우크라 평화 협상 막전막후",
+ "hook": "미국 특사단, 푸틴 이어 젤렌스키 회동!",
+ "category_tag": "세계",
+ "music_mood": "serious",
  "cover_photo": [
-  "futuristic robot dog park",
-  "robotics in park"
+  "international diplomatic conference room empty",
+  "moscow skyline building"
  ],
  "panels": [
   {
    "photo": [
-    "futuristic robot dog park",
-    "modern city street"
+    "moscow kremlin architectural landmark",
+    "russia government building exterior"
    ],
    "lines": [
     {
      "who": "M",
-     "pose": "surprised",
-     "text": "샌프란시스코에서 강아지를 산책시키는 로봇 개가 포착됐어요!"
+     "pose": "explain",
+     "text": "미국 특사단이 모스크바를 찾아 푸틴 대통령과 우크라이나 평화 협상을 논의했습니다."
     },
     {
      "who": "F",
-     "pose": "laugh",
-     "text": "로봇이 산책을 시킨다고요?"
+     "pose": "listen",
+     "text": "곧이어 더블린에서 젤렌스키 대통령도 만났군요."
     }
    ]
   },
   {
    "photo": [
-    "farm pasture animal field",
-    "rural landscape"
+    "dublin ireland historic city street",
+    "european government building exterior"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "미국의 한 목장에는 소들의 관심을 한 몸에 받는 로봇 개가 첫 출근을 했대요."
+     "text": "젤렌스키 대통령은 유럽 국가들이 다음 종전 협상에 참여하게 된 것을 환영했습니다."
     },
     {
      "who": "M",
-     "pose": "thumbsup",
-     "text": "인기 만점 신입사원이네요!"
+     "pose": "point",
+     "text": "유럽의 동참이 협상의 새로운 변수가 되겠네요."
     }
    ]
   },
   {
    "photo": [
-    "modern sidewalk city street",
-    "urban pedestrian walkway"
+    "united nations meeting hall interior",
+    "international summit conference table"
    ],
    "lines": [
     {
      "who": "M",
-     "pose": "think",
-     "text": "이 모습을 본 사람들은 '과연 똥은 직접 치우냐'며 유쾌한 반응을 보이고 있어요."
+     "pose": "explain",
+     "text": "다만 푸틴 측의 수석 협상가는 우크라이나 내 '모든 러시아 영토 인치'를 되찾겠다고 공언했습니다."
     },
     {
      "who": "F",
-     "pose": "laugh",
-     "text": "역시 가장 중요한 현실적인 고민이죠!"
+     "pose": "worried",
+     "text": "양측의 입장 차이가 여전히 팽팽하네요."
     }
    ]
   },
   {
    "photo": [
-    "modern technology concept park",
-    "futuristic innovation"
+    "blue sky and horizon landscape view",
+    "peace symbol abstract background"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "신기한 기술이 우리 일상 가까이 다가오고 있는 모습이네요."
+     "text": "미국과 유럽, 우크라이나 간의 논의가 앞으로 평화의 길로 이어질지 주목됩니다."
     },
     {
      "who": "M",
      "pose": "thumbsup",
-     "text": "다음엔 어떤 로봇이 나타날지 기대되는데요?"
+     "text": "평화적인 해결책이 마련되길 바라봅니다!"
     }
    ]
   }
  ],
  "facts": [
-  "샌프란시스코에서 강아지를 산책시키는 로봇 개가 포착됐다 (강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글)",
-  "미 목장에 첫 출근한 로봇 개가 소들의 관심을 한 몸에 받았다 ([잇슈 SNS] 소들의 관심을 한 몸에…미 목장에 첫 출근한 ‘로봇 개’)",
-  "사람들은 똥은 치우는지에 대해 유쾌한 반응을 보였다 (강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글)"
+  "미국 특사단이 모스크바에서 푸틴을 만나 우크라이나 협상을 논의함 (US envoys meet with Putin in Moscow on Ukraine talks)",
+  "특사단이 더블린에서 젤렌스키를 만남 (then see Zelenskyy in Dublin)",
+  "젤렌스키가 유럽의 평화 협상 참여를 환영함 (Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks)",
+  "푸틴 측이 영토 요구 고수 및 평화유지군 배치 거부 입장을 보임 (영토 요구 고수·평화유지군 배치 거부)"
  ],
  "summary": [
-  "샌프란시스코서 로봇 개 포착",
-  "미국 목장에 로봇 개 첫 출근",
-  "똥은 치우냐며 네티즌들 와글"
+  "미국 특사단, 모스크바서 푸틴 회동",
+  "더블린서 젤렌스키 만나 유럽 참여 논의",
+  "푸틴 측은 러시아 영토 수복 의지 강조"
  ],
- "question": "여러분이 키우는 반려동물이 로봇 개를 보면 어떤 반응을 보일까요?",
- "caption": "미국에서 포착된 신기한 로봇 개 소식! 🐕🤖\n\n강아지를 산책시키는 로봇부터 목장에 출근한 로봇까지 정말 다양하게 활약하고 있네요.\n\n가장 중요한 '똥은 누가 치우나'라는 현실적인 질문에 다들 공감하는 분위기입니다. 😆\n\n오늘의 신기한 세계 소식이 흥미로웠다면 좋아요를 눌러주세요!",
+ "question": "이번 평화 협상이 어떤 방향으로 흘러갈까요?",
+ "caption": "🌍 미국 특사단이 모스크바와 더블린을 잇따라 방문하며 우크라이나 평화 협상 논의가 이어지고 있습니다.\n\n푸틴 대통령과의 회동에 이어 젤렌스키 대통령을 만난 특사단! 젤렌스키 대통령은 유럽 국가들의 종전 협상 참여를 환영했는데요.\n\n다만 푸틴 측 협상가의 강경 발언 등 입장 차이가 여전한 상황입니다. 앞으로의 협상 진전 과정을 함께 지켜봐야겠습니다.\n\n#글로벌툰 #국제뉴스 #우크라이나 #평화협상 #미국특사 #푸틴 #젤렌스키 #세계뉴스 #시사상식 #외교 #이슈 #뉴스툰 #트렌드",
  "hashtags": [
   "#글로벌툰",
-  "#로봇개",
-  "#샌프란시스코",
-  "#목장로봇",
-  "#신기한뉴스",
-  "#세계소식",
-  "#테크",
-  "#로봇",
-  "#반려동물",
-  "#IT뉴스",
-  "#이색소식",
-  "#오늘의뉴스",
-  "#트렌드",
-  "#해외소식"
+  "#국제뉴스",
+  "#우크라이나",
+  "#평화협상",
+  "#미국특사",
+  "#푸틴",
+  "#젤렌스키",
+  "#세계뉴스",
+  "#시사상식",
+  "#외교",
+  "#이슈",
+  "#뉴스툰"
  ],
  "verify": {
-  "verdict": "pass",
-  "issues": []
+  "verdict": "fix",
+  "issues": [
+   "3번 패널의 '평화유지군 배치에는 선을 그었습니다'는 내용은 제공된 [근거]에 존재하지 않으므로 근거 기반 사실 검증에서 수정이 필요합니다."
+  ]
  },
  "source": {
-  "title": "강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글",
-  "source": "연합뉴스TV",
-  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VSzdqSk1ORzgtZUl0T0dHdGQ1a21wVTd3V2xNbkttbUIyVmxWRFRtMDRJUUxYWk94MzZsOFJFR0Rka3MtY2dsWjlYb0ZXSHU0dVQxQ1F6UmdzT1YyVjBaek00TTZ5S00?oc=5",
+  "title": "US envoys meet with Putin in Moscow on Ukraine talks, then see Zelenskyy in Dublin",
+  "source": "AP News",
+  "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTFZuQ05KbXhLT294akRzMl9XWE5rUmRhV01fSDY4VVF6dnNaZVlCUzdCd1I2TnI0azFRT1VHcW1hVm9oMWhUNTZaVUc0QjNVNkNseGxYTGU3RmpSWXppTVZ4TzVRWEpxdE1tOVc3NDJYdFZmdWhoeFBvSXc4MXV4N0JUSW95SzlZalpwcERuU3hRNHpSbVBwNXl1Y19kUDU1d2c?oc=5",
   "category": "world",
-  "n_sources": 5,
+  "n_sources": 11,
   "sources": [
-   "KBS 뉴스",
-   "라디오코리아",
-   "미주중앙일보",
-   "아시아경제",
-   "연합뉴스TV"
+   "AP News",
+   "Al Jazeera",
+   "Atlantic Council",
+   "BBC",
+   "CNN",
+   "Euronews.com",
+   "Institute for the Study of War",
+   "NBC News"
   ],
   "summary": "",
   "related_titles": [
-   "강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글",
-   "[잇슈 SNS] 소들의 관심을 한 몸에…미 목장에 첫 출근한 ‘로봇 개’",
-   "개가 개를 산책시킨다? 샌프란시스코서 로봇개 포착",
-   "“강아지가 강아지를 산책?”…샌프란시스코서 포착된 로봇의 정체",
-   "로봇 개가 강아지 산책을? 美 거리서 포착된 기막힌 풍경"
+   "US envoys meet with Putin in Moscow on Ukraine talks, then see Zelenskyy in Dublin",
+   "Kushner says Europe to join next Ukraine talks after meeting Putin and Zelensky",
+   "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+   "Putin’s chief negotiator vows to return ‘every inch of Russian land’ in Ukraine",
+   "In Moscow, Witkoff and Kushner Ask Putin to Include Europe in Peace Talks"
   ]
  }
 }
