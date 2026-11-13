@@ -1,0 +1,138 @@
+{
+ "selected_index": 5,
+ "topic_title": "로봇 개가 개를 산책?",
+ "hook": "미국에서 포착된 신기한 로봇 개 풍경",
+ "category_tag": "테크",
+ "cover_photo": [
+  "futuristic robot dog park",
+  "robotics in park"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "futuristic robot dog park",
+    "modern city street"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "샌프란시스코에서 강아지를 산책시키는 로봇 개가 포착됐어요!"
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "로봇이 산책을 시킨다고요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "farm pasture animal field",
+    "rural landscape"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "미국의 한 목장에는 소들의 관심을 한 몸에 받는 로봇 개가 첫 출근을 했대요."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "인기 만점 신입사원이네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern sidewalk city street",
+    "urban pedestrian walkway"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "이 모습을 본 사람들은 '과연 똥은 직접 치우냐'며 유쾌한 반응을 보이고 있어요."
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "역시 가장 중요한 현실적인 고민이죠!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern technology concept park",
+    "futuristic innovation"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "신기한 기술이 우리 일상 가까이 다가오고 있는 모습이네요."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "다음엔 어떤 로봇이 나타날지 기대되는데요?"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "샌프란시스코에서 강아지를 산책시키는 로봇 개가 포착됐다 (강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글)",
+  "미 목장에 첫 출근한 로봇 개가 소들의 관심을 한 몸에 받았다 ([잇슈 SNS] 소들의 관심을 한 몸에…미 목장에 첫 출근한 ‘로봇 개’)",
+  "사람들은 똥은 치우는지에 대해 유쾌한 반응을 보였다 (강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글)"
+ ],
+ "summary": [
+  "샌프란시스코서 로봇 개 포착",
+  "미국 목장에 로봇 개 첫 출근",
+  "똥은 치우냐며 네티즌들 와글"
+ ],
+ "question": "여러분이 키우는 반려동물이 로봇 개를 보면 어떤 반응을 보일까요?",
+ "caption": "미국에서 포착된 신기한 로봇 개 소식! 🐕🤖\n\n강아지를 산책시키는 로봇부터 목장에 출근한 로봇까지 정말 다양하게 활약하고 있네요.\n\n가장 중요한 '똥은 누가 치우나'라는 현실적인 질문에 다들 공감하는 분위기입니다. 😆\n\n오늘의 신기한 세계 소식이 흥미로웠다면 좋아요를 눌러주세요!",
+ "hashtags": [
+  "#글로벌툰",
+  "#로봇개",
+  "#샌프란시스코",
+  "#목장로봇",
+  "#신기한뉴스",
+  "#세계소식",
+  "#테크",
+  "#로봇",
+  "#반려동물",
+  "#IT뉴스",
+  "#이색소식",
+  "#오늘의뉴스",
+  "#트렌드",
+  "#해외소식"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글",
+  "source": "연합뉴스TV",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VSzdqSk1ORzgtZUl0T0dHdGQ1a21wVTd3V2xNbkttbUIyVmxWRFRtMDRJUUxYWk94MzZsOFJFR0Rka3MtY2dsWjlYb0ZXSHU0dVQxQ1F6UmdzT1YyVjBaek00TTZ5S00?oc=5",
+  "category": "world",
+  "n_sources": 5,
+  "sources": [
+   "KBS 뉴스",
+   "라디오코리아",
+   "미주중앙일보",
+   "아시아경제",
+   "연합뉴스TV"
+  ],
+  "summary": "",
+  "related_titles": [
+   "강아지 산책시키는 ’로봇 개’ 포착…“똥은 치우냐“ 와글",
+   "[잇슈 SNS] 소들의 관심을 한 몸에…미 목장에 첫 출근한 ‘로봇 개’",
+   "개가 개를 산책시킨다? 샌프란시스코서 로봇개 포착",
+   "“강아지가 강아지를 산책?”…샌프란시스코서 포착된 로봇의 정체",
+   "로봇 개가 강아지 산책을? 美 거리서 포착된 기막힌 풍경"
+  ]
+ }
+}

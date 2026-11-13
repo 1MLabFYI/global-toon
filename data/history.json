@@ -75,5 +75,14 @@
   "dir": "output/2026-11-13/morning",
   "status": "published",
   "media_id": "18038933822846680"
+ },
+ {
+  "date": "2026-11-13",
+  "slot": "noon",
+  "title": "로봇 개가 개를 산책?",
+  "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VSzdqSk1ORzgtZUl0T0dHdGQ1a21wVTd3V2xNbkttbUIyVmxWRFRtMDRJUUxYWk94MzZsOFJFR0Rka3MtY2dsWjlYb0ZXSHU0dVQxQ1F6UmdzT1YyVjBaek00TTZ5S00?oc=5",
+  "dir": "output/2026-11-13/noon",
+  "status": "published",
+  "media_id": "17921940912461724"
  }
 ]
