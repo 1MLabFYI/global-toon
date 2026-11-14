@@ -11,6 +11,12 @@ class IGError(RuntimeError):
     pass
 
 
+def _env(name: str) -> str | None:
+    """비밀값 앞뒤의 공백·줄바꿈 제거(복사·붙여넣기 때 섞여 들어가는 경우가 많음)."""
+    v = os.environ.get(name)
+    return v.strip() if v else v
+
+
 def _base(cfg: dict) -> str:
     host = "graph.instagram.com" if cfg["instagram"]["api"] == "instagram_login" else "graph.facebook.com"
     return f"https://{host}/{cfg['instagram']['version']}"
@@ -39,8 +45,8 @@ def _wait(base: str, cid: str, token: str, limit_s: int = 600):
 
 
 def publish_carousel(image_urls: list[str], caption: str, cfg: dict) -> str:
-    token = os.environ.get("IG_ACCESS_TOKEN")
-    uid = os.environ.get("IG_USER_ID")
+    token = _env("IG_ACCESS_TOKEN")
+    uid = _env("IG_USER_ID")
     if not (token and uid):
         raise IGError("IG_ACCESS_TOKEN / IG_USER_ID 환경변수가 없습니다.")
     base = _base(cfg)
@@ -92,8 +98,8 @@ def _publish(base: str, uid: str, token: str, cid: str, tries: int = 3) -> str:
 def publish_reel(video_url: str, cover_url: str, caption: str, cfg: dict, local_path: str | None = None,
                  simple_path: str | None = None) -> str:
     """릴스 게시. 시도 순서: ①직접 업로드 ②직접 업로드(단순 인코딩본) ③URL 방식. 모두 실패하면 예외."""
-    token = os.environ.get("IG_ACCESS_TOKEN")
-    uid = os.environ.get("IG_USER_ID")
+    token = _env("IG_ACCESS_TOKEN")
+    uid = _env("IG_USER_ID")
     if not (token and uid):
         raise IGError("IG_ACCESS_TOKEN / IG_USER_ID 환경변수가 없습니다.")
     base = _base(cfg)
@@ -122,7 +128,7 @@ def publish_reel(video_url: str, cover_url: str, caption: str, cfg: dict, local_
 
 def refresh_token(cfg: dict) -> str:
     """Instagram Login 장기 토큰(60일) 갱신 — 24시간 이상 지난 토큰만 가능."""
-    token = os.environ["IG_ACCESS_TOKEN"]
+    token = _env("IG_ACCESS_TOKEN")
     if cfg["instagram"]["api"] != "instagram_login":
         raise IGError("facebook_login 방식은 시스템 사용자 토큰(만료 없음) 사용을 권장합니다.")
     data = _call("GET", "https://graph.instagram.com/refresh_access_token",
