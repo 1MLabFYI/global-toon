@@ -78,8 +78,10 @@ def make_reel(images: list[str], durations: list[float], music: str | None, out_
              "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1",
              # 인스타 릴스 권장: 닫힌 GOP, 2초 간격 키프레임, 고정 프레임레이트
              "-g", str(fps * 2), "-keyint_min", str(fps * 2), "-sc_threshold", "0",
-             "-flags", "+cgop", "-fps_mode", "cfr",
+             "-flags", "+cgop", "-fps_mode", "cfr", "-bf", "0", "-shortest",
              "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "2",
+             # 인스타 릴스 규격: 편집 목록(edit list) 없음, moov 앞쪽 배치
+             "-use_editlist", "0", "-avoid_negative_ts", "make_zero", "-brand", "mp42",
              "-movflags", "+faststart", out_path]
     subprocess.run(args, check=True)
     return total
