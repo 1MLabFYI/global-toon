@@ -58,19 +58,36 @@ def publish_carousel(image_urls: list[str], caption: str, cfg: dict) -> str:
 
 
 def publish_reel(video_url: str, cover_url: str, caption: str, cfg: dict) -> str:
-    """릴스 게시: 영상 컨테이너 생성 → 처리 완료 대기(최대 10분) → 게시. 피드에도 함께 노출."""
+    """릴스 게시: 영상 컨테이너 생성 → 처리 완료 대기 → 게시. 실패 시 재시도, 표지 지정 없이 한 번 더."""
     token = os.environ.get("IG_ACCESS_TOKEN")
     uid = os.environ.get("IG_USER_ID")
     if not (token and uid):
         raise IGError("IG_ACCESS_TOKEN / IG_USER_ID 환경변수가 없습니다.")
     base = _base(cfg)
-    c = _call("POST", f"{base}/{uid}/media", media_type="REELS", video_url=video_url,
-              cover_url=cover_url, caption=caption[:2200], share_to_feed="true", access_token=token)
-    print(f"[ig] reel container {c['id']}")
-    _wait(base, c["id"], token)
-    pub = _call("POST", f"{base}/{uid}/media_publish", creation_id=c["id"], access_token=token)
-    print(f"[ig] published reel id {pub['id']}")
-    return pub["id"]
+    last = None
+    for with_cover in (True, False):
+        params = dict(media_type="REELS", video_url=video_url, caption=caption[:2200],
+                      share_to_feed="true", access_token=token)
+        if with_cover:
+            params["cover_url"] = cover_url
+        try:
+            c = _call("POST", f"{base}/{uid}/media", **params)
+            print(f"[ig] reel container {c['id']} (표지 지정={with_cover})")
+            _wait(base, c["id"], token)
+        except IGError as e:
+            last = e
+            print(f"[ig] 컨테이너 실패: {e}")
+            continue
+        for attempt in range(3):
+            time.sleep(20 + attempt * 30)          # FINISHED 직후 바로 게시하면 실패하는 경우가 있어 잠시 대기
+            try:
+                pub = _call("POST", f"{base}/{uid}/media_publish", creation_id=c["id"], access_token=token)
+                print(f"[ig] published reel id {pub['id']}")
+                return pub["id"]
+            except IGError as e:
+                last = e
+                print(f"[ig] 게시 실패({attempt + 1}/3): {e}")
+    raise IGError(f"릴스 게시 실패: {last}")
 
 
 def refresh_token(cfg: dict) -> str:

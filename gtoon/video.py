@@ -75,7 +75,10 @@ def make_reel(images: list[str], durations: list[float], music: str | None, out_
     args += ["-filter_complex", ";".join(parts), "-map", f"[{last}]", "-map", "[a]",
              "-t", f"{total:.3f}", "-r", str(fps),
              "-c:v", "libx264", "-preset", "medium", "-crf", str(r["crf"]), "-maxrate", "8M", "-bufsize", "16M",
-             "-pix_fmt", "yuv420p", "-profile:v", "high",
+             "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1",
+             # 인스타 릴스 권장: 닫힌 GOP, 2초 간격 키프레임, 고정 프레임레이트
+             "-g", str(fps * 2), "-keyint_min", str(fps * 2), "-sc_threshold", "0",
+             "-flags", "+cgop", "-fps_mode", "cfr",
              "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "2",
              "-movflags", "+faststart", out_path]
     subprocess.run(args, check=True)

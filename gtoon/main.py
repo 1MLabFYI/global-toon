@@ -126,12 +126,19 @@ def cmd_make(args, cfg):
         script["music"] = os.path.basename(music) if music else ""
         script["music_credit"] = video.music_credit(music)
         print(f"[video] {length:.1f}초, 음악: {script['music'] or '없음'}, {os.path.getsize(mp4) / 1e6:.1f}MB")
+        # 릴스 실패 대비: 피드 캐러셀 규격(4:5)으로 잘라 둔 이미지
+        pages_files = []
+        for i, pg in enumerate(pages, 1):
+            fn = os.path.join(out, f"feed_{i:02d}.jpg")
+            pg.convert("RGB").crop((0, 200, W, 200 + W * 5 // 4)).save(fn, "JPEG", quality=90)
+            pages_files.append(os.path.relpath(fn, ROOT).replace("\\", "/"))
         files = [os.path.relpath(mp4, ROOT).replace("\\", "/"), files[0]]   # [영상, 표지]
 
     caption = build_caption(script, cfg)
     with open(os.path.join(out, "caption.txt"), "w", encoding="utf-8") as f:
         f.write(caption)
     meta = {"slot": args.slot, "created": now.isoformat(), "files": files, "format": fmt,
+            "pages": locals().get("pages_files", files),
             "photo_sources": sources, "photo_urls": [p.url for p in [cover, *pics]],
             "title": script["topic_title"],
             "publishable": sources.count("fallback") <= 1}
@@ -161,7 +168,12 @@ def cmd_publish(args, cfg):
         sys.exit(f"[publish] 배경 사진을 충분히 구하지 못해 게시하지 않습니다: {meta.get('photo_sources')}")
     urls = [f"{args.base_url.rstrip('/')}/{p}" for p in meta["files"]]
     if meta.get("format") == "reels":
-        media_id = publish_reel(urls[0], urls[1], caption, cfg)
+        try:
+            media_id = publish_reel(urls[0], urls[1], caption, cfg)
+        except Exception as e:                   # 릴스 실패 시 같은 장면 이미지로 캐러셀 게시(회차 유지)
+            print(f"[publish] 릴스 실패 → 이미지 캐러셀로 대신 게시: {e}")
+            pages = [f"{args.base_url.rstrip('/')}/{p}" for p in meta.get("pages", [])]
+            media_id = publish_carousel(pages, caption, cfg)
     else:
         media_id = publish_carousel(urls, caption, cfg)
     hist = load_hist()
