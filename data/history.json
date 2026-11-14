@@ -45,5 +45,15 @@
   "status": "published",
   "music": "bright_01.mp3",
   "media_id": "18112748180623432"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "noon",
+  "title": "미·중·러 사상 첫 3자 회담",
+  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOS0ZHZDFUVjNXc19jTzlIeWRBX0s4dmtIUG1jNGFwZFpCUTBEWEJTRW5tbnhDVTlEdDlwcnZNV0ctRWVLNnhaSUJvbDVlRzUyNmxWelF0aU5xOWV0SkJ5UkhHNTdmVTcyZ1plcWhhY0N2LW5zNUZFT3pVWXhzZkFidEM2bkk0aE8wUFRScg?oc=5",
+  "dir": "output/2026-11-14/noon",
+  "status": "published",
+  "music": "serious_01.mp3",
+  "media_id": "18652260550018797"
  }
 ]

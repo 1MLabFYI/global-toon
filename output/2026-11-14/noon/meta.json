@@ -1,0 +1,33 @@
+{
+ "slot": "noon",
+ "created": "2026-11-14T12:35:21.727172+09:00",
+ "files": [
+  "output/2026-11-14/noon/reel.mp4",
+  "output/2026-11-14/noon/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-14/noon/feed_01.jpg",
+  "output/2026-11-14/noon/feed_02.jpg",
+  "output/2026-11-14/noon/feed_03.jpg",
+  "output/2026-11-14/noon/feed_04.jpg",
+  "output/2026-11-14/noon/feed_05.jpg",
+  "output/2026-11-14/noon/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/cat-animal-nature-pet-9720087/",
+  "https://pixabay.com/photos/church-cathedral-window-building-6508068/",
+  "https://pixabay.com/photos/saint-georges-hall-liverpool-4661859/",
+  "https://pixabay.com/photos/nuclear-power-plant-cooling-tower-3145445/",
+  "https://pixabay.com/photos/museum-architecture-london-landmark-458321/"
+ ],
+ "title": "미·중·러 사상 첫 3자 회담",
+ "publishable": true
+}

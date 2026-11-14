@@ -1,0 +1,141 @@
+{
+ "selected_index": 1,
+ "topic_title": "미·중·러 사상 첫 3자 회담",
+ "hook": "핵 비확산 의제로 한자리에 모인다",
+ "category_tag": "세계",
+ "music_mood": "serious",
+ "cover_photo": [
+  "diplomatic summit table flags",
+  "international conference room"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "international summit hall empty",
+    "diplomatic conference hall"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "미국과 중국, 러시아 정상이 한자리에 모이는 사상 첫 3자 회담이 열려요."
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "세 정상이 한 테이블에요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "beijing great hall of the people exterior",
+    "china modern architecture"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "백악관에 따르면 이번 만남은 11월 19일 중국에서 진행될 예정이라고 합니다."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "장소와 날짜가 나왔군요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "nuclear power symbol symbolics",
+    "geopolitics globe meeting"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "이번 역사적인 3자 회담의 핵심 의제는 바로 '핵 비확산' 문제라고 해요."
+    },
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "안보의 핵심 문제네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "united nations assembly hall empty",
+    "global diplomacy flags"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "세계 주요 강대국 수장들이 처음 마주 앉는 만큼 전 세계 외교가가 주목하고 있어요."
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "어떤 논의가 나올까요?"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "트럼프 미국 대통령이 푸틴 러시아 대통령, 시진핑 중국 국가주석과 사상 첫 3자 회담을 갖는다 (Trump to have first trilateral meeting with Putin, Xi)",
+  "백악관에 따르면 이번 3자 회담은 11월 19일 중국에서 열린다 (Trump to Meet With Xi, Putin Nov. 19 in China, White House Says)",
+  "이번 3자 회담의 핵심 의제는 핵 비확산 문제이다 (Trump to meet with China’s Xi and Russia’s Putin at historic trilateral sit-down on nuclear non-proliferation)"
+ ],
+ "summary": [
+  "미·중·러 사상 첫 3자 회담",
+  "11월 19일 중국에서 개최 예정",
+  "핵 비확산이 핵심 의제로 다뤄져"
+ ],
+ "question": "미·중·러 정상의 첫 3자 회담, 어떤 결과가 나올까요?",
+ "caption": "미국과 중국, 러시아 정상이 사상 처음으로 한자리에 모입니다. 🌐\n\n백악관에 따르면 오는 11월 19일 중국에서 3자 정상회담이 열릴 예정인데요. 이번 역사적인 만남의 핵심 의제는 바로 '핵 비확산'입니다.\n\n세 강대국의 수장이 공식 3자 테이블에 마주 앉는 것은 이번이 처음인 만큼 전 세계의 이목이 집중되고 있습니다. 과연 어떤 결과가 도출될까요?",
+ "hashtags": [
+  "#글로벌툰",
+  "#세계뉴스",
+  "#국제뉴스",
+  "#정상회담",
+  "#외교",
+  "#핵비확산",
+  "#미국",
+  "#중국",
+  "#러시아",
+  "#글로벌이슈",
+  "#국제정치",
+  "#시사상식",
+  "#뉴스요약"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Trump to have first trilateral meeting with Putin, Xi",
+  "source": "The Washington Post",
+  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOS0ZHZDFUVjNXc19jTzlIeWRBX0s4dmtIUG1jNGFwZFpCUTBEWEJTRW5tbnhDVTlEdDlwcnZNV0ctRWVLNnhaSUJvbDVlRzUyNmxWelF0aU5xOWV0SkJ5UkhHNTdmVTcyZ1plcWhhY0N2LW5zNUZFT3pVWXhzZkFidEM2bkk0aE8wUFRScg?oc=5",
+  "category": "world",
+  "n_sources": 14,
+  "sources": [
+   "AP News",
+   "BBC",
+   "Bloomberg.com",
+   "CNN",
+   "DW.com",
+   "Euronews.com",
+   "Fortune",
+   "Fox News"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Trump to have first trilateral meeting with Putin, Xi",
+   "Trump to meet with China’s Xi and Russia’s Putin at historic trilateral sit-down on nuclear non-proliferation",
+   "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda",
+   "Trump to Meet With Xi, Putin Nov. 19 in China, White House Says",
+   "Beijing faces Russia bind amid talk of Xi-Trump-Putin summit"
+  ]
+ }
+}
