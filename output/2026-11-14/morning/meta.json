@@ -1,11 +1,19 @@
 {
  "slot": "morning",
- "created": "2026-11-14T08:17:25.480344+09:00",
+ "created": "2026-11-14T10:31:59.165703+09:00",
  "files": [
   "output/2026-11-14/morning/reel.mp4",
   "output/2026-11-14/morning/01.jpg"
  ],
  "format": "reels",
+ "pages": [
+  "output/2026-11-14/morning/feed_01.jpg",
+  "output/2026-11-14/morning/feed_02.jpg",
+  "output/2026-11-14/morning/feed_03.jpg",
+  "output/2026-11-14/morning/feed_04.jpg",
+  "output/2026-11-14/morning/feed_05.jpg",
+  "output/2026-11-14/morning/feed_06.jpg"
+ ],
  "photo_sources": [
   "pixabay",
   "pixabay",
@@ -14,12 +22,12 @@
   "pixabay"
  ],
  "photo_urls": [
-  "https://pixabay.com/photos/city-night-architecture-dark-urban-4935219/",
-  "https://pixabay.com/photos/coffee-shop-cafe-restaurant-dining-7369404/",
-  "https://pixabay.com/photos/architecture-avenue-buildings-city-1846023/",
-  "https://pixabay.com/photos/woman-dj-music-headphones-jeans-10453367/",
-  "https://pixabay.com/photos/woman-model-silhouette-star-8035746/"
+  "https://pixabay.com/photos/plant-indoor-table-green-nature-4148876/",
+  "https://pixabay.com/photos/editor-white-screen-beam-projector-3673978/",
+  "https://pixabay.com/photos/drone-technology-equipment-8188144/",
+  "https://pixabay.com/photos/cozy-living-room-rustic-interior-10505991/",
+  "https://pixabay.com/photos/lounge-tv-couch-sofa-plants-5555652/"
  ],
- "title": "GTA 6의 시대가 온다",
+ "title": "구형 애플TV도 시리 AI를?",
  "publishable": true
 }

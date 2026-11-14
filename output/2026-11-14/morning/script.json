@@ -1,139 +1,140 @@
 {
- "selected_index": 6,
- "topic_title": "GTA 6의 시대가 온다",
- "hook": "전 세계 게임계가 주목하는 역대급 신작",
+ "selected_index": 5,
+ "topic_title": "구형 애플TV도 시리 AI를?",
+ "hook": "구형 모델까지 확대된 tvOS 업그레이드 소식!",
  "category_tag": "테크",
- "music_mood": "bright",
+ "music_mood": "calm",
  "cover_photo": [
-  "modern city night skyline",
-  "futuristic neon street"
+  "modern living room with television",
+  "living room interior"
  ],
  "panels": [
   {
    "photo": [
-    "empty gaming chair with monitor",
-    "dark gaming room setup"
+    "modern television screen living room",
+    "living room interior"
    ],
    "lines": [
     {
-     "who": "M",
-     "pose": "explain",
-     "text": "출시를 앞둔 대형 신작 게임 때문에 전 세계 게임계가 들썩이고 있어요!"
+     "who": "F",
+     "pose": "point",
+     "text": "애플이 구형 애플TV 4K 모델을 위한 tvOS 27.2.1 업데이트를 배포했어요!"
     },
     {
-     "who": "F",
+     "who": "M",
      "pose": "surprised",
-     "text": "벌써부터 영향력이 어마어마하네요?"
+     "text": "구형 기종도 챙겨주다니 감동인데요?"
     }
    ]
   },
   {
    "photo": [
-    "large city street downtown",
-    "busy urban intersection"
-   ],
-   "lines": [
-    {
-     "who": "F",
-     "pose": "explain",
-     "text": "수년간의 연구 끝에 완성된 엄청나게 디테일한 세계관을 담았다고 합니다."
-    },
-    {
-     "who": "M",
-     "pose": "think",
-     "text": "디테일에 진심인 게임이죠 정말."
-    }
-   ]
-  },
-  {
-   "photo": [
-    "crowded electronics store",
-    "gaming convention hall"
+    "smart remote control on sofa",
+    "living room sofa"
    ],
    "lines": [
     {
      "who": "M",
      "pose": "explain",
-     "text": "팝 문화 전반에 큰 파장을 일으킬 것으로 기대되며 업계의 큰 관심을 받고 있어요."
+     "text": "이번 업데이트의 핵심은 바로 Siri AI 기능이 구형 모델에도 탑재된다는 점입니다."
     },
     {
      "who": "F",
      "pose": "thumbsup",
-     "text": "기록을 얼마나 갈아치울지 궁금해요!"
+     "text": "AI로 더 똑똑해지겠네요!"
     }
    ]
   },
   {
    "photo": [
-    "neon sign glowing in dark",
-    "modern digital art display"
+    "living room with warm lighting",
+    "cozy room interior"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "과연 게임 역사에 어떤 발자취를 남길지 함께 지켜보시죠."
+     "text": "최신형 제품인 300달러짜리 애플TV 4K가 화제인 가운데 이뤄진 조치예요."
     },
     {
      "who": "M",
-     "pose": "laugh",
-     "text": "제 지갑도 미리 준비해야겠어요!"
+     "pose": "think",
+     "text": "가격은 다소 비싸지만 기능은 훌륭하다는 평이죠."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern media room interior",
+    "living room setup"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "쓰던 기기 그대로 AI 기능을 만날 수 있는 반가운 소식입니다!"
+    },
+    {
+     "who": "F",
+     "pose": "smile",
+     "text": "오늘 바로 업데이트 확인해봐야겠어요!"
     }
    ]
   }
  ],
  "facts": [
-  "GTA 6 출시를 앞두고 게임 업계가 주목하고 있다 ('Unlike Anything Else': As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover)",
-  "수년간의 연구로 디테일한 세계관을 구축했다 (How years of research built Grand Theft Auto VI’s obsessively detailed world)"
+  "Apple Releases tvOS 27.2.1 With Siri AI for Older Apple TVs (Apple Releases tvOS 27.2.1 With Siri AI for Older Apple TVs)",
+  "Siri AI Coming to Older Apple TV 4K Models in tvOS 27.2.1 (Siri AI Coming to Older Apple TV 4K Models in tvOS 27.2.1)",
+  "The $300 Apple TV 4K Is Absurdly Expensive and Absurdly Good (The $300 Apple TV 4K Is Absurdly Expensive and Absurdly Good)"
  ],
  "summary": [
-  "출시 앞둔 GTA 6에 쏠린 전 세계의 눈",
-  "수년간의 연구로 완성된 디테일한 세계관",
-  "팝 문화 전반에 미칠 파급력에 기대 집중"
+  "구형 애플TV 4K 대상 tvOS 27.2.1 배포",
+  "구형 모델에서도 Siri AI 기능 사용 가능",
+  "최신형 애플TV 4K와 함께 주목받는 업데이트"
  ],
- "question": "여러분이 가장 기다리고 있는 게임은 무엇인가요?",
- "caption": "전 세계가 주목하는 역대급 신작 소식! 🎮\n\n출시를 앞둔 대형 기대작 때문에 게임계가 벌써부터 들썩이고 있는데요. 과연 어떤 놀라운 모습을 보여줄지 정말 기대됩니다!\n\n오늘의 뉴스, 쉽고 빠르게 확인해 보세요 ✨\n\n#글로벌툰 #게임뉴스 #테크뉴스 #신작게임 #문화 #게임추천 #글로벌이슈 #트렌드",
+ "question": "여러분은 집에서 어떤 스트리밍 기기를 사용하고 계시나요?",
+ "caption": "애플이 구형 애플TV 4K 모델을 위한 tvOS 27.2.1 업데이트를 공개했습니다! ✨\n\n이번 업데이트를 통해 그동안 최신 기기에만 집중되었던 Siri AI 기능이 구형 모델에도 확대 적용되는데요. 쓰던 기기 그대로 더 스마트한 기능을 만나볼 수 있게 되었습니다.\n\n새로운 기능과 함께 더 편리해질 거실 환경을 기대해 보며, 오늘 바로 업데이트를 확인해 보세요! 📺\n\n#애플TV #tvOS #테크뉴스 #글로벌툰",
  "hashtags": [
-  "#글로벌툰",
-  "#게임뉴스",
+  "#애플TV",
+  "#tvOS",
+  "#SiriAI",
   "#테크뉴스",
-  "#신작게임",
-  "#문화",
-  "#게임추천",
-  "#글로벌이슈",
-  "#트렌드",
   "#IT뉴스",
-  "#게임계소식",
-  "#화제작",
-  "#데일리뉴스"
+  "#애플",
+  "#스마트홈",
+  "#업데이트",
+  "#신제품",
+  "#가전",
+  "#글로벌툰",
+  "#IT"
  ],
  "verify": {
   "verdict": "pass",
   "issues": []
  },
  "source": {
-  "title": "‘Unlike Anything Else’: As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover",
-  "source": "Variety",
-  "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVWx6NElrYi1Ka0pJM194cUpNLW1BYnNjX3R1TzE4OVdKdlcxVnQ2cGMtZm41SjNqS1ZjYVUtLW5vVGtrZXVKZWpiNEQ3am9lWFlCdzc5ckNua01ObUppZVJIVUdsVlR2YllFUWVHaUxqakVSaThWcFJodUZSZlFNVEdqenhtbTVBbVk0c0F4SDk?oc=5",
+  "title": "Apple Releases tvOS 27.2.1 With Siri AI for Older Apple TVs",
+  "source": "MacRumors",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE43SGZ3bUFxTlFUTmMtbXhjRlRhT0VnVWhWNzIwQTN6bWVocjgxVWU1SGlPV2tQckdhSTI0X3NkRVVFZ3FkU2Y4OWxRVVZobzlENDRkcEJkTHJtSGVfTGhBcUNjTEo4UmNBWEg4RUxpR3B6UQ?oc=5",
   "category": "technology",
-  "n_sources": 16,
+  "n_sources": 14,
   "sources": [
    "9to5Google",
-   "9to5Mac",
-   "AP News",
    "Android Authority",
-   "BBC",
-   "Bloomberg.com",
+   "CNET",
+   "CNN",
    "DC Rainmaker",
-   "Digital Foundry"
+   "Digital Foundry",
+   "Engadget",
+   "Game Informer"
   ],
   "summary": "",
   "related_titles": [
-   "‘Unlike Anything Else’: As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover",
-   "'Grand Theft Auto VI' is almost here. What to know about the characters, music and billions at stake",
-   "How years of research built Grand Theft Auto VI’s obsessively detailed world",
-   "The Global Story | GTA 6: A mirror of America?",
-   "The $1 Billion Video Game About to Swallow the World Whole"
+   "Apple Releases tvOS 27.2.1 With Siri AI for Older Apple TVs",
+   "The new Apple TV 4K is my favorite streaming box ever, but is the price too high?",
+   "The $300 Apple TV 4K Is Absurdly Expensive and Absurdly Good",
+   "Siri AI Coming to Older Apple TV 4K Models in tvOS 27.2.1",
+   "The pricey new Apple TV 4K is still the best streamer around"
   ]
  }
 }

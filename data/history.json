@@ -25,5 +25,15 @@
   "dir": "output/2026-11-14/morning",
   "status": "made",
   "music": "bright_02.mp3"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "morning",
+  "title": "구형 애플TV도 시리 AI를?",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE43SGZ3bUFxTlFUTmMtbXhjRlRhT0VnVWhWNzIwQTN6bWVocjgxVWU1SGlPV2tQckdhSTI0X3NkRVVFZ3FkU2Y4OWxRVVZobzlENDRkcEJkTHJtSGVfTGhBcUNjTEo4UmNBWEg4RUxpR3B6UQ?oc=5",
+  "dir": "output/2026-11-14/morning",
+  "status": "published",
+  "music": "calm_01.mp3",
+  "media_id": "18132297004842510"
  }
 ]
