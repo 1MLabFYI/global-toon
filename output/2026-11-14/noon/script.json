@@ -1,141 +1,141 @@
 {
- "selected_index": 1,
- "topic_title": "미·중·러 사상 첫 3자 회담",
- "hook": "핵 비확산 의제로 한자리에 모인다",
+ "selected_index": 5,
+ "topic_title": "기후회의 전기차 속도전",
+ "topic_subtitle": "UN 기후변화 회의의 전기화 목표",
  "category_tag": "세계",
- "music_mood": "serious",
+ "music_mood": "calm",
  "cover_photo": [
-  "diplomatic summit table flags",
-  "international conference room"
+  "global climate summit conference hall",
+  "international conference stage"
  ],
  "panels": [
   {
    "photo": [
-    "international summit hall empty",
-    "diplomatic conference hall"
+    "modern conference hall interior",
+    "auditorium meeting room"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "미국과 중국, 러시아 정상이 한자리에 모이는 사상 첫 3자 회담이 열려요."
+     "text": "UN 기후변화 회의에서 전기화 목표를 적극 추진하기로 했어요."
     },
     {
      "who": "M",
      "pose": "surprised",
-     "text": "세 정상이 한 테이블에요?"
+     "text": "지구를 위한 큰 걸음이네요!"
     }
    ]
   },
   {
    "photo": [
-    "beijing great hall of the people exterior",
-    "china modern architecture"
+    "large industrial electric vehicles parking",
+    "modern electric charging station"
    ],
    "lines": [
     {
      "who": "M",
      "pose": "point",
-     "text": "백악관에 따르면 이번 만남은 11월 19일 중국에서 진행될 예정이라고 합니다."
+     "text": "화석연료 감축을 두고 치열한 논의가 이어지고 있습니다."
     },
     {
      "who": "F",
      "pose": "think",
-     "text": "장소와 날짜가 나왔군요!"
+     "text": "과학 보고서 시기를 두고도 의견이 엇갈렸죠."
     }
    ]
   },
   {
    "photo": [
-    "nuclear power symbol symbolics",
-    "geopolitics globe meeting"
+    "heavy machinery at industrial mining site",
+    "open pit mining landscape"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "이번 역사적인 3자 회담의 핵심 의제는 바로 '핵 비확산' 문제라고 해요."
+     "text": "한편 각 단체들은 광산 개발 과정에서 철저한 안전 장치를 요구했어요."
     },
     {
      "who": "M",
-     "pose": "point",
-     "text": "안보의 핵심 문제네요."
+     "pose": "worried",
+     "text": "환경 보호와 자원 개발의 균형이 중요하겠어요."
     }
    ]
   },
   {
    "photo": [
-    "united nations assembly hall empty",
-    "global diplomacy flags"
+    "futuristic sustainable city aerial view",
+    "green energy landscape"
    ],
    "lines": [
     {
      "who": "M",
-     "pose": "explain",
-     "text": "세계 주요 강대국 수장들이 처음 마주 앉는 만큼 전 세계 외교가가 주목하고 있어요."
-    },
-    {
-     "who": "F",
      "pose": "thumbsup",
-     "text": "어떤 논의가 나올까요?"
+     "text": "앞으로의 친환경 행보를 계속 지켜봐야겠습니다."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "글로벌툰과 함께 지구 소식을 전해드렸어요!"
     }
    ]
   }
  ],
  "facts": [
-  "트럼프 미국 대통령이 푸틴 러시아 대통령, 시진핑 중국 국가주석과 사상 첫 3자 회담을 갖는다 (Trump to have first trilateral meeting with Putin, Xi)",
-  "백악관에 따르면 이번 3자 회담은 11월 19일 중국에서 열린다 (Trump to Meet With Xi, Putin Nov. 19 in China, White House Says)",
-  "이번 3자 회담의 핵심 의제는 핵 비확산 문제이다 (Trump to meet with China’s Xi and Russia’s Putin at historic trilateral sit-down on nuclear non-proliferation)"
+  "UN 기후변화 회의에서 전기화 목표를 추진한다 (UN climate summit pushes electrification goal as groups call for mining safeguards)",
+  "기후 과학 보고서 시기를 두고 논의가 있었다 (Timing of Climate Science Reports Ignites a Hot Fight at U.N. Talks)",
+  "단체들이 광산 채굴에 대한 안전장치를 요구했다 (UN climate summit pushes electrification goal as groups call for mining safeguards)"
  ],
  "summary": [
-  "미·중·러 사상 첫 3자 회담",
-  "11월 19일 중국에서 개최 예정",
-  "핵 비확산이 핵심 의제로 다뤄져"
+  "UN 기후변화 회의서 전기화 목표 추진",
+  "화석연료 감축과 과학 보고서 시기 쟁점",
+  "광산 개발 관련 안전장치 마련 요구"
  ],
- "question": "미·중·러 정상의 첫 3자 회담, 어떤 결과가 나올까요?",
- "caption": "미국과 중국, 러시아 정상이 사상 처음으로 한자리에 모입니다. 🌐\n\n백악관에 따르면 오는 11월 19일 중국에서 3자 정상회담이 열릴 예정인데요. 이번 역사적인 만남의 핵심 의제는 바로 '핵 비확산'입니다.\n\n세 강대국의 수장이 공식 3자 테이블에 마주 앉는 것은 이번이 처음인 만큼 전 세계의 이목이 집중되고 있습니다. 과연 어떤 결과가 도출될까요?",
+ "question": "여러분이 생각하는 가장 시급한 환경 대책은 무엇인가요?",
+ "caption": "🌍 UN 기후변화 회의에서 전기화 목표 추진과 화석연료 감축 논의가 이어지고 있습니다! 광산 개발 안전장치 요구까지, 오늘의 주요 국제 소식을 글로벌툰에서 확인해 보세요.\n\n#기후변화 #UN회의 #전기화 #환경정책 #국제뉴스 #글로벌툰",
  "hashtags": [
-  "#글로벌툰",
-  "#세계뉴스",
+  "#기후변화",
+  "#UN회의",
+  "#전기화",
+  "#환경정책",
   "#국제뉴스",
-  "#정상회담",
-  "#외교",
-  "#핵비확산",
-  "#미국",
-  "#중국",
-  "#러시아",
-  "#글로벌이슈",
-  "#국제정치",
+  "#글로벌툰",
+  "#지구보호",
+  "#화석연료",
+  "#광산안전",
+  "#지속가능성",
+  "#뉴스툰",
   "#시사상식",
-  "#뉴스요약"
+  "#세계뉴스"
  ],
  "verify": {
   "verdict": "pass",
   "issues": []
  },
  "source": {
-  "title": "Trump to have first trilateral meeting with Putin, Xi",
-  "source": "The Washington Post",
-  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOS0ZHZDFUVjNXc19jTzlIeWRBX0s4dmtIUG1jNGFwZFpCUTBEWEJTRW5tbnhDVTlEdDlwcnZNV0ctRWVLNnhaSUJvbDVlRzUyNmxWelF0aU5xOWV0SkJ5UkhHNTdmVTcyZ1plcWhhY0N2LW5zNUZFT3pVWXhzZkFidEM2bkk0aE8wUFRScg?oc=5",
+  "title": "UN climate summit pushes electrification goal as groups call for mining safeguards",
+  "source": "AP News",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXlUSWVwbVZ3UkJ4dERlR1FpSXZ3WmZEN2ljSnotaS1HNE1CS19CZ0lLZ0hXa3l1SEotV01uWWRRNVBQSi1ybmxVSE4yN2tYZkwyRTg1VGhOTWxCeUdlMU9vNDhxdGdCZFIzLUhCb19LMEtFZ0VTSm94TlVuMVc1T0k1TGU2LVZCN0dNdUJZcnBCWl9YTXIxTzBmbTRNRXY5Z24wcXJ6bWlrLVhsYUNpMlh3ODI2WnU0WUZtOA?oc=5",
   "category": "world",
-  "n_sources": 14,
+  "n_sources": 12,
   "sources": [
    "AP News",
    "BBC",
-   "Bloomberg.com",
    "CNN",
    "DW.com",
-   "Euronews.com",
-   "Fortune",
-   "Fox News"
+   "Fox News",
+   "POLITICO.eu",
+   "Politico",
+   "Reuters"
   ],
   "summary": "",
   "related_titles": [
-   "Trump to have first trilateral meeting with Putin, Xi",
-   "Trump to meet with China’s Xi and Russia’s Putin at historic trilateral sit-down on nuclear non-proliferation",
-   "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda",
-   "Trump to Meet With Xi, Putin Nov. 19 in China, White House Says",
-   "Beijing faces Russia bind amid talk of Xi-Trump-Putin summit"
+   "UN climate summit pushes electrification goal as groups call for mining safeguards",
+   "UN chief urges drastic emissions cuts as COP31 wrestles with fossil fuels",
+   "Timing of Climate Science Reports Ignites a Hot Fight at U.N. Talks",
+   "The election climate diplomats can’t stop talking about. It's not the midterms.",
+   "‘You cannot build peace on a burning planet,’ UN chief tells Cop31 in farewell speech"
   ]
  }
 }

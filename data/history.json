@@ -55,5 +55,15 @@
   "status": "published",
   "music": "serious_01.mp3",
   "media_id": "18652260550018797"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "noon",
+  "title": "기후회의 전기차 속도전",
+  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXlUSWVwbVZ3UkJ4dERlR1FpSXZ3WmZEN2ljSnotaS1HNE1CS19CZ0lLZ0hXa3l1SEotV01uWWRRNVBQSi1ybmxVSE4yN2tYZkwyRTg1VGhOTWxCeUdlMU9vNDhxdGdCZFIzLUhCb19LMEtFZ0VTSm94TlVuMVc1T0k1TGU2LVZCN0dNdUJZcnBCWl9YTXIxTzBmbTRNRXY5Z24wcXJ6bWlrLVhsYUNpMlh3ODI2WnU0WUZtOA?oc=5",
+  "dir": "output/2026-11-14/noon",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "18106006790033913"
  }
 ]
