@@ -14,7 +14,7 @@ cfg = load_cfg()
 ok = True
 
 # 1) Instagram
-tok, uid = os.environ.get("IG_ACCESS_TOKEN"), os.environ.get("IG_USER_ID")
+tok, uid = (os.environ.get("IG_ACCESS_TOKEN") or "").strip(), (os.environ.get("IG_USER_ID") or "").strip()
 base = _base(cfg)
 r = requests.get(f"{base}/{uid}", params={"fields": "id,username", "access_token": tok}, timeout=30)
 if r.status_code == 200:
@@ -35,8 +35,9 @@ for m in cfg["image"]["models"]:
             imagegen._schnell("a cartoon cat, 2D comic style", cfg, 1)
         print(f"✅ Cloudflare {m}")
     except Exception as e:
-        print(f"❌ Cloudflare {m}: {e}")
-        ok = False if m == cfg["image"]["models"][0] else ok
+        # Cloudflare는 진행자 표정 생성(최초 1회)에만 쓰므로 실패해도 경고만 표시
+        msg = "오늘 무료 한도 소진(매일 09:00 KST 초기화)" if "429" in str(e) else str(e)[:200]
+        print(f"⚠️ Cloudflare {m}: {msg}")
 
 # 3) 배경 사진 (Pixabay 기본)
 prov = cfg.get("photos", {}).get("provider", "pixabay")
