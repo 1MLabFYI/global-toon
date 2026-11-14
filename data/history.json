@@ -65,5 +65,15 @@
   "status": "published",
   "music": "calm_02.mp3",
   "media_id": "18106006790033913"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "noon",
+  "title": "미국, 이란 군사행동 멈추나?",
+  "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMXJTcEdfVGdOV1VrbGpYTy1hMlkybS1IbjZGS0piS01yNWY5RnVsMi16ZHBMTFVIajNzcFoydFZXWmhEQXJuVXBHNFBic2JSRlJLZ05TNGlmclRmMlppOExmc2ttem1zVnhQV0ppcnVaUkd2Q29fVVNXUzJpUFEwUE1WSHVkc0tZQXpmaHBSZ0YxVWpoOGNkMmZnbw?oc=5",
+  "dir": "output/2026-11-14/noon",
+  "status": "published",
+  "music": "serious_01.mp3",
+  "media_id": "18020861408740808"
  }
 ]

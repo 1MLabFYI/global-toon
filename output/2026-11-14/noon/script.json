@@ -1,141 +1,141 @@
 {
- "selected_index": 5,
- "topic_title": "기후회의 전기차 속도전",
- "topic_subtitle": "UN 기후변화 회의의 전기화 목표",
+ "selected_index": 1,
+ "topic_title": "미국, 이란 군사행동 멈추나?",
+ "hook": "경제적 타격 충분... 새 전략 시험대",
  "category_tag": "세계",
- "music_mood": "calm",
+ "music_mood": "serious",
  "cover_photo": [
-  "global climate summit conference hall",
-  "international conference stage"
+  "The Pentagon building Washington DC aerial view",
+  "government building architecture"
  ],
  "panels": [
   {
    "photo": [
-    "modern conference hall interior",
-    "auditorium meeting room"
+    "The Pentagon building Washington DC aerial view",
+    "pentagon aerial view"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "UN 기후변화 회의에서 전기화 목표를 적극 추진하기로 했어요."
+     "text": "미국 정부가 경제적으로 약해진 이란을 상대로 추가 군사 행동이 필요하지 않다고 밝혔어요."
     },
     {
      "who": "M",
      "pose": "surprised",
-     "text": "지구를 위한 큰 걸음이네요!"
+     "text": "군사 작전 대신 기조가 바뀌나요?"
     }
    ]
   },
   {
    "photo": [
-    "large industrial electric vehicles parking",
-    "modern electric charging station"
+    "cargo ship container terminal port crane",
+    "industrial container shipping port"
    ],
    "lines": [
     {
      "who": "M",
-     "pose": "point",
-     "text": "화석연료 감축을 두고 치열한 논의가 이어지고 있습니다."
+     "pose": "explain",
+     "text": "루비오는 이란이 겪는 경제적 고통이 워낙 커서 추가 타격을 가할 이유가 없다고 설명했죠."
     },
     {
      "who": "F",
      "pose": "think",
-     "text": "과학 보고서 시기를 두고도 의견이 엇갈렸죠."
+     "text": "경제 압박 효과를 지켜보려는 거군요!"
     }
    ]
   },
   {
    "photo": [
-    "heavy machinery at industrial mining site",
-    "open pit mining landscape"
+    "United States Department of State diplomatic building",
+    "government diplomatic office building"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "한편 각 단체들은 광산 개발 과정에서 철저한 안전 장치를 요구했어요."
+     "text": "이에 외신들은 미국의 대이란 전략이 직접 타격 대신 상황을 관망하는 쪽으로 바뀌었다고 봐요."
     },
     {
      "who": "M",
-     "pose": "worried",
-     "text": "환경 보호와 자원 개발의 균형이 중요하겠어요."
+     "pose": "point",
+     "text": "지켜보며 기다리는 전략이군요."
     }
    ]
   },
   {
    "photo": [
-    "futuristic sustainable city aerial view",
-    "green energy landscape"
+    "Persian Gulf coastline modern skyscrapers skyline",
+    "Middle East modern skyline waterfront"
    ],
    "lines": [
     {
      "who": "M",
-     "pose": "thumbsup",
-     "text": "앞으로의 친환경 행보를 계속 지켜봐야겠습니다."
+     "pose": "explain",
+     "text": "미국의 전략 변화 속에 걸프 지역 동맹국들도 이란과의 외교적 접촉에 나서고 있어요."
     },
     {
      "who": "F",
-     "pose": "explain",
-     "text": "글로벌툰과 함께 지구 소식을 전해드렸어요!"
+     "pose": "shrug",
+     "text": "중동 정세가 안정으로 갈지 주목되네요!"
     }
    ]
   }
  ],
  "facts": [
-  "UN 기후변화 회의에서 전기화 목표를 추진한다 (UN climate summit pushes electrification goal as groups call for mining safeguards)",
-  "기후 과학 보고서 시기를 두고 논의가 있었다 (Timing of Climate Science Reports Ignites a Hot Fight at U.N. Talks)",
-  "단체들이 광산 채굴에 대한 안전장치를 요구했다 (UN climate summit pushes electrification goal as groups call for mining safeguards)"
+  "미국 루비오가 경제적으로 약화된 이란에 대해 추가 군사 조치가 필요하지 않다고 밝혔다 (Rubio says further US military action is not needed against economically weakened Iran)",
+  "루비오는 이란의 경제적 고통이 매우 크기 때문에 추가 타격이 불필요하다고 설명했다 (Rubio: ‘No need’ for further strikes on Iran because the economic pain ‘is so great’)",
+  "트럼프 행정부의 대이란 전략이 기다림(관망) 전략으로 전환되고 있다는 신호가 나타났다 (Trump Signals New Strategy on Iran: A Waiting Game)",
+  "미국의 전략 변화에 맞춰 걸프 동맹국들이 테헤란과의 외교를 추진하고 있다 (As Trump shifts Iran strategy, Gulf allies pursue diplomacy with Tehran)"
  ],
  "summary": [
-  "UN 기후변화 회의서 전기화 목표 추진",
-  "화석연료 감축과 과학 보고서 시기 쟁점",
-  "광산 개발 관련 안전장치 마련 요구"
+  "미, 이란 대상 추가 군사 조치 불필요 언급",
+  "심각한 경제난 감안해 관망 전략으로 선회",
+  "걸프 동맹국들도 이란과 외교 대화 모색"
  ],
- "question": "여러분이 생각하는 가장 시급한 환경 대책은 무엇인가요?",
- "caption": "🌍 UN 기후변화 회의에서 전기화 목표 추진과 화석연료 감축 논의가 이어지고 있습니다! 광산 개발 안전장치 요구까지, 오늘의 주요 국제 소식을 글로벌툰에서 확인해 보세요.\n\n#기후변화 #UN회의 #전기화 #환경정책 #국제뉴스 #글로벌툰",
+ "question": "미국의 새로운 관망 전략이 중동 정세에 어떤 영향을 줄까요?",
+ "caption": "미국이 경제난을 겪는 이란에 대해 추가 군사 조치가 필요하지 않다는 입장을 밝혔습니다. 🇺🇸🇮🇷\n\n루비오는 이란이 받는 경제적 압박이 이미 충분히 크기 때문이라고 설명했는데요.\n\n이에 따라 미국의 대이란 정책이 직접 타격 대신 상황을 지켜보는 방식으로 바뀌고 있으며, 걸프 동맹국들도 외교적 대화에 나서는 분위기입니다. 🕊️",
  "hashtags": [
-  "#기후변화",
-  "#UN회의",
-  "#전기화",
-  "#환경정책",
+  "#글로벌뉴스",
+  "#미국외교",
+  "#이란",
+  "#중동정세",
+  "#루비오",
   "#국제뉴스",
+  "#외교전략",
+  "#걸프국가",
+  "#경제제재",
+  "#카드뉴스",
   "#글로벌툰",
-  "#지구보호",
-  "#화석연료",
-  "#광산안전",
-  "#지속가능성",
-  "#뉴스툰",
-  "#시사상식",
-  "#세계뉴스"
+  "#뉴스요약"
  ],
  "verify": {
   "verdict": "pass",
   "issues": []
  },
  "source": {
-  "title": "UN climate summit pushes electrification goal as groups call for mining safeguards",
+  "title": "Rubio says further US military action is not needed against economically weakened Iran",
   "source": "AP News",
-  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXlUSWVwbVZ3UkJ4dERlR1FpSXZ3WmZEN2ljSnotaS1HNE1CS19CZ0lLZ0hXa3l1SEotV01uWWRRNVBQSi1ybmxVSE4yN2tYZkwyRTg1VGhOTWxCeUdlMU9vNDhxdGdCZFIzLUhCb19LMEtFZ0VTSm94TlVuMVc1T0k1TGU2LVZCN0dNdUJZcnBCWl9YTXIxTzBmbTRNRXY5Z24wcXJ6bWlrLVhsYUNpMlh3ODI2WnU0WUZtOA?oc=5",
+  "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMXJTcEdfVGdOV1VrbGpYTy1hMlkybS1IbjZGS0piS01yNWY5RnVsMi16ZHBMTFVIajNzcFoydFZXWmhEQXJuVXBHNFBic2JSRlJLZ05TNGlmclRmMlppOExmc2ttem1zVnhQV0ppcnVaUkd2Q29fVVNXUzJpUFEwUE1WSHVkc0tZQXpmaHBSZ0YxVWpoOGNkMmZnbw?oc=5",
   "category": "world",
-  "n_sources": 12,
+  "n_sources": 14,
   "sources": [
    "AP News",
-   "BBC",
    "CNN",
    "DW.com",
-   "Fox News",
-   "POLITICO.eu",
-   "Politico",
-   "Reuters"
+   "Euronews.com",
+   "Financial Times",
+   "France 24",
+   "NBC News",
+   "NPR"
   ],
   "summary": "",
   "related_titles": [
-   "UN climate summit pushes electrification goal as groups call for mining safeguards",
-   "UN chief urges drastic emissions cuts as COP31 wrestles with fossil fuels",
-   "Timing of Climate Science Reports Ignites a Hot Fight at U.N. Talks",
-   "The election climate diplomats can’t stop talking about. It's not the midterms.",
-   "‘You cannot build peace on a burning planet,’ UN chief tells Cop31 in farewell speech"
+   "Rubio says further US military action is not needed against economically weakened Iran",
+   "Trump Signals New Strategy on Iran: A Waiting Game",
+   "Rubio: ‘No need’ for further strikes on Iran because the economic pain ‘is so great’",
+   "As Trump shifts Iran strategy, Gulf allies pursue diplomacy with Tehran",
+   "What's Trump's strategy now with Iran? To keep things as they are"
   ]
  }
 }
