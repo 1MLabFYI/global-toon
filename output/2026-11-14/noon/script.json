@@ -1,141 +1,141 @@
 {
- "selected_index": 1,
- "topic_title": "미국, 이란 군사행동 멈추나?",
- "hook": "경제적 타격 충분... 새 전략 시험대",
+ "selected_index": 7,
+ "topic_title": "우크라 평화협상 새 국면?",
+ "hook": "유럽 참여 가능성 열렸다!",
  "category_tag": "세계",
  "music_mood": "serious",
  "cover_photo": [
-  "The Pentagon building Washington DC aerial view",
-  "government building architecture"
+  "europe flags meeting building architecture",
+  "international conference hall"
  ],
  "panels": [
   {
    "photo": [
-    "The Pentagon building Washington DC aerial view",
-    "pentagon aerial view"
+    "international summit meeting room interior",
+    "conference table"
    ],
    "lines": [
     {
      "who": "F",
      "pose": "explain",
-     "text": "미국 정부가 경제적으로 약해진 이란을 상대로 추가 군사 행동이 필요하지 않다고 밝혔어요."
+     "text": "위트코프 특사가 푸틴 대통령이 다음 평화협상 때 유럽의 참여를 허용하기로 했다고 밝혔습니다."
     },
     {
      "who": "M",
      "pose": "surprised",
-     "text": "군사 작전 대신 기조가 바뀌나요?"
+     "text": "오, 유럽이 협상 테이블에 다시 앉게 되는군요!"
     }
    ]
   },
   {
    "photo": [
-    "cargo ship container terminal port crane",
-    "industrial container shipping port"
+    "european union flags outside building",
+    "diplomatic building"
    ],
    "lines": [
     {
      "who": "M",
      "pose": "explain",
-     "text": "루비오는 이란이 겪는 경제적 고통이 워낙 커서 추가 타격을 가할 이유가 없다고 설명했죠."
+     "text": "EU는 독일 등 5개국과 연합체가 유럽을 대표해 종전협상에 참여하기로 의견을 모았습니다."
     },
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "직접 목소리를 내겠다는 뜻이네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "moscow kremlin architecture view",
+    "historical government building"
+   ],
+   "lines": [
     {
      "who": "F",
      "pose": "think",
-     "text": "경제 압박 효과를 지켜보려는 거군요!"
+     "text": "다만 뉴욕타임스는 아직 러시아 측의 공식적인 확인은 나오지 않았다고 전했습니다."
+    },
+    {
+     "who": "M",
+     "pose": "worried",
+     "text": "아직은 신중하게 지켜봐야겠네요."
     }
    ]
   },
   {
    "photo": [
-    "United States Department of State diplomatic building",
-    "government diplomatic office building"
-   ],
-   "lines": [
-    {
-     "who": "F",
-     "pose": "explain",
-     "text": "이에 외신들은 미국의 대이란 전략이 직접 타격 대신 상황을 관망하는 쪽으로 바뀌었다고 봐요."
-    },
-    {
-     "who": "M",
-     "pose": "point",
-     "text": "지켜보며 기다리는 전략이군요."
-    }
-   ]
-  },
-  {
-   "photo": [
-    "Persian Gulf coastline modern skyscrapers skyline",
-    "Middle East modern skyline waterfront"
+    "peace concept modern architecture",
+    "open sky bridge"
    ],
    "lines": [
     {
      "who": "M",
      "pose": "explain",
-     "text": "미국의 전략 변화 속에 걸프 지역 동맹국들도 이란과의 외교적 접촉에 나서고 있어요."
+     "text": "러시아는 유럽의 평화 의지가 먼저 확인되어야 협상에 참여할 수 있다는 입장입니다."
     },
     {
      "who": "F",
-     "pose": "shrug",
-     "text": "중동 정세가 안정으로 갈지 주목되네요!"
+     "pose": "thumbsup",
+     "text": "앞으로의 외교적 움직임을 계속 주시해야겠습니다."
     }
    ]
   }
  ],
  "facts": [
-  "미국 루비오가 경제적으로 약화된 이란에 대해 추가 군사 조치가 필요하지 않다고 밝혔다 (Rubio says further US military action is not needed against economically weakened Iran)",
-  "루비오는 이란의 경제적 고통이 매우 크기 때문에 추가 타격이 불필요하다고 설명했다 (Rubio: ‘No need’ for further strikes on Iran because the economic pain ‘is so great’)",
-  "트럼프 행정부의 대이란 전략이 기다림(관망) 전략으로 전환되고 있다는 신호가 나타났다 (Trump Signals New Strategy on Iran: A Waiting Game)",
-  "미국의 전략 변화에 맞춰 걸프 동맹국들이 테헤란과의 외교를 추진하고 있다 (As Trump shifts Iran strategy, Gulf allies pursue diplomacy with Tehran)"
+  "위트코프 특사 \"푸틴, 다음 우크라 평화협상 때 유럽 참여 허용키로\" (후보 7)",
+  "NYT \"아직 러측의 공식 확인 없어\" (후보 7)",
+  "EU “우크라이나 종전협상에 독일 등 5개국·EU가 유럽 대표로 참여” (후보 7)",
+  "러시아 \"유럽 평화 의지 확인돼야 종전협상 참여 가능\" (후보 7)"
  ],
  "summary": [
-  "미, 이란 대상 추가 군사 조치 불필요 언급",
-  "심각한 경제난 감안해 관망 전략으로 선회",
-  "걸프 동맹국들도 이란과 외교 대화 모색"
+  "위트코프 특사, 푸틴이 유럽의 평화협상 참여 허용 시사",
+  "EU는 독일 등 5개국과 유럽 대표단 참여 준비 중",
+  "러시아 측의 공식 확인과 평화 의지 검증이 남은 과제"
  ],
- "question": "미국의 새로운 관망 전략이 중동 정세에 어떤 영향을 줄까요?",
- "caption": "미국이 경제난을 겪는 이란에 대해 추가 군사 조치가 필요하지 않다는 입장을 밝혔습니다. 🇺🇸🇮🇷\n\n루비오는 이란이 받는 경제적 압박이 이미 충분히 크기 때문이라고 설명했는데요.\n\n이에 따라 미국의 대이란 정책이 직접 타격 대신 상황을 지켜보는 방식으로 바뀌고 있으며, 걸프 동맹국들도 외교적 대화에 나서는 분위기입니다. 🕊️",
+ "question": "이번 평화협상에 유럽이 참여하게 될까요?",
+ "caption": "오늘의 세계 주요 뉴스 🌍\n\n위트코프 특사가 다음 우크라이나 평화협상에서 푸틴 대통령이 유럽의 참여를 허용하기로 했다고 밝혔습니다.\n\nEU는 독일 등 5개국을 포함한 대표단을 구성할 예정이지만, 뉴욕타임스는 아직 러시아 측의 공식 확인은 나오지 않았다고 보도했습니다.\n\n러시아는 유럽의 평화 의지가 확인되어야 한다는 입장을 보이고 있습니다. 🧐\n\n#글로벌툰 #국제뉴스 #우크라이나 #평화협상 #유럽연합 #러시아 #외교소식 #세계뉴스 #시사정보 #뉴스픽 #트렌드",
  "hashtags": [
-  "#글로벌뉴스",
-  "#미국외교",
-  "#이란",
-  "#중동정세",
-  "#루비오",
-  "#국제뉴스",
-  "#외교전략",
-  "#걸프국가",
-  "#경제제재",
-  "#카드뉴스",
   "#글로벌툰",
-  "#뉴스요약"
+  "#국제뉴스",
+  "#우크라이나",
+  "#평화협상",
+  "#유럽연합",
+  "#러시아",
+  "#외교소식",
+  "#세계뉴스",
+  "#시사정보",
+  "#뉴스픽",
+  "#이슈",
+  "#해외뉴스"
  ],
  "verify": {
   "verdict": "pass",
   "issues": []
  },
  "source": {
-  "title": "Rubio says further US military action is not needed against economically weakened Iran",
-  "source": "AP News",
-  "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMXJTcEdfVGdOV1VrbGpYTy1hMlkybS1IbjZGS0piS01yNWY5RnVsMi16ZHBMTFVIajNzcFoydFZXWmhEQXJuVXBHNFBic2JSRlJLZ05TNGlmclRmMlppOExmc2ttem1zVnhQV0ppcnVaUkd2Q29fVVNXUzJpUFEwUE1WSHVkc0tZQXpmaHBSZ0YxVWpoOGNkMmZnbw?oc=5",
+  "title": "위트코프 특사 \"푸틴, 다음 우크라 평화협상 때 유럽 참여 허용키로\"… NYT \"아직 러측의 공식 확인 없어\"",
+  "source": "뉴스핌",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBJTG9ydVRMRFd5emhfUjl3QnlyaXJzcGxCQmlGanp3MGJGbjhRUFZKOTVadi1Qc2w3d1l1ZFZiMElMRWZXUndqdFh6ZWI1WEhrdFhDMHUzSWFpRS1M?oc=5",
   "category": "world",
-  "n_sources": 14,
+  "n_sources": 8,
   "sources": [
-   "AP News",
-   "CNN",
-   "DW.com",
-   "Euronews.com",
-   "Financial Times",
-   "France 24",
-   "NBC News",
-   "NPR"
+   "KBS 뉴스",
+   "MBC 뉴스",
+   "경향신문",
+   "뉴스핌",
+   "연합뉴스",
+   "조선일보",
+   "주간조선",
+   "한국일보"
   ],
   "summary": "",
   "related_titles": [
-   "Rubio says further US military action is not needed against economically weakened Iran",
-   "Trump Signals New Strategy on Iran: A Waiting Game",
-   "Rubio: ‘No need’ for further strikes on Iran because the economic pain ‘is so great’",
-   "As Trump shifts Iran strategy, Gulf allies pursue diplomacy with Tehran",
-   "What's Trump's strategy now with Iran? To keep things as they are"
+   "위트코프 특사 \"푸틴, 다음 우크라 평화협상 때 유럽 참여 허용키로\"… NYT \"아직 러측의 공식 확인 없어\"",
+   "EU “우크라이나 종전협상에 독일 등 5개국·EU가 유럽 대표로 참여”",
+   "평화 협상서 물러서지 않는 푸틴···영토 요구 고수·평화유지군 배치 거부",
+   "러시아 \"유럽 평화 의지 확인돼야 종전협상 참여 가능\"",
+   "종전 협상 중인 푸틴의 경고…“유럽군 우크라 파병하면 전쟁 재개”"
   ]
  }
 }

@@ -75,5 +75,15 @@
   "status": "published",
   "music": "serious_01.mp3",
   "media_id": "18020861408740808"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "noon",
+  "title": "우크라 평화협상 새 국면?",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBJTG9ydVRMRFd5emhfUjl3QnlyaXJzcGxCQmlGanp3MGJGbjhRUFZKOTVadi1Qc2w3d1l1ZFZiMElMRWZXUndqdFh6ZWI1WEhrdFhDMHUzSWFpRS1M?oc=5",
+  "dir": "output/2026-11-14/noon",
+  "status": "published",
+  "music": "serious_01.mp3",
+  "media_id": "18057869252657564"
  }
 ]
