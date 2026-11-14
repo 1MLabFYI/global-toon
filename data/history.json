@@ -35,5 +35,15 @@
   "status": "published",
   "music": "calm_01.mp3",
   "media_id": "18132297004842510"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "evening",
+  "title": "시간의 오카리나 리메이크",
+  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUklWZzlXU1gzQ3NWX2x3dVpOYnE5OU5WVE5pTFFjRVZNTlYzbTY4NWNqMzIxeXNNYlZwWTNDNkJMRWoxX3Boa3U5OU9WVmRLdDVfQldvYzBWWGdlN0kzcXhmUENtbEZja3pJa1NyLVpwcFA2TW96WlRwemk0ZHhoeU9CSTM1RGoxZ2hHdmxDcjc4YS14eVhwbUlrYkhGcV9kd3d5d0pTanctVmhQOWdF0gG0AUFVX3lxTE1hVmpWRGZUZWswUWJEMGdZb1BVUzRDVVFNZWRPZUVQN1hVVWZGNDk3TXpneDZlRmljT3E0VU93d0dfQTNIVTVISlE2UmE5MXhRdzR3ZTBzMldxS1VtOFZ2ZFJIMEl3NVpyeEluM1VjWTFrWEsyanZwN3BFa3dzZF9rdFhTNHVYUHhCY1IyRE9UTHFzYS02NmVBeXRqYmVyMzA1ZUFuQ0Q4VDFZQUluY29WclJKUA?oc=5",
+  "dir": "output/2026-11-14/evening",
+  "status": "published",
+  "music": "bright_01.mp3",
+  "media_id": "18112748180623432"
  }
 ]
