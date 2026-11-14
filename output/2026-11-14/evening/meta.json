@@ -1,6 +1,6 @@
 {
  "slot": "evening",
- "created": "2026-11-14T11:36:16.815530+09:00",
+ "created": "2026-11-14T20:05:37.556414+09:00",
  "files": [
   "output/2026-11-14/evening/reel.mp4",
   "output/2026-11-14/evening/01.jpg"
@@ -22,12 +22,12 @@
   "pixabay"
  ],
  "photo_urls": [
-  "https://pixabay.com/photos/video-game-console-video-game-play-2202590/",
-  "https://pixabay.com/photos/adult-annoyed-blur-burnout-1850268/",
-  "https://pixabay.com/photos/teen-virtual-reality-virtual-helmet-8485578/",
-  "https://pixabay.com/photos/vinyl-plate-music-analog-vintage-3557749/",
-  "https://pixabay.com/photos/portal-ruins-architecture-ruin-old-4960440/"
+  "https://pixabay.com/photos/woman-dj-music-headphones-jeans-10453367/",
+  "https://pixabay.com/photos/cats-gifts-christmas-motif-9949985/",
+  "https://pixabay.com/photos/engineer-engineering-4941352/",
+  "https://pixabay.com/photos/cpu-processor-computer-hardware-933192/",
+  "https://pixabay.com/photos/game-strategy-computer-289470/"
  ],
- "title": "시간의 오카리나 리메이크",
+ "title": "그래픽카드 품귀 현상",
  "publishable": true
 }

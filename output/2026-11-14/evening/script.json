@@ -1,142 +1,139 @@
 {
- "selected_index": 8,
- "topic_title": "시간의 오카리나 리메이크",
- "hook": "4일 만에 5백만 장 돌파!",
+ "selected_index": 7,
+ "topic_title": "그래픽카드 품귀 현상",
+ "hook": "왜 구하고 싶어도 못 살까?",
  "category_tag": "테크",
- "music_mood": "bright",
+ "music_mood": "calm",
  "cover_photo": [
-  "retro video game console controller",
-  "gaming room neon lights"
+  "computer hardware store shelves",
+  "electronics store interior"
  ],
  "panels": [
   {
    "photo": [
-    "nintendo switch console on desk",
-    "gaming handheld device"
+    "modern computer graphics card",
+    "gpu hardware"
    ],
    "lines": [
     {
-     "who": "M",
+     "who": "F",
      "pose": "explain",
-     "text": "젤다의 전설 시간의 오카리나 리메이크가 나왔어요!"
+     "text": "요즘 게이밍 그래픽카드 구하기 정말 하늘의 별 따기죠?"
     },
     {
-     "who": "F",
+     "who": "M",
      "pose": "surprised",
-     "text": "와, 전설의 귀환이네요!"
+     "text": "제 지갑은 이미 준비됐는데 물건이 없어요!"
     }
    ]
   },
   {
    "photo": [
-    "player holding video game controller",
-    "gaming setup screen glow"
+    "computer hardware factory manufacturing",
+    "tech warehouse"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "많은 분들이 수요가 많으니 그냥 더 만들면 되지 않냐고 묻는데요."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "단순히 생산량을 늘리고 싶어도 쉽게 늘릴 수 없는 이유가 있다고 합니다."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "computer chip microprocessor",
+    "semiconductor technology"
    ],
    "lines": [
     {
      "who": "F",
-     "pose": "point",
-     "text": "출시 후 단 4일 만에 전 세계에서 5백만 장 이상 팔렸대요."
+     "pose": "explain",
+     "text": "복잡한 반도체 공급망과 제조 공정의 한계 때문인데요."
     },
     {
      "who": "M",
-     "pose": "laugh",
-     "text": "인기가 엄청나군요!"
+     "pose": "think",
+     "text": "만들고 싶어도 기술과 부품이 받쳐줘야 하는군요."
     }
    ]
   },
   {
    "photo": [
-    "vintage video game cartridge display",
-    "classic retro gaming gear"
+    "gamer playing pc game",
+    "gaming setup"
    ],
    "lines": [
-    {
-     "who": "M",
-     "pose": "explain",
-     "text": "닌텐도 스위치 2 게임 중 가장 빠르게 팔린 기록이라네요."
-    },
     {
      "who": "F",
      "pose": "thumbsup",
-     "text": "기록을 갈아치웠군요!"
-    }
-   ]
-  },
-  {
-   "photo": [
-    "fantasy glowing temple ruins",
-    "magical forest pathway"
-   ],
-   "lines": [
-    {
-     "who": "F",
-     "pose": "explain",
-     "text": "추억의 명작이 새로운 플랫폼에서 다시 사랑받고 있어요."
+     "text": "제조사와 소비자의 고민이 당분간 이어질 것으로 보입니다."
     },
     {
      "who": "M",
      "pose": "laugh",
-     "text": "저도 오카리나 불러러 갑니다~"
+     "text": "제 컴퓨터는 조금 더 버텨줘야겠네요!"
     }
    ]
   }
  ],
  "facts": [
-  "젤다의 전설 시간의 오카리나 리메이크가 출시되었다 (The Legend of Zelda: Ocarina of Time Remake Sells 5 Million in Four Days)",
-  "출시 후 4일 만에 5백만 장 이상 판매되었다 (The Legend of Zelda: Ocarina of Time Remake Sells 5 Million in Four Days)",
-  "닌텐도 스위치 2 게임 중 가장 빠르게 판매된 기록을 세웠다 (The Legend Of Zelda: Ocarina Of Time Remake Is Nintendo's Fastest-Selling Switch 2 Game Ever)"
+  "엔비디아가 수요가 있어도 단순히 지포스 카드를 더 많이 만들 수 없는 이유가 보도되었다 (Why Nvidia can’t simply make more GeForce cards — even if it wants to)"
  ],
  "summary": [
-  "젤다의 전설 리메이크 출시",
-  "4일 만에 5백만 장 판매 돌파",
-  "스위치 2 최단기 흥행 기록"
+  "최근 그래픽카드 품귀 현상 지속",
+  "단순히 생산량을 늘리기 어려운 이유",
+  "복잡한 제조 공정과 공급망이 원인"
  ],
- "question": "여러분이 가장 좋아하는 젤다 시리즈는 무엇인가요?",
- "caption": "전설의 귀환! 젤다의 전설 시간의 오카리나 리메이크가 출시 4일 만에 5백만 장을 돌파하며 엄청난 흥행을 기록하고 있어요. 추억의 명작을 다시 만나는 기분, 어떠신가요? ✨\n\n#글로벌툰 #게임뉴스 #젤다의전설 #닌텐도스위치2",
+ "question": "여러분의 그래픽카드는 안녕하신가요?",
+ "caption": "구하고 싶어도 구하기 힘든 그래픽카드! 🎮\n왜 만들고 싶어도 마음대로 늘릴 수 없는지 살펴봤어요.\n\n컴퓨터 업그레이드를 고민하셨던 분들이라면 주목할 만한 소식입니다! 💻\n\n#글로벌툰 #테크뉴스 #그래픽카드 #지포스 #컴퓨터하드웨어 #IT뉴스 #테크이슈 #PC게임 #반도체 #IT트렌드 #최신기술 #과학뉴스 #정보공유 #데일리뉴스",
  "hashtags": [
   "#글로벌툰",
-  "#게임뉴스",
   "#테크뉴스",
-  "#닌텐도",
-  "#젤다의전설",
-  "#시간의오카리나",
-  "#스위치2",
-  "#게임추천",
-  "#신작게임",
-  "#취미생활",
+  "#그래픽카드",
+  "#지포스",
+  "#컴퓨터하드웨어",
   "#IT뉴스",
-  "#글로벌이슈",
-  "#데일리뉴스",
-  "#게임스타그램"
+  "#테크이슈",
+  "#PC게임",
+  "#반도체",
+  "#IT트렌드",
+  "#최신기술",
+  "#과학뉴스",
+  "#정보공유",
+  "#데일리뉴스"
  ],
  "verify": {
   "verdict": "pass",
   "issues": []
  },
  "source": {
-  "title": "Zelda: Ocarina of Time Remake Sells 5 Million in Four Days, Yet Former Nintendo Leads Say The Series Sold “Like Nothing” Before Breath of the Wild",
-  "source": "Wccftech",
-  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUklWZzlXU1gzQ3NWX2x3dVpOYnE5OU5WVE5pTFFjRVZNTlYzbTY4NWNqMzIxeXNNYlZwWTNDNkJMRWoxX3Boa3U5OU9WVmRLdDVfQldvYzBWWGdlN0kzcXhmUENtbEZja3pJa1NyLVpwcFA2TW96WlRwemk0ZHhoeU9CSTM1RGoxZ2hHdmxDcjc4YS14eVhwbUlrYkhGcV9kd3d5d0pTanctVmhQOWdF0gG0AUFVX3lxTE1hVmpWRGZUZWswUWJEMGdZb1BVUzRDVVFNZWRPZUVQN1hVVWZGNDk3TXpneDZlRmljT3E0VU93d0dfQTNIVTVISlE2UmE5MXhRdzR3ZTBzMldxS1VtOFZ2ZFJIMEl3NVpyeEluM1VjWTFrWEsyanZwN3BFa3dzZF9rdFhTNHVYUHhCY1IyRE9UTHFzYS02NmVBeXRqYmVyMzA1ZUFuQ0Q4VDFZQUluY29WclJKUA?oc=5",
+  "title": "Why Nvidia can’t simply make more GeForce cards — even if it wants to",
+  "source": "PCWorld",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOU9NaXZLMkhWWWZEcGVheGNuNEV4SWNjc3MydUpmVkxJMGpXQjRZcFNNei1RZW1VTlJrdmpzZ3htQUs5dmhmaTRRXzVfU1RhaWFjUzdUemE3TlpxcHljbVFoTFN5UEJBRmU4TXNRY3dsN0F3MjU0eXlBM2JFVF9QcDBFbWN3cEZsUEpPZ1FGU1RSbHU1UnJuT1B1c3VkUlNuZU9xd29GRUN2bUZhdDN2NQ?oc=5",
   "category": "technology",
-  "n_sources": 11,
+  "n_sources": 12,
   "sources": [
    "9to5Google",
-   "BBC",
+   "CNET",
    "DC Rainmaker",
    "Digital Foundry",
-   "Forbes",
-   "Game Informer",
+   "Inven Global",
    "MacRumors",
-   "Mashable"
+   "PCWorld",
+   "Pure Xbox"
   ],
   "summary": "",
   "related_titles": [
-   "Zelda: Ocarina of Time Remake Sells 5 Million in Four Days, Yet Former Nintendo Leads Say The Series Sold “Like Nothing” Before Breath of the Wild",
-   "The Legend of Zelda: Ocarina of Time for Nintendo Switch 2 sells over 5.2 million units worldwide in first four days",
-   "The Legend Of Zelda: Ocarina Of Time Remake Is Nintendo's Fastest-Selling Switch 2 Game Ever",
-   "The ‘Zelda: Ocarina Of Time’ Remake Sold Over 5 Million Copies In 4 Days",
-   "'The Ocarina of Time' remake is setting Metacritic records left and right"
+   "Why Nvidia can’t simply make more GeForce cards — even if it wants to",
+   "GeForce Evangelist Jacob Freeman Assures Consumers That The Future Of Gaming GPUs Is Safe, But That Doesn’t Mean Graphics Cards Will Become Cheaper",
+   "Why are modern GPUs so expensive? 7 things that drive graphics card prices",
+   "Blockbusters Are Out and GPUs Are Pricey — How About GeForce NOW?"
   ]
  }
 }

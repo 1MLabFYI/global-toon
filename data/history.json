@@ -85,5 +85,15 @@
   "status": "published",
   "music": "serious_01.mp3",
   "media_id": "18057869252657564"
+ },
+ {
+  "date": "2026-11-14",
+  "slot": "evening",
+  "title": "그래픽카드 품귀 현상",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOU9NaXZLMkhWWWZEcGVheGNuNEV4SWNjc3MydUpmVkxJMGpXQjRZcFNNei1RZW1VTlJrdmpzZ3htQUs5dmhmaTRRXzVfU1RhaWFjUzdUemE3TlpxcHljbVFoTFN5UEJBRmU4TXNRY3dsN0F3MjU0eXlBM2JFVF9QcDBFbWN3cEZsUEpPZ1FGU1RSbHU1UnJuT1B1c3VkUlNuZU9xd29GRUN2bUZhdDN2NQ?oc=5",
+  "dir": "output/2026-11-14/evening",
+  "status": "published",
+  "music": "calm_01.mp3",
+  "media_id": "17874311643644858"
  }
 ]
