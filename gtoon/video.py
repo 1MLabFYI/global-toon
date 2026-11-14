@@ -74,7 +74,7 @@ def make_reel(images: list[str], durations: list[float], music: str | None, out_
                  f"afade=t=in:d=0.6,afade=t=out:st={max(0, total - 1.8):.3f}:d=1.8[a]")
     args += ["-filter_complex", ";".join(parts), "-map", f"[{last}]", "-map", "[a]",
              "-t", f"{total:.3f}", "-r", str(fps),
-             "-c:v", "libx264", "-preset", "medium", "-crf", str(r["crf"]), "-maxrate", "8M", "-bufsize", "16M",
+             "-c:v", "libx264", "-preset", "medium", "-crf", str(r["crf"]), "-maxrate", "4M", "-bufsize", "8M",
              "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1",
              # 인스타 릴스 권장: 닫힌 GOP, 2초 간격 키프레임, 고정 프레임레이트
              "-g", str(fps * 2), "-keyint_min", str(fps * 2), "-sc_threshold", "0",
