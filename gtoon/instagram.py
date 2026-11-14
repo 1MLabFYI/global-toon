@@ -97,20 +97,19 @@ def _publish(base: str, uid: str, token: str, cid: str, tries: int = 3) -> str:
 
 def publish_reel(video_url: str, cover_url: str, caption: str, cfg: dict, local_path: str | None = None,
                  simple_path: str | None = None) -> str:
-    """릴스 게시. 시도 순서: ①직접 업로드 ②직접 업로드(단순 인코딩본) ③URL 방식. 모두 실패하면 예외."""
+    """릴스 게시. 시도 순서: ①URL 방식(정상 동작 확인됨) ②직접 업로드 ③단순 인코딩본 직접 업로드."""
     token = _env("IG_ACCESS_TOKEN")
     uid = _env("IG_USER_ID")
     if not (token and uid):
         raise IGError("IG_ACCESS_TOKEN / IG_USER_ID 환경변수가 없습니다.")
     base = _base(cfg)
-    attempts = []
+    attempts = [("URL 방식", lambda: _call("POST", f"{base}/{uid}/media", media_type="REELS", video_url=video_url,
+                                            cover_url=cover_url, caption=caption[:2200], share_to_feed="true",
+                                            access_token=token)["id"])]
     if local_path and os.path.exists(local_path):
         attempts.append(("직접 업로드", lambda: _upload_resumable(base, uid, token, local_path, caption, cover_url)))
     if simple_path and os.path.exists(simple_path):
         attempts.append(("직접 업로드·단순 인코딩", lambda: _upload_resumable(base, uid, token, simple_path, caption, None)))
-    attempts.append(("URL 방식", lambda: _call("POST", f"{base}/{uid}/media", media_type="REELS", video_url=video_url,
-                                               caption=caption[:2200], share_to_feed="true",
-                                               access_token=token)["id"]))
     last = None
     for name, make in attempts:
         try:
