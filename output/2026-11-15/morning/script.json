@@ -1,0 +1,139 @@
+{
+ "selected_index": 7,
+ "topic_title": "GTA6에 진심인 사람들",
+ "hook": "출시일에 휴가 낸 미국 게이머들!",
+ "category_tag": "테크",
+ "music_mood": "bright",
+ "cover_photo": [
+  "empty modern office desk with computer",
+  "gaming setup glowing neon light"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "empty gaming chair in front of computer",
+    "modern desk setup"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "미국에서 대형 게임 출시를 앞두고 벌어진 일이에요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "설마 회사 쉬겠다는 사람이 엄청 많나요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "person typing on laptop in bright room",
+    "working at desk"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "추정치에 따르면 미국 게이머 약 1,250만 명이 휴가를 계획 중이래요."
+    },
+    {
+     "who": "F",
+     "pose": "surprised",
+     "text": "정말 게임에 진심이네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "calendar on wooden desk with pen",
+    "office desk calendar"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "일부 기업은 아예 게임을 즐기도록 전용 휴가일을 주기도 한답니다."
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "저도 그런 회사로 이직하고 싶은데요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "city skyline at sunset from window",
+    "modern architecture building"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "문화 콘텐츠 하나로 사회 전체가 들썩이는 모습이 신기하네요."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "여러분도 출시일엔 휴가 쓰실 건가요?"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "추정 1,250만 명의 미국 게이머가 GTA 6 출시를 위해 휴가를 계획 중이다 (Gamers granted vacation days to play GTA 6)",
+  "일부 기업은 직원들에게 게임을 즐길 수 있는 전용 휴가일을 제공한다 (Logitech’s ‘Game Day’ Gives Employees a Dedicated Day Off)"
+ ],
+ "summary": [
+  "미국 게이머 1,250만 명 휴가 계획",
+  "대형 게임 출시 앞두고 사회적 화제",
+  "일부 기업은 전용 휴가일 제공도"
+ ],
+ "question": "여러분은 좋아하는 게임이 나오면 휴가를 쓰시나요?",
+ "caption": "🎮 게임 출시일에 휴가 내는 사람들!\n\n미국에서 대형 기대작 출시를 앞두고 휴가를 계획 중인 게이머가 1,250만 명에 달한다고 해요. 일부 기업은 아예 전용 휴가일까지 준다니 정말 대단하죠? 문화 콘텐츠의 파급력이 새삼 놀랍습니다! ✨\n\n#글로벌툰 #게임소식 #GTA6 #직장인휴가 #문화생활 #이슈",
+ "hashtags": [
+  "#글로벌툰",
+  "#게임뉴스",
+  "#테크",
+  "#해외소식",
+  "#이슈",
+  "#트렌드",
+  "#직장인",
+  "#휴가",
+  "#문화",
+  "#엔터",
+  "#시사",
+  "#글로벌"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Gamers granted vacation days to play GTA 6: ‘Five-day business trip in Vice City’",
+  "source": "New York Post",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSFRWYUo4TVY4R0trTVBvdzZxTGhmMXgycmlrQ1N5MVgyN0oxdVVmUFIxOWR2VGNmeDNJSWhKeFd2ZkdJcUpVU0VBb2ZZbkNtU3JaVFJnTHR4cjBsRnZlRHVEdFZGQW1TNElrRUZtTThsX1pDcnJPYy1qeTc2N1FIbWc4YXlRVTY4S0pDcEZvR2lScmZ2VURNVjRvYnkwZmRJcGZEWkRfa2o1YUN5Q0l1WFpHeWVEUEFZS0dUaWh3?oc=5",
+  "category": "technology",
+  "n_sources": 9,
+  "sources": [
+   "CNBC",
+   "FOX 13 Seattle",
+   "Forbes",
+   "Hypebeast",
+   "New York Post",
+   "Notebookcheck",
+   "PCMag",
+   "The New York Times"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Gamers granted vacation days to play GTA 6: ‘Five-day business trip in Vice City’",
+   "GTA 6 release could trigger $1B U.S. productivity loss",
+   "Logitech’s ‘Game Day’ Gives Employees a Dedicated Day Off",
+   "An Estimated 12.5 Million US Gamers Are Planning to Take Time Off for 'Grand Theft Auto VI’s' Launch",
+   "Taking Off Work or Skipping School to Play GTA 6? So Are 12.5 Million Other People"
+  ]
+ }
+}

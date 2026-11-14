@@ -95,5 +95,15 @@
   "status": "published",
   "music": "calm_01.mp3",
   "media_id": "17874311643644858"
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "morning",
+  "title": "GTA6에 진심인 사람들",
+  "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSFRWYUo4TVY4R0trTVBvdzZxTGhmMXgycmlrQ1N5MVgyN0oxdVVmUFIxOWR2VGNmeDNJSWhKeFd2ZkdJcUpVU0VBb2ZZbkNtU3JaVFJnTHR4cjBsRnZlRHVEdFZGQW1TNElrRUZtTThsX1pDcnJPYy1qeTc2N1FIbWc4YXlRVTY4S0pDcEZvR2lScmZ2VURNVjRvYnkwZmRJcGZEWkRfa2o1YUN5Q0l1WFpHeWVEUEFZS0dUaWh3?oc=5",
+  "dir": "output/2026-11-15/morning",
+  "status": "published",
+  "music": "bright_01.mp3",
+  "media_id": "18099912380445517"
  }
 ]
