@@ -169,7 +169,13 @@ def cmd_publish(args, cfg):
     urls = [f"{args.base_url.rstrip('/')}/{p}" for p in meta["files"]]
     if meta.get("format") == "reels":
         try:
-            media_id = publish_reel(urls[0], urls[1], caption, cfg)
+            local = os.path.join(ROOT, meta["files"][0])
+            simple = os.path.join(d, "reel_simple.mp4")
+            try:
+                video.simple_encode(local, simple)       # 진단용 단순 인코딩본
+            except Exception as e:
+                print(f"[publish] 단순 인코딩 실패: {e}")
+            media_id = publish_reel(urls[0], urls[1], caption, cfg, local_path=local, simple_path=simple)
         except Exception as e:                   # 릴스 실패 시 같은 장면 이미지로 캐러셀 게시(회차 유지)
             print(f"[publish] 릴스 실패 → 이미지 캐러셀로 대신 게시: {e}")
             pages = [f"{args.base_url.rstrip('/')}/{p}" for p in meta.get("pages", [])]

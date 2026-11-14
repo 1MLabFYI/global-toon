@@ -87,6 +87,15 @@ def make_reel(images: list[str], durations: list[float], music: str | None, out_
     return total
 
 
+def simple_encode(src: str, dst: str) -> None:
+    """가장 보수적인 설정으로 다시 인코딩(H.264 Main, 30fps, AAC 44.1kHz) — 릴스 거절 원인 진단·우회용."""
+    subprocess.run([ffmpeg_exe(), "-y", "-loglevel", "error", "-i", src,
+                    "-c:v", "libx264", "-profile:v", "main", "-level", "4.0", "-preset", "fast", "-crf", "23",
+                    "-maxrate", "3500k", "-bufsize", "7000k", "-pix_fmt", "yuv420p", "-r", "30",
+                    "-g", "60", "-bf", "0", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+                    "-use_editlist", "0", "-movflags", "+faststart", dst], check=True)
+
+
 def music_credit(path: str | None) -> str:
     """assets/music/credits.json 에 곡별 출처가 있으면 캡션에 표기."""
     if not path:
