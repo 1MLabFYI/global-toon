@@ -1,0 +1,33 @@
+{
+ "slot": "morning",
+ "created": "2026-11-16T08:16:22.502649+09:00",
+ "files": [
+  "output/2026-11-16/morning/reel.mp4",
+  "output/2026-11-16/morning/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-16/morning/feed_01.jpg",
+  "output/2026-11-16/morning/feed_02.jpg",
+  "output/2026-11-16/morning/feed_03.jpg",
+  "output/2026-11-16/morning/feed_04.jpg",
+  "output/2026-11-16/morning/feed_05.jpg",
+  "output/2026-11-16/morning/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/forex-trade-trading-finance-8207730/",
+  "https://pixabay.com/photos/numbers-figures-background-red-20319/",
+  "https://pixabay.com/photos/a-woman-robot-3124083/",
+  "https://pixabay.com/photos/trading-stock-chart-finance-8774164/",
+  "https://pixabay.com/photos/consultant-office-business-finance-779590/"
+ ],
+ "title": "AI 슈퍼위크 온다!",
+ "publishable": true
+}

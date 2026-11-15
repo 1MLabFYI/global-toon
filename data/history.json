@@ -125,5 +125,15 @@
   "status": "published",
   "music": "bright_02.mp3",
   "media_id": "18108093833360302"
+ },
+ {
+  "date": "2026-11-16",
+  "slot": "morning",
+  "title": "AI 슈퍼위크 온다!",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SZVdJWHN6ckFBUF9ZX3FSaF9IODdhcXVac0RBSnpaUWM1WUlNSzNJeXBYQlhwb1NjV3VZcDRFbmo5WkVBY0Q5ejNiUFhhWmxGNmdiRlZKWUMyUdIBX0FVX3lxTE1TbVBySFpmcnV2TXBIVzJ3RGw2cU43NC0xNV9vbENuZlpDbW85cVdfUE1HRm5nOVlIZ1NpMl8zenZESkpDUngwTTNGVDhON2dVeFhROHpuWDhYWjNGTl9B?oc=5",
+  "dir": "output/2026-11-16/morning",
+  "status": "published",
+  "music": "calm_01.mp3",
+  "media_id": "17928785307431096"
  }
 ]

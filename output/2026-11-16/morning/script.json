@@ -1,0 +1,141 @@
+{
+ "selected_index": 13,
+ "topic_title": "AI 슈퍼위크 온다!",
+ "hook": "엔비디아 실적·앤트로픽 상장 임박",
+ "category_tag": "경제",
+ "music_mood": "calm",
+ "cover_photo": [
+  "stock market trading screen board",
+  "financial market charts"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "stock exchange electronic display board",
+    "financial district building"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "이번 주 증시의 향방을 가를 역대급 'AI 빅위크'가 찾아왔어요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "도대체 무슨 일이 있길래요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "artificial intelligence microchip processor glowing",
+    "computer server circuit board"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "AI 대장주 엔비디아의 실적 발표와 인공지능 기업 앤트로픽의 상장이 겹쳤거든요."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "시장 판도를 바꿀 이벤트네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "stock market chart showing upward trend",
+    "financial analyst desk monitor"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "두 이벤트 결과에 따라 글로벌 증시는 물론 국내 반도체주 향방까지 결정될 전망이에요."
+    },
+    {
+     "who": "M",
+     "pose": "worried",
+     "text": "투자자들 손에 땀을 쥐겠네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "futuristic glowing data graphs and charts",
+    "city skyline illuminated at night"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "AI 열풍이 진짜 숫자로 증명될지, 이번 주 전 세계 시선이 쏠리고 있습니다!"
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "숨죽이고 지켜봐야겠어요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "엔비디아 실적 발표와 앤트로픽 상장(IPO)이 이번 주 증시 향방의 최대 가늠자로 꼽힌다 ('엔비디아 실적·앤트로픽 상장…이번주 증시 향방 최대 가늠자')",
+  "뉴욕증시 등에서 이번 주를 엔비디아 실적과 앤트로픽 상장이 맞물린 'AI 빅위크'로 부른다 ('[뉴욕증시-주간전망] 엔비디아 실적에 앤트로픽 상장…\\'AI 빅위크\\'')",
+  "해당 이벤트들은 국내외 반도체 및 증시 흐름에 큰 영향을 미칠 핵심 요인이다 ('젠슨 황 없는 엔비디아 실적·앤트로픽 IPO…코스피 6000 재탈환?', '지금 주가 흔들려도 지나고 보면 좋은 가격…반도체 장기 투자법')"
+ ],
+ "summary": [
+  "엔비디아 실적 발표 임박",
+  "앤트로픽 상장 겹친 AI 주간",
+  "글로벌 증시 최대 가늠자"
+ ],
+ "question": "이번 주 AI 대장주들의 성적표, 시장 기대를 뛰어넘을 수 있을까요?",
+ "caption": "이번 주는 글로벌 증시의 명운이 걸린 'AI 빅위크'입니다! 📈\n\nAI 대표 주자 엔비디아의 실적 발표와 생성형 AI 기업 앤트로픽의 상장이 동시에 맞물렸기 때문인데요.\n\n시장의 높은 기대치를 충족하며 국내외 반도체 증시를 다시 끌어올릴 수 있을지, 전 세계 투자자들의 이목이 집중되고 있습니다. 👀✨",
+ "hashtags": [
+  "#글로벌툰",
+  "#경제뉴스",
+  "#엔비디아",
+  "#앤트로픽",
+  "#엔비디아실적",
+  "#AI빅위크",
+  "#주식시장",
+  "#뉴욕증시",
+  "#코스피",
+  "#반도체",
+  "#인공지능",
+  "#경제상식",
+  "#모닝브리핑"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "엔비디아 실적·앤트로픽 상장…이번주 증시 향방 최대 가늠자",
+  "source": "경향신문",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1SZVdJWHN6ckFBUF9ZX3FSaF9IODdhcXVac0RBSnpaUWM1WUlNSzNJeXBYQlhwb1NjV3VZcDRFbmo5WkVBY0Q5ejNiUFhhWmxGNmdiRlZKWUMyUdIBX0FVX3lxTE1TbVBySFpmcnV2TXBIVzJ3RGw2cU43NC0xNV9vbENuZlpDbW85cVdfUE1HRm5nOVlIZ1NpMl8zenZESkpDUngwTTNGVDhON2dVeFhROHpuWDhYWjNGTl9B?oc=5",
+  "category": "business",
+  "n_sources": 9,
+  "sources": [
+   "MBC 뉴스",
+   "경향신문",
+   "뉴시스",
+   "마켓인",
+   "머니투데이",
+   "연합인포맥스",
+   "이데일리",
+   "조선일보"
+  ],
+  "summary": "",
+  "related_titles": [
+   "엔비디아 실적·앤트로픽 상장…이번주 증시 향방 최대 가늠자",
+   "젠슨 황 없는 엔비디아 실적·앤트로픽 IPO…코스피 6000 재탈환? - 머니투데이",
+   "[뉴욕증시-주간전망] 엔비디아 실적에 앤트로픽 상장…'AI 빅위크'",
+   "\"지금 주가 흔들려도 지나고 보면 좋은 가격\"…반도체 장기 투자법",
+   "“젠슨 황 떠나도 메모리는 필요…반도체 호황, 끝난 것 아냐”"
+  ]
+ }
+}
