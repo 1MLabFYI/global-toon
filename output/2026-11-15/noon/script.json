@@ -1,0 +1,143 @@
+{
+ "selected_index": 11,
+ "topic_title": "사상 첫 미·중·러 3자회담",
+ "hook": "APEC 무대서 열리는 세 정상의 만남",
+ "category_tag": "세계",
+ "music_mood": "serious",
+ "cover_photo": [
+  "international conference hall stage",
+  "modern summit venue interior"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "modern conference center exterior",
+    "city skyline summit venue"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "오는 APEC 무대에서 미국, 중국, 러시아 정상이 사상 첫 3자 회담을 열 예정입니다."
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "세 나라 정상이 한자리에 모인다고요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "large international summit meeting room",
+    "diplomatic negotiation table"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "백악관 발표 등에 따르면, 이번 회동에서는 핵군축 등 주요 현안 논의 여부가 주목받고 있습니다."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "글로벌 안보의 큰 분수령이 되겠네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern press conference room",
+    "empty news briefing podium"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "일각에서는 과거 2차 세계대전 당시의 회담에 비유하며 주변국들의 우려 섞인 시선도 나오고 있어요."
+    },
+    {
+     "who": "M",
+     "pose": "worried",
+     "text": "주변국들이 촉각을 곤두세울 만하네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "city skyline aerial view during day",
+    "modern urban financial district"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "중국 측은 다자주의를 강조하며 우려 불식에 나선 상황입니다. 이번 만남의 결과가 주목됩니다."
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "차분하게 외교적 행보를 지켜봐야겠습니다."
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "미국, 중국, 러시아 정상이 APEC 무대에서 사상 첫 3자 회담을 계획하고 있다고 백악관과 크렘린궁이 밝혔다 (후보 11 관련 보도)",
+  "이번 회담은 핵군축 등을 다룰 예정이며, 주변국가들 사이에서는 과거 2차 대전 당시의 회담에 빗댄 우려와 관심이 공존하고 있다 (후보 11 관련 보도)",
+  "중국은 '제2의 얄타' 우려를 불식시키기 위해 다자주의를 강조하고 있다 (후보 11 관련 보도)"
+ ],
+ "summary": [
+  "APEC 무대서 미·중·러 사상 첫 3자회담 개최",
+  "핵군축 등 주요 안보 현안을 두고 논의 전망",
+  "주변국 우려 속 중국은 다자주의 강조하며 대응"
+ ],
+ "question": "이번 3자 회담이 국제 정세에 어떤 영향을 미칠까요?",
+ "caption": "오늘의 세계 뉴스 🌍\n\n오는 APEC 무대에서 미국, 중국, 러시아 정상이 사상 처음으로 3자 회담을 가집니다. 핵군축 등 주요 현안을 두고 어떤 대화가 오갈지 국제사회의 관심이 집중되고 있습니다.\n\n주변국들의 다양한 시선 속에서 다자주의를 강조하는 목소리도 이어지고 있는데요, 앞으로의 외교 행보를 함께 지켜보시죠! 🤝\n\n#글로벌툰 #세계뉴스 #APEC #미중러정상회담 #국제외교 #뉴스픽",
+ "hashtags": [
+  "#글로벌툰",
+  "#세계뉴스",
+  "#APEC",
+  "#미중러",
+  "#정상회담",
+  "#국제정세",
+  "#외교뉴스",
+  "#핵군축",
+  "#백악관",
+  "#크렘린궁",
+  "#글로벌이슈",
+  "#시사뉴스",
+  "#뉴스해설",
+  "#데일리뉴스",
+  "#트렌드"
+ ],
+ "verify": {
+  "verdict": "fix",
+  "issues": [
+   "패널 2의 대사 중 '크렘린궁' 언급은 제시된 근거에 전혀 나타나지 않은 출처입니다(백악관 발표만 확인됨)."
+  ]
+ },
+ "source": {
+  "title": "선전 APEC, 사상 첫 미중러정상 3자회동 촉각, 中 '제2얄타' 우려불식 다자주의 강조",
+  "source": "뉴스핌",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sbzZDTHFXb1RqS3huODE5dUNDOU5ud1hta1dfa3FlTjU4OGR2Rzh5VV92YjZuMVJYTUNRbTBQdElVT1YxbWZzSDFCRVFWdWhISGI3NUpCUXJvRWo5?oc=5",
+  "category": "world",
+  "n_sources": 6,
+  "sources": [
+   "VOA 한국어 홈페이지",
+   "경향신문",
+   "뉴스핌",
+   "뉴시스",
+   "동아일보",
+   "연합뉴스"
+  ],
+  "summary": "",
+  "related_titles": [
+   "선전 APEC, 사상 첫 미중러정상 3자회동 촉각, 中 '제2얄타' 우려불식 다자주의 강조",
+   "미·중·러 '동상삼몽'…주변국들 '제2의 얄타회담' 될라 우려",
+   "트럼프·시진핑·푸틴 첫 3자 회담…中도 핵군축 협상 나설까",
+   "백악관 “미·중·러 정상, 19일 선전에서 회동”···‘21세기 얄타회담’ 되나",
+   "트럼프, 필리핀·중국 순방...당국자 “미북 정상회담 계획 없어”"
+  ]
+ }
+}

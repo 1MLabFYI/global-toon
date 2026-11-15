@@ -105,5 +105,15 @@
   "status": "published",
   "music": "bright_01.mp3",
   "media_id": "18099912380445517"
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "noon",
+  "title": "사상 첫 미·중·러 3자회담",
+  "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sbzZDTHFXb1RqS3huODE5dUNDOU5ud1hta1dfa3FlTjU4OGR2Rzh5VV92YjZuMVJYTUNRbTBQdElVT1YxbWZzSDFCRVFWdWhISGI3NUpCUXJvRWo5?oc=5",
+  "dir": "output/2026-11-15/noon",
+  "status": "published",
+  "music": "serious_01.mp3",
+  "media_id": "18004776641806653"
  }
 ]
