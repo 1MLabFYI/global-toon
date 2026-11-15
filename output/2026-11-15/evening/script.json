@@ -1,0 +1,141 @@
+{
+ "selected_index": 2,
+ "topic_title": "오늘 저녁 한일전!",
+ "hook": "김도영 방망이로 12연패 끊을까?",
+ "category_tag": "스포츠",
+ "music_mood": "bright",
+ "cover_photo": [
+  "baseball stadium night lights",
+  "sports stadium"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "baseball bat and glove",
+    "sports equipment"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "오늘 저녁 7시, 야구 한일 결승전이 열려요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "드디어 오늘이군요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "baseball player batting practice",
+    "baseball field"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "김도영 선수의 활약에 팬들의 기대가 모이고 있어요."
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "멋진 타격 기대돼요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "domed baseball stadium",
+    "modern stadium"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "이번 경기에서 한일전 12연패를 끊어낼 수 있을지 주목됩니다."
+    },
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "이번엔 꼭 이기면 좋겠네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "excited baseball fans cheering",
+    "sports crowd"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "오늘 저녁 7시, 모두 함께 태극전사들을 응원해요!"
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "승리를 기원합니다!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "야구 한일 결승전이 오늘 저녁 7시에 열린다 ('야구 한일 결승전’ 오늘 저녁 7시…김도영 방망이, 12연패 끊을까)",
+  "김도영 선수가 출전한다 ('야구 한일 결승전’ 오늘 저녁 7시…김도영 방망이, 12연패 끊을까)",
+  "한일전 12연패 탈출 기회다 (‘후반기 ERA 0.90’ 日 괴물 에이스, 그런데 한국만 만나면 부진…한일전 12연패 탈출 기회일까)"
+ ],
+ "summary": [
+  "오늘 저녁 7시 야구 한일 결승전 개최",
+  "김도영 선수 활약과 연패 탈출 주목",
+  "태극전사들의 멋진 승부 응원하기"
+ ],
+ "question": "오늘 저녁 한일전 스코어, 몇 대 몇으로 승리할까요?",
+ "caption": "오늘 저녁 7시, 야구 한일 결승전이 펼쳐집니다! ⚾\n\n김도영 선수의 시원한 방망이를 앞세워 12연패를 끊고 우승컵을 들어 올릴 수 있을까요? 🏆\n\n오늘 저녁, 모두 함께 태극전사들을 응원해 봐요! 🙌\n\n#야구한일전 #결승전 #김도영 #야구대표주 #오늘의경기 #스포츠뉴스 #글로벌툰",
+ "hashtags": [
+  "#야구한일전",
+  "#결승전",
+  "#김도영",
+  "#야구대표팀",
+  "#오늘의경기",
+  "#스포츠뉴스",
+  "#한일전",
+  "#야구",
+  "#응원",
+  "#승리",
+  "#글로벌툰",
+  "#뉴스툰",
+  "#스포츠"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "‘야구 한일 결승전’ 오늘 저녁 7시…김도영 방망이, 12연패 끊을까",
+  "source": "한겨레",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRjg2TFFFRjhnckt1QnNrSTVIMzZzaUZoM1Y3R1pjRk5WVjFUUzNaN3FuWnJ3NjBpNXNGdUJuNmJRYVlNSWhEclNwcENXT0lWblV6TUUzckpDNEZSOTRpTEZvN29UVmNWNmtyR2xqMzI5cnU2SlNhRk9ZcnQxdnRUVHBR?oc=5",
+  "category": "sports",
+  "n_sources": 9,
+  "sources": [
+   "경향신문",
+   "뉴시스",
+   "동아일보",
+   "머니투데이",
+   "시사저널",
+   "연합뉴스",
+   "연합뉴스TV",
+   "조선일보"
+  ],
+  "summary": "",
+  "related_titles": [
+   "‘야구 한일 결승전’ 오늘 저녁 7시…김도영 방망이, 12연패 끊을까",
+   "김건우 vs 다카하시, APBC 결승 선발…김도영은 설욕 나선다",
+   "'우승 도전' 한국, 김지찬-김도영 테이블세터 유지…안현민, 4번 지명타자",
+   "‘후반기 ERA 0.90’ 日 괴물 에이스, 그런데 한국만 만나면 부진…한일전 12연패 탈출 기회일까 - 머니투데이",
+   "'한일전 12연패 끊나' 한동희 사구→안현민 4번 DH, 문현빈 우익수 선발…최원호 감독 \"선발 등판했던 투수들 제외 전부 대기\" [오!쎈 도쿄]"
+  ]
+ }
+}

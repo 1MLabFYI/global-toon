@@ -115,5 +115,15 @@
   "status": "published",
   "music": "serious_01.mp3",
   "media_id": "18004776641806653"
+ },
+ {
+  "date": "2026-11-15",
+  "slot": "evening",
+  "title": "오늘 저녁 한일전!",
+  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRjg2TFFFRjhnckt1QnNrSTVIMzZzaUZoM1Y3R1pjRk5WVjFUUzNaN3FuWnJ3NjBpNXNGdUJuNmJRYVlNSWhEclNwcENXT0lWblV6TUUzckpDNEZSOTRpTEZvN29UVmNWNmtyR2xqMzI5cnU2SlNhRk9ZcnQxdnRUVHBR?oc=5",
+  "dir": "output/2026-11-15/evening",
+  "status": "published",
+  "music": "bright_02.mp3",
+  "media_id": "18108093833360302"
  }
 ]

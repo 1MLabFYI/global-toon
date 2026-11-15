@@ -1,0 +1,33 @@
+{
+ "slot": "evening",
+ "created": "2026-11-15T20:06:01.049685+09:00",
+ "files": [
+  "output/2026-11-15/evening/reel.mp4",
+  "output/2026-11-15/evening/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-15/evening/feed_01.jpg",
+  "output/2026-11-15/evening/feed_02.jpg",
+  "output/2026-11-15/evening/feed_03.jpg",
+  "output/2026-11-15/evening/feed_04.jpg",
+  "output/2026-11-15/evening/feed_05.jpg",
+  "output/2026-11-15/evening/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/stadium-new-york-nyc-usa-baseball-470186/",
+  "https://pixabay.com/photos/baseball-little-league-youth-kid-7985435/",
+  "https://pixabay.com/photos/sport-kid-ball-play-1429603/",
+  "https://pixabay.com/photos/baseball-sport-umpire-focus-game-2137745/",
+  "https://pixabay.com/photos/beautiful-woman-portrait-fan-woman-8074997/"
+ ],
+ "title": "오늘 저녁 한일전!",
+ "publishable": true
+}
