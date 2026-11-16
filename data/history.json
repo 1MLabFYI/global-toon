@@ -135,5 +135,15 @@
   "status": "published",
   "music": "calm_01.mp3",
   "media_id": "17928785307431096"
+ },
+ {
+  "date": "2026-11-16",
+  "slot": "noon",
+  "title": "AI 공급망 동맹 결성",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRaFpicTJKUEpKMDNKOTJLY21uSzN6Q3ZaYlUtcGRVaUtLMkVScWlIYWlmQ2RpN25MUmVELTdCbWN5cEF4M2NIcE42Z1B4Sm5ELUoyaXg0TUgyQQ?oc=5",
+  "dir": "output/2026-11-16/noon",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "17913162903578624"
  }
 ]

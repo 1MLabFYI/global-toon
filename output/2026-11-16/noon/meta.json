@@ -1,0 +1,33 @@
+{
+ "slot": "noon",
+ "created": "2026-11-16T13:16:56.434176+09:00",
+ "files": [
+  "output/2026-11-16/noon/reel.mp4",
+  "output/2026-11-16/noon/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-16/noon/feed_01.jpg",
+  "output/2026-11-16/noon/feed_02.jpg",
+  "output/2026-11-16/noon/feed_03.jpg",
+  "output/2026-11-16/noon/feed_04.jpg",
+  "output/2026-11-16/noon/feed_05.jpg",
+  "output/2026-11-16/noon/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/proxy-proxy-server-free-proxy-4620559/",
+  "https://pixabay.com/photos/boardroom-london-office-5453288/",
+  "https://pixabay.com/photos/welding-welder-work-welding-sparks-67640/",
+  "https://pixabay.com/photos/woman-artificial-intelligence-8026954/",
+  "https://pixabay.com/photos/earth-globe-planet-world-space-11015/"
+ ],
+ "title": "AI 공급망 동맹 결성",
+ "publishable": true
+}

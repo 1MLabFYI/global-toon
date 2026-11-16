@@ -1,0 +1,139 @@
+{
+ "selected_index": 6,
+ "topic_title": "AI 공급망 동맹 결성",
+ "hook": "한국 등 9개국, 中 견제 AI 공급망 보호 협정!",
+ "category_tag": "세계",
+ "music_mood": "calm",
+ "cover_photo": [
+  "global technology network map glowing lines",
+  "futuristic digital network background"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "modern international conference room empty",
+    "business summit hall interior"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "한국과 미국, 일본 등 9개국이 AI 공급망 보호 협정을 맺었어요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "인공지능 핵심 기술을 지키기 위해 뭉쳤군요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "high tech semiconductor manufacturing cleanroom",
+    "microchip technology abstract"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "이번 협정은 핵심 광물과 반도체 등 민감 기술 보호가 목적입니다."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "특정 국가 의존도를 낮추려는 의도가 담겨 있어요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "futuristic artificial intelligence server room",
+    "modern data center facility"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "참여국들은 AI 공급망의 안정성을 높이고 긴밀히 협력하기로 했습니다."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "안전한 기술 생태계가 튼튼해지겠네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "global connection digital globe wireframe",
+    "world map technology network"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "글로벌 기술 환경에 어떤 변화를 가져올지 주목됩니다."
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "다음에도 알찬 소식으로 찾아올게요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "韓美日 등 9개국, 中 견제 AI 공급망 보호 협정 체결 (韓美日 등 9개국, 中 견제 AI 공급망 보호 협정 체결·희토류·반도체 협력)",
+  "희토류와 반도체 등 핵심 광물과 민감 기술 보호 (미, 한국·일본 등과 AI 공급망 보호 선언…중국 견제 위해)",
+  "중국 의존도를 낮추고 공급망 결속 강화 (미국, 한국 등 8개국과 AI 공급망 결속…중국 의존 낮춘다)"
+ ],
+ "summary": [
+  "한국·미국·일본 등 9개국 AI 공급망 협정 체결",
+  "반도체·희토류 등 핵심 광물과 민감 기술 보호",
+  "특정 국가 의존도를 낮추고 공급망 안전성 강화"
+ ],
+ "question": "여러분은 급변하는 글로벌 AI 기술 환경에서 가장 중요한 요소가 무엇이라고 생각하시나요?",
+ "caption": "🌍 韓·美·일 등 9개국, AI 공급망 보호 협정 체결!\n\n한국을 포함한 9개국이 인공지능(AI) 공급망을 보호하기 위한 협정을 맺었습니다. 반도체와 희토류 등 핵심 광물과 민감 기술을 안전하게 지키고, 특정 국가 의존도를 낮추기 위한 조치인데요.\n\n글로벌 기술 생태계에 어떤 변화를 가져올지 함께 지켜보시죠! 💡\n\n#글로벌툰 #AI공급망 #국제뉴스 #테크소식",
+ "hashtags": [
+  "#글로벌툰",
+  "#AI공급망",
+  "#국제뉴스",
+  "#세계뉴스",
+  "#테크",
+  "#반도체",
+  "#희토류",
+  "#경제뉴스",
+  "#뉴스툰",
+  "#시사",
+  "#소통",
+  "#데일리"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "韓美日 등 9개국, 中 견제 AI 공급망 보호 협정 체결…희토류·반도체 협력",
+  "source": "파이낸셜뉴스",
+  "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRaFpicTJKUEpKMDNKOTJLY21uSzN6Q3ZaYlUtcGRVaUtLMkVScWlIYWlmQ2RpN25MUmVELTdCbWN5cEF4M2NIcE42Z1B4Sm5ELUoyaXg0TUgyQQ?oc=5",
+  "category": "world",
+  "n_sources": 7,
+  "sources": [
+   "Chosunbiz",
+   "경향신문",
+   "매일경제",
+   "머니투데이",
+   "미주중앙일보",
+   "지디넷코리아",
+   "파이낸셜뉴스"
+  ],
+  "summary": "",
+  "related_titles": [
+   "韓美日 등 9개국, 中 견제 AI 공급망 보호 협정 체결…희토류·반도체 협력",
+   "미, 한국·일본 등과 AI 공급망 보호 선언…중국 견제 위해",
+   "미국, 한국 등 8개국과 AI 공급망 결속…중국 의존 낮춘다",
+   "美, 한국 등 동맹과 AI 민감기술·핵심광물 보호 '샌프란시스코 선언' - 머니투데이",
+   "習과 ‘희토류 협상’ 앞둔 트럼프…韓등 동맹국과 ‘AI 공동협정’ 서명"
+  ]
+ }
+}
