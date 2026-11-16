@@ -1,0 +1,142 @@
+{
+ "selected_index": 6,
+ "topic_title": "PC 게임도 도는 차세대 콘솔?",
+ "hook": "베일 벗은 엑스박스 '프로젝트 헬릭스'",
+ "category_tag": "테크",
+ "music_mood": "bright",
+ "cover_photo": [
+  "modern video game console living room",
+  "gaming controller neon light"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "gaming room neon setup",
+    "modern gaming room dark interior"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "마이크로소프트가 차세대 기기 ‘프로젝트 헬릭스’의 새 정보를 대거 공개했어요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "차세대 끝판왕 게임기 등장인가요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "gaming pc desk setup",
+    "computer monitor keyboard gaming"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "분명 콘솔 게임기인데, 무려 PC 게임까지 그대로 플레이할 수 있게 만든대요!"
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "PC는 아닌데 PC 게임이 된다니 신기하네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "microchip glowing tech concept",
+    "circuit board high tech"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "차세대 기술인 ‘뉴럴 렌더링’을 활용해 기기 가격도 합리적으로 낮출 거래요."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "지갑 사정까지 챙겨주면 무조건 환영이죠!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "retro video games collection shelf",
+    "game cartridges shelf room"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "과거의 수많은 명작을 이어받는 ‘게임 보존’도 헬릭스의 핵심 가치라고 밝혔어요."
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "이제 거실 기기 하나로 게임 종결 가능할까요?"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "마이크로소프트 엑스박스가 차세대 기기인 '프로젝트 헬릭스(Project Helix)'에 대한 새로운 정보를 공개함 ('The Ultimate Gaming Machine' - Xbox Reveals Tons Of New Project Helix Information)",
+  "엑스박스 헬릭스는 PC가 아닌 콘솔이지만 PC 게임을 플레이할 수 있음 (Microsoft says Xbox Helix is a console, not a PC — but it will be able to play your PC games)",
+  "뉴럴 렌더링 기술을 통해 기기 가격을 합리적으로 유지할 수 있음 (Neural Rendering Could Keep Xbox Project Helix Affordable)",
+  "게임 보존(Game Preservation)이 엑스박스 프로젝트 헬릭스의 핵심 철학임 (Game Preservation Is Core to XBOX Project Helix)"
+ ],
+ "summary": [
+  "엑스박스 프로젝트 헬릭스 공개",
+  "콘솔인데 PC 게임까지 구동",
+  "뉴럴 렌더링으로 가성비 노려"
+ ],
+ "question": "콘솔 하나로 PC 게임까지 다 된다면 갈아타실 의향 있나요?",
+ "caption": "엑스박스의 차세대 기기 ‘프로젝트 헬릭스’의 베일이 조금씩 벗겨지고 있습니다.🎮\n\nPC가 아닌 순수 콘솔이지만 PC 게임 라이브러리를 그대로 플레이할 수 있고, ‘뉴럴 렌더링’ 기술로 가격 부담까지 낮추겠다는 야심 찬 계획인데요! 여기에 기존 게임들을 그대로 즐길 수 있는 ‘게임 보존’까지 챙겼다고 합니다.🔥\n\n거실 게임기의 판도가 완전히 바뀔지 기대되네요!",
+ "hashtags": [
+  "#글로벌툰",
+  "#엑스박스",
+  "#프로젝트헬릭스",
+  "#차세대콘솔",
+  "#게임기",
+  "#게이밍PC",
+  "#스팀",
+  "#게임뉴스",
+  "#테크이슈",
+  "#IT트렌드",
+  "#콘솔게임",
+  "#뉴럴렌더링",
+  "#비디오게임"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "'The Ultimate Gaming Machine' - Xbox Reveals Tons Of New Project Helix Information",
+  "source": "Pure Xbox",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORHp6UF92aVo2S0VnaEJyNUhoZTlEaXJEVVhFRTRWUHRtZUVJWG9RcUt6WG9fMjl6NVE0dDJiVVVTZlFQS1VuN0liUHpObnNqdVA0NV84MXJCU2d5X2h6b2Z3MGVzYy1Ia0FfUVo0LUpFZFJlVFNlVVlERTNHQVZDT2hUczJTTUl6alNoSHVCWlQ1RWZrVVlXaXp0SHdjSE1RT1BYNlBKODZVZmNId2p4ZHFGV1Q1dWs?oc=5",
+  "category": "technology",
+  "n_sources": 14,
+  "sources": [
+   "9to5Google",
+   "9to5Mac",
+   "Axios",
+   "GameGPU",
+   "Insider Gaming",
+   "MovieWeb",
+   "Nintendo Life",
+   "Pure Xbox"
+  ],
+  "summary": "",
+  "related_titles": [
+   "'The Ultimate Gaming Machine' - Xbox Reveals Tons Of New Project Helix Information",
+   "Microsoft says Xbox Helix is a console, not a PC — but it will be able to play your PC games: \"It is not a PC that can also play console games\"",
+   "Neural Rendering Could Keep Xbox Project Helix Affordable",
+   "Game Preservation Is Core to XBOX Project Helix",
+   "PlayStation 6 will target 120 FPS, while Xbox Helix will target 144 FPS in 4K resolution."
+  ]
+ }
+}

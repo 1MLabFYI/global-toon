@@ -145,5 +145,15 @@
   "status": "published",
   "music": "calm_02.mp3",
   "media_id": "17913162903578624"
+ },
+ {
+  "date": "2026-11-16",
+  "slot": "evening",
+  "title": "PC 게임도 도는 차세대 콘솔?",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORHp6UF92aVo2S0VnaEJyNUhoZTlEaXJEVVhFRTRWUHRtZUVJWG9RcUt6WG9fMjl6NVE0dDJiVVVTZlFQS1VuN0liUHpObnNqdVA0NV84MXJCU2d5X2h6b2Z3MGVzYy1Ia0FfUVo0LUpFZFJlVFNlVVlERTNHQVZDT2hUczJTTUl6alNoSHVCWlQ1RWZrVVlXaXp0SHdjSE1RT1BYNlBKODZVZmNId2p4ZHFGV1Q1dWs?oc=5",
+  "dir": "output/2026-11-16/evening",
+  "status": "published",
+  "music": "bright_01.mp3",
+  "media_id": "18132077371849612"
  }
 ]
