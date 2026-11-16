@@ -1,0 +1,33 @@
+{
+ "slot": "morning",
+ "created": "2026-11-17T08:20:40.135328+09:00",
+ "files": [
+  "output/2026-11-17/morning/reel.mp4",
+  "output/2026-11-17/morning/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-17/morning/feed_01.jpg",
+  "output/2026-11-17/morning/feed_02.jpg",
+  "output/2026-11-17/morning/feed_03.jpg",
+  "output/2026-11-17/morning/feed_04.jpg",
+  "output/2026-11-17/morning/feed_05.jpg",
+  "output/2026-11-17/morning/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/smartphone-screen-room-wall-sunset-8057248/",
+  "https://pixabay.com/photos/movie-theater-theatre-sit-chair-4213755/",
+  "https://pixabay.com/photos/castle-marienburg-interior-hanover-7254622/",
+  "https://pixabay.com/photos/girl-woman-office-work-coffee-2583442/",
+  "https://pixabay.com/photos/coffee-milk-coffee-beans-563800/"
+ ],
+ "title": "올해 최대 엔터 소식!",
+ "publishable": true
+}

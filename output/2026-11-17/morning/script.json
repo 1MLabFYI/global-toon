@@ -1,0 +1,137 @@
+{
+ "selected_index": 9,
+ "topic_title": "올해 최대 엔터 소식!",
+ "hook": "영화가 아니라 게임이라고요?",
+ "category_tag": "테크",
+ "music_mood": "bright",
+ "cover_photo": [
+  "modern gaming setup glowing screen dark room",
+  "video game controller desk"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "movie theater auditorium empty screen",
+    "cinema interior"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "올해 최고의 엔터테인먼트 이벤트는 영화가 아니래요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "영화관 말고 어디로 가야 하나요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "luxury gaming room neon lighting",
+    "pc gaming setup"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "바로 전 세계가 주목하는 'GTA 6' 출시 소식입니다."
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "수많은 언론이 집중 조명하고 있죠!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "busy corporate office desk workspace",
+    "modern office interior"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "오랜 개발 기간과 엄청난 규모로 게이머들의 기대를 모으고 있어요."
+    },
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "전 세계 테크 매거진들이 연일 보도 중이네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "calendar on desk with coffee cup",
+    "office desk top view"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "올해 문화계를 뒤흔들 대작, 여러분도 기대되시나요?"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "GTA 6 is highlighted as the biggest entertainment event of the year, surpassing movies (The biggest entertainment event of the year isn’t a movie — it’s ‘Grand Theft Auto VI’)",
+  "The game's development involves massive scale and staff over years (Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI)"
+ ],
+ "summary": [
+  "올해 최고 엔터 소식은 영화가 아닌 GTA 6",
+  "수많은 언론이 집중 보도하며 기대감 증폭",
+  "전 세계 게이머들의 이목이 집중되는 중"
+ ],
+ "question": "여러분이 올해 가장 기다린 게임이나 영화는 무엇인가요?",
+ "caption": "올해 가장 뜨거운 엔터테인먼트 소식! 🎬\n\n영화가 아니라 바로 'GTA 6' 출시 소식이 전 세계를 들썩이게 하고 있어요. 수많은 언론과 게이머들이 주목하고 있는 이번 대작! 과연 어떤 모습일지 정말 기대되네요. ✨\n\n#글로벌툰 #GTA6 #게임뉴스 #테크뉴스 #엔터테인먼트 #최신게임 #문화소식 #게임추천 #글로벌이슈 #트렌드 #뉴스툰 #인스타뉴스 #데일리뉴스",
+ "hashtags": [
+  "#글로벌툰",
+  "#GTA6",
+  "#게임뉴스",
+  "#테크뉴스",
+  "#엔터테인먼트",
+  "#최신게임",
+  "#문화소식",
+  "#게임추천",
+  "#글로벌이슈",
+  "#트렌드",
+  "#뉴스툰",
+  "#인스타뉴스",
+  "#데일리뉴스",
+  "#게임",
+  "#이슈"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "The biggest entertainment event of the year isn’t a movie — it’s ‘Grand Theft Auto VI’",
+  "source": "CNN",
+  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZEw1T2VYX205VmdHTVM0QVNvcE81NDFXQldPVHluMTg5NkdLRHhtWUNPeU5oX3ptTDhhR3hyU0FWN3FEa1VuUUhUdkl2amtoa3k1OVhCR1o5WGtXRGJzWWpCLTEzYzBnbzFqaGJDcG95ZzhNREI2bDd4OHBaY3JXUmlNel9YcU0?oc=5",
+  "category": "technology",
+  "n_sources": 18,
+  "sources": [
+   "9to5Google",
+   "Audacy",
+   "BBC",
+   "CNBC",
+   "CNN",
+   "Forbes",
+   "GameGPU",
+   "Gematsu"
+  ],
+  "summary": "",
+  "related_titles": [
+   "The biggest entertainment event of the year isn’t a movie — it’s ‘Grand Theft Auto VI’",
+   "Ten years, thousands of staff and a billion dollars: the exclusive inside story of Grand Theft Auto VI",
+   "All tech eyes on Grand Theft Auto VI release Thursday",
+   "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
+   "‘GTA VI’ Has Already Sold $1 Billion+ In Preorders—But May Not Revive Console Sales Amid AI-Driven Price Hikes"
+  ]
+ }
+}

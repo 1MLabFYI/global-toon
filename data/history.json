@@ -155,5 +155,15 @@
   "status": "published",
   "music": "bright_01.mp3",
   "media_id": "18132077371849612"
+ },
+ {
+  "date": "2026-11-17",
+  "slot": "morning",
+  "title": "올해 최대 엔터 소식!",
+  "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZEw1T2VYX205VmdHTVM0QVNvcE81NDFXQldPVHluMTg5NkdLRHhtWUNPeU5oX3ptTDhhR3hyU0FWN3FEa1VuUUhUdkl2amtoa3k1OVhCR1o5WGtXRGJzWWpCLTEzYzBnbzFqaGJDcG95ZzhNREI2bDd4OHBaY3JXUmlNel9YcU0?oc=5",
+  "dir": "output/2026-11-17/morning",
+  "status": "published",
+  "music": "bright_02.mp3",
+  "media_id": "17981612258921306"
  }
 ]
