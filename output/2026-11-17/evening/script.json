@@ -1,0 +1,136 @@
+{
+ "selected_index": 7,
+ "topic_title": "시리 AI 하루 한도가?",
+ "hook": "애플의 복잡한 AI 기능 사용량 제한 테스트",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "modern smartphone with ai assistant screen",
+  "futuristic tech device display"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "person holding smartphone indoors",
+    "hands using modern mobile device"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "애플이 더 복잡한 시리 AI 상호작용에 대해 일일 사용량 제한을 테스트하고 있어요."
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "AI 쓸 때 횟수 제한이 걸린다고요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "software update screen on phone",
+    "digital interface with settings"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "최근 공개된 베타 버전에서 관련 기능과 아이클라우드플러스 업그레이드가 추가됐답니다."
+    },
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "시리 AI 일일 사용량 제한과 요금 도입에 대한 내용도 언급되고 있어요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "futuristic artificial intelligence concept art",
+    "digital network abstract background"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "새로운 제한이 적용된 후 시리 AI를 사용하기 위해 비용을 지불해야 할 수도 있다는 보도가 나왔어요."
+    },
+    {
+     "who": "M",
+     "pose": "shrug",
+     "text": "매일 쓰는 기능인데 아쉬울 수도 있겠어요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "person looking at mobile device thoughtfully",
+    "modern technology lifestyle"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "앞으로 업데이트되면서 AI 서비스가 어떻게 자리 잡을지 지켜봐야겠어요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "애플은 더 복잡한 시리 AI 상호작용에 대해 일일 사용량 제한을 테스트하고 있다 (Apple is testing daily usage limits for more complex Siri AI interactions)",
+  "iOS 베타 버전에 일일 시리 AI 제한과 아이클라우드플러스 업그레이드가 추가되었다 (iOS 27.3 Beta Adds Daily Siri AI Limits and iCloud+ Upgrades)"
+ ],
+ "summary": [
+  "애플, 시리 AI 일일 사용량 제한 테스트",
+  "복잡한 AI 상호작용에 적용되는 기능",
+  "베타 버전을 통해 관련 내용 공개"
+ ],
+ "question": "여러분은 AI 사용량에 제한이 생기면 불편하실 것 같나요?",
+ "caption": "🤖 애플이 더 복잡한 시리 AI 상호작용에 대해 일일 사용량 제한을 테스트 중이라는 소식입니다!\n\n최근 베타 버전을 통해 관련 내용이 알려졌는데요, 앞으로 AI 서비스가 어떻게 변화할지 함께 살펴보아요. 📱✨\n\n댓글로 여러분의 의견을 남겨주세요!",
+ "hashtags": [
+  "#글로벌툰",
+  "#테크뉴스",
+  "#애플",
+  "#시리",
+  "#AI",
+  "#인공지능",
+  "#스마트폰",
+  "#IT뉴스",
+  "#아이폰",
+  "#업데이트",
+  "#기술동향",
+  "#이슈"
+ ],
+ "verify": {
+  "verdict": "fix",
+  "issues": [
+   "근거에 없는 '서버 부담을 줄이려는 조치로 보이네요', '고급 AI 연산은 막대한 서버 자원이 필요해서 일정한 제한이 검토되는 거래요' 등의 추측성 내용이 포함되어 있음."
+  ]
+ },
+ "source": {
+  "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+  "source": "The Verge",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQkNnb0JyWWVtVWhWbGRSd1QxRDRSZld4aGtaTU82Vzk1Z1hBUzRNd0I2TkFCSmlGaWE2WGRaN09jX1hIZ3p0VXRKZTBoYWg0RVZpVTFOQXBSd0dTc1NGU1ZFMTYzRVNyLUxtRXpEbTk4TTZvZ2RMUkJ5ckI0dTdOY1lXaEtCYnNIVXlwTjE2U2E3RW9EOW9sNzFTeXpDdktmM05iU0N3?oc=5",
+  "category": "technology",
+  "n_sources": 18,
+  "sources": [
+   "9to5Google",
+   "9to5Mac",
+   "AppleInsider",
+   "Bleacher Report",
+   "Cranky Flier",
+   "Engadget",
+   "GamesIndustry.biz",
+   "Gematsu"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Apple is testing daily usage limits for more complex Siri AI interactions",
+   "Everything new in iOS 27.3 beta 2",
+   "iOS 27.3 Beta Adds Daily Siri AI Limits and iCloud+ Upgrades",
+   "Siri AI daily usage limits and fees will launch with iOS 27.3",
+   "Here’s how much you’ll need to pay to use Siri AI after Apple’s new limits kick in"
+  ]
+ }
+}

@@ -175,5 +175,15 @@
   "status": "published",
   "music": "calm_01.mp3",
   "media_id": "17901177246655198"
+ },
+ {
+  "date": "2026-11-17",
+  "slot": "evening",
+  "title": "시리 AI 하루 한도가?",
+  "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQkNnb0JyWWVtVWhWbGRSd1QxRDRSZld4aGtaTU82Vzk1Z1hBUzRNd0I2TkFCSmlGaWE2WGRaN09jX1hIZ3p0VXRKZTBoYWg0RVZpVTFOQXBSd0dTc1NGU1ZFMTYzRVNyLUxtRXpEbTk4TTZvZ2RMUkJ5ckI0dTdOY1lXaEtCYnNIVXlwTjE2U2E3RW9EOW9sNzFTeXpDdktmM05iU0N3?oc=5",
+  "dir": "output/2026-11-17/evening",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "17983814979130384"
  }
 ]
