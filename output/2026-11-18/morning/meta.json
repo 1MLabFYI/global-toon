@@ -1,0 +1,33 @@
+{
+ "slot": "morning",
+ "created": "2026-11-18T08:26:11.700044+09:00",
+ "files": [
+  "output/2026-11-18/morning/reel.mp4",
+  "output/2026-11-18/morning/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-18/morning/feed_01.jpg",
+  "output/2026-11-18/morning/feed_02.jpg",
+  "output/2026-11-18/morning/feed_03.jpg",
+  "output/2026-11-18/morning/feed_04.jpg",
+  "output/2026-11-18/morning/feed_05.jpg",
+  "output/2026-11-18/morning/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/code-hacker-data-security-707069/",
+  "https://pixabay.com/photos/asian-woman-fashion-museum-art-7276658/",
+  "https://pixabay.com/photos/it-server-server-cabinet-network-838377/",
+  "https://pixabay.com/photos/code-program-programming-language-1568556/",
+  "https://pixabay.com/photos/screen-smartphone-mobile-phone-569515/"
+ ],
+ "title": "AI 학습 껐는데 2달 보관?",
+ "publishable": true
+}

@@ -185,5 +185,15 @@
   "status": "published",
   "music": "calm_02.mp3",
   "media_id": "17983814979130384"
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "morning",
+  "title": "AI 학습 껐는데 2달 보관?",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb291c3Q3S0JBZVg5R3FWNzB6UG5zS0hzYWVYUDZKMTJhYmNHR0dUVEc2VlNsVUZJRi1TOHFyNDJ0TGF0cjhWekpuRTlVYzlzNTNQaG9CYUhLUFdhUURPUU0tZVhZT3p6MElldGFlWG02UDFwTU5KSkhUeEtISFdsbzBrbkFkQk8zdVlLRzI1Y0RuMGFsOXd6eXh5Zlg3MGNxTHBnNlhjVGJyeDNXelEybm5pRWlBTDA?oc=5",
+  "dir": "output/2026-11-18/morning",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "17983034997138860"
  }
 ]

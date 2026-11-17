@@ -1,0 +1,140 @@
+{
+ "selected_index": 12,
+ "topic_title": "AI 학습 껐는데 2달 보관?",
+ "hook": "구글 제미나이 새 데이터 정책 논란",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "digital data privacy concept",
+  "smartphone data security"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "modern smartphone on wooden desk",
+    "hands holding smartphone"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "구글이 내 대화로 AI를 학습시키지 않도록 제미나이 설정을 더 쉽게 개편했어요."
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "오, 이제 프라이버시 안심?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "server room datacenter blue light",
+    "computer server racks"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "worried",
+     "text": "그런데 기록 기능을 꺼도 구글이 채팅 내역을 무려 2달 동안 보관한다고 해요."
+    },
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "기존 72시간보다 20배 길어졌죠!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "laptop screen showing code and data",
+    "typing on computer keyboard"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "AI가 나에 대해 기록해 둔 숨겨진 정보를 확인하고 틀린 내용을 고칠 수도 있게 됐어요."
+    },
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "학습은 안 해도 두 달 보관이라니..."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "cyber security shield icon digital",
+    "abstract technology network"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "편리한 생성형 AI를 쓰면서 내 데이터가 어떻게 남는지 꼼꼼히 살피는 게 필수가 됐네요."
+    },
+    {
+     "who": "F",
+     "pose": "shrug",
+     "text": "여러분은 기록 켜두시나요?"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "구글이 이용자 데이터로 AI를 학습시키지 않고 제미나이를 쓸 수 있도록 옵션을 더 쉽게 변경했다. (Google makes it easier to use Gemini without training AI on your data)",
+  "기록 기능을 꺼두더라도 구글은 채팅 내역을 기존 72시간에서 최대 2달(2 months) 동안 보관하며, 이는 이전보다 약 20배 늘어난 기간이다. (Google to keep Gemini chats for 2 months, up from 72 hours, even with history off / Opting out of Gemini tracking? Google will still hold your data 20x longer)",
+  "제미나이가 이용자에 대해 알고 있는 기록을 직접 확인하고 오류를 수정할 수 있는 기능이 있다. (I found Gemini's hidden record of what it knows about me, then fixed what it got wrong)"
+ ],
+ "summary": [
+  "구글 제미나이 학습 제외 쉬워져",
+  "기록 꺼도 2달간 대화 보관 논란",
+  "기존 72시간 대비 20배 늘어나"
+ ],
+ "question": "AI 서비스 쓸 때 대화 기록 저장 옵션, 켜두시나요 꺼두시나요?",
+ "caption": "구글이 제미나이에서 내 대화로 AI를 학습시키지 않는 옵션을 더 쉽게 만들었습니다. 🤖\n\n하지만 대화 기록을 꺼두더라도 구글 서버에 채팅 내역이 최대 2달간 보관된다는 사실이 알려지며 프라이버시 논란이 일고 있는데요. 기존 72시간 보관에서 무려 20배나 늘어난 셈입니다. 🔒\n\n점점 일상 깊숙이 들어오는 생성형 AI, 내 데이터 관리는 어떻게 하고 계신가요?",
+ "hashtags": [
+  "#글로벌툰",
+  "#구글제미나이",
+  "#제미나이",
+  "#인공지능",
+  "#AI뉴스",
+  "#개인정보보호",
+  "#프라이버시",
+  "#데이터보안",
+  "#빅테크",
+  "#IT트렌드",
+  "#테크이슈",
+  "#카드뉴스"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Google makes it easier to use Gemini without training AI on your data",
+  "source": "Ars Technica",
+  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb291c3Q3S0JBZVg5R3FWNzB6UG5zS0hzYWVYUDZKMTJhYmNHR0dUVEc2VlNsVUZJRi1TOHFyNDJ0TGF0cjhWekpuRTlVYzlzNTNQaG9CYUhLUFdhUURPUU0tZVhZT3p6MElldGFlWG02UDFwTU5KSkhUeEtISFdsbzBrbkFkQk8zdVlLRzI1Y0RuMGFsOXd6eXh5Zlg3MGNxTHBnNlhjVGJyeDNXelEybm5pRWlBTDA?oc=5",
+  "category": "technology",
+  "n_sources": 16,
+  "sources": [
+   "9to5Google",
+   "Android Police",
+   "Ars Technica",
+   "BBC",
+   "Bleacher Report",
+   "Bloomberg.com",
+   "Brief IA",
+   "CNN"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Google makes it easier to use Gemini without training AI on your data",
+   "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
+   "Opting out of Gemini tracking? Google will still hold your data 20x longer",
+   "I found Gemini's hidden record of what it knows about me, then fixed what it got wrong",
+   "Gemini: Disabling the History Option Will Still Retain Exchanges"
+  ]
+ }
+}
