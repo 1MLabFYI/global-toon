@@ -1,0 +1,140 @@
+{
+ "selected_index": 4,
+ "topic_title": "킬러 로봇 막을 수 있을까?",
+ "hook": "유엔에서 본격화된 AI 무기 규제 논의",
+ "category_tag": "세계",
+ "music_mood": "calm",
+ "cover_photo": [
+  "United Nations assembly hall Geneva",
+  "military AI technology robot"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "United Nations Geneva conference room",
+    "diplomatic summit hall"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "유엔에서 인공지능을 활용한 '킬러 로봇' 자율무기를 규제하기 위한 공식 회담이 열렸어요."
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "영화 속 이야기가 아니었네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "futuristic military robotic drone",
+    "autonomous defense hardware"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "스스로 목표를 정해 타격하는 AI 무기의 위험성에 대해 국제사회의 공포가 커진 탓인데요."
+    },
+    {
+     "who": "F",
+     "pose": "worried",
+     "text": "통제 불능이 되면 큰일이니까요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "diplomats seated at multilateral summit",
+    "international negotiation table"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "하지만 미국과 러시아 등 2개국이 협약 추진에 강하게 반대하면서 큰 난관에 부딪혔습니다."
+    },
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "주요 군사 강국들의 입장이 팽팽하군요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "technology concept human and robotic hand",
+    "cyber defense control screen"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "먼 미래의 일로만 여겨졌던 자율무기 논쟁이 이제 현실의 시급한 외교 과제가 됐습니다."
+    },
+    {
+     "who": "F",
+     "pose": "shrug",
+     "text": "과연 어디까지 규제할 수 있을까요?"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "유엔에서 AI 자율무기(킬러 로봇)를 규제하기 위한 회담이 열렸다 (U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow)",
+  "AI 무기에 대한 전 세계적 우려가 커지며 규제 논의가 시작됐다 ('A futuristic debate now very real': Why the world is struggling to regulate killer robots)",
+  "미국과 러시아 등 2개국의 강력한 반대로 자율무기 제한 협상에 난관이 있다 (U.N. effort to limit autonomous weapons faces 2 countries’ strong resistance / US and Russia to oppose talks on limiting autonomous weapons)"
+ ],
+ "summary": [
+  "유엔, AI '킬러 로봇' 규제 논의",
+  "미국·러시아 등 강한 반대 직면",
+  "현실로 다가온 미래 무기 논쟁"
+ ],
+ "question": "스스로 판단하는 AI 자율무기, 여러분은 전면 금지해야 한다고 보시나요?",
+ "caption": "영화 속 이야기인 줄만 알았던 '킬러 로봇' 🤖\n\n유엔이 인공지능 자율무기 규제를 위한 국제 회담을 진행 중이지만, 미국과 러시아 등 강대국의 반대로 난항을 겪고 있습니다.\n\n기술의 발전과 함께 찾아온 새로운 안보 위협, 국제사회는 과연 합의를 이뤄낼 수 있을까요? 여러분의 생각을 댓글로 남겨주세요! 👇",
+ "hashtags": [
+  "#글로벌툰",
+  "#세계뉴스",
+  "#AI무기",
+  "#킬러로봇",
+  "#유엔",
+  "#국제외교",
+  "#인공지능",
+  "#자율무기",
+  "#안보이슈",
+  "#테크뉴스",
+  "#시사상식",
+  "#뉴스만화"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
+  "source": "NPR",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORjVjenZkdk1vNVNjSTR1UklRSHZCMGllZVR5N2lfRXo2MXg0MzBnQjBxekctUk5RZWJQaGRxYTRyekJvSzAzM0piT0I2dVhlcmVUalpyV2FxQVQtMVNLdGZpWjFBUUY4bGVBbldicWVnZ0MtWnNoQmhMYmVYWllHY3pHcUc4Zw?oc=5",
+  "category": "world",
+  "n_sources": 10,
+  "sources": [
+   "AP News",
+   "DW.com",
+   "Daily Express",
+   "France 24",
+   "NPR",
+   "POLITICO.eu",
+   "Reuters",
+   "The Seattle Times"
+  ],
+  "summary": "",
+  "related_titles": [
+   "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
+   "U.N. effort to limit autonomous weapons faces 2 countries’ strong resistance",
+   "'A futuristic debate now very real': Why the world is struggling to regulate killer robots",
+   "US and Russia to oppose talks on limiting autonomous weapons",
+   "Guterres calls for a legally binding instrument for ‘killer robots'"
+  ]
+ }
+}

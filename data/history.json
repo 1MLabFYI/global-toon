@@ -165,5 +165,15 @@
   "status": "published",
   "music": "bright_02.mp3",
   "media_id": "17981612258921306"
+ },
+ {
+  "date": "2026-11-17",
+  "slot": "noon",
+  "title": "킬러 로봇 막을 수 있을까?",
+  "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORjVjenZkdk1vNVNjSTR1UklRSHZCMGllZVR5N2lfRXo2MXg0MzBnQjBxekctUk5RZWJQaGRxYTRyekJvSzAzM0piT0I2dVhlcmVUalpyV2FxQVQtMVNLdGZpWjFBUUY4bGVBbldicWVnZ0MtWnNoQmhMYmVYWllHY3pHcUc4Zw?oc=5",
+  "dir": "output/2026-11-17/noon",
+  "status": "published",
+  "music": "calm_01.mp3",
+  "media_id": "17901177246655198"
  }
 ]

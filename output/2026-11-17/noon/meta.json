@@ -1,0 +1,33 @@
+{
+ "slot": "noon",
+ "created": "2026-11-17T12:57:19.606528+09:00",
+ "files": [
+  "output/2026-11-17/noon/reel.mp4",
+  "output/2026-11-17/noon/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-17/noon/feed_01.jpg",
+  "output/2026-11-17/noon/feed_02.jpg",
+  "output/2026-11-17/noon/feed_03.jpg",
+  "output/2026-11-17/noon/feed_04.jpg",
+  "output/2026-11-17/noon/feed_05.jpg",
+  "output/2026-11-17/noon/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/museum-architecture-london-landmark-458321/",
+  "https://pixabay.com/photos/switzerland-lake-landscape-outlook-4002440/",
+  "https://pixabay.com/photos/robotics-artificial-intelligence-10237767/",
+  "https://pixabay.com/photos/woman-porch-sitting-leisure-casual-3353711/",
+  "https://pixabay.com/photos/hand-prosthesis-humanoid-hand-3852899/"
+ ],
+ "title": "킬러 로봇 막을 수 있을까?",
+ "publishable": true
+}
