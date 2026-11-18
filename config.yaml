@@ -11,9 +11,12 @@ account:
 # 하루 3회 슬롯 (GitHub Actions cron과 이름을 맞춤)
 #  categories: 해당 슬롯에서 우선 고려할 뉴스 분야
 slots:
+  daily:                   # 하루 1편 — 모든 분야 중 오늘 가장 주목받는 이슈 1개
+    label: "오늘의 주요 이슈 (국내·세계·경제·테크·과학·문화 중 가장 화제인 소식)"
+    categories: [nation, world, business, technology, science, entertainment, sports]
   morning:
     label: "아침 국내 주요 이슈(경제·사회·생활)"
-    categories: [business, nation, technology]
+    categories: [nation, business]
   noon:
     label: "점심 세계 주요 뉴스"
     categories: [world, science]
