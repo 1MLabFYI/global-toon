@@ -205,5 +205,15 @@
   "status": "published",
   "music": "calm_02.mp3",
   "media_id": "18080833997429705"
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "evening",
+  "title": "13년 만의 귀환!",
+  "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNU5oVy1LNFdSWUFIbTV3RkNqQlJNWWdlb3pJNUxOV3ZRMU02TjFOV0VBUGVoRDhLOEU0SHpSTl9YMEwtN1pVSV9rQ0I0cUZvRFptd1NGUks3ci0zekpiSmZKMmJobUZfcTZpS1YyVkZCbVR4U3RKQ1F6TUlXU2x5VmdDZ2V1empCQVViM3NNVDhPc1NtMU5IeENVZWlNQQ?oc=5",
+  "dir": "output/2026-11-18/evening",
+  "status": "published",
+  "music": "bright_01.mp3",
+  "media_id": "17905064682378036"
  }
 ]

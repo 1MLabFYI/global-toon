@@ -1,0 +1,138 @@
+{
+ "selected_index": 0,
+ "topic_title": "13년 만의 귀환!",
+ "hook": "드디어 베일 벗는 역대급 게임",
+ "category_tag": "테크",
+ "music_mood": "bright",
+ "cover_photo": [
+  "modern video game controller glowing neon",
+  "gaming setup dark room neon lights"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "busy neon city street at night",
+    "neon glowing city night view"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "무려 13년을 기다리게 만든 대형 신작, GTA 6가 드디어 찾아옵니다!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "기다리다 목이 빠지는 줄 알았다고요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "digital billboard glowing in city",
+    "large digital billboard advertising"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "출시 전부터 15억 달러가 넘는 수익을 올리는 등 엄청난 기록을 세우고 있어요."
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "전 세계 게이머들의 심장을 벌써부터 저격 중이네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern gaming console controller close up",
+    "game controller on desk"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "오랜 기다림 끝에 곧 다가올 정식 출시를 앞두고 전 세계가 들썩이고 있습니다."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "드디어 기대감이 최고조에 달했군요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "cozy gaming room setup with multiple monitors",
+    "gaming desk with glowing keyboard"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "smile",
+     "text": "오랜 기다림 끝에 찾아온 만큼 역대급 재미를 보여주길 기대해 봐요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "13-year wait for Grand Theft Auto VI (After a 13-year wait, ‘Grand Theft Auto VI’ arrives with enormous hype and expectations)",
+  "Enormous hype and expectations before release (After a 13-year wait, ‘Grand Theft Auto VI’ arrives with enormous hype and expectations)"
+ ],
+ "summary": [
+  "13년 만에 찾아오는 대작 GTA 6",
+  "출시 전 15억 달러 이상을 기록하며 엄청난 기대감 집중",
+  "곧 다가올 정식 출시 예정"
+ ],
+ "question": "여러분은 이번 주 출시작을 위해 연차를 쓰실 예정인가요?",
+ "caption": "🎮 무려 13년의 기다림 끝에 드디어 'GTA 6'가 찾아옵니다!\n\n출시 전부터 15억 달러가 넘는 수익을 기록하고 전 세계 게이머들의 마음을 설레게 하고 있는데요, 곧 베일이 벗겨집니다. 과연 어떤 역대급 기록을 세우게 될지 정말 기대되네요! 🌟\n\n댓글로 여러분의 소감을 알려주세요! 👇\n\n#GTA6 #게임뉴스 #신작게임 #글로벌툰",
+ "hashtags": [
+  "#GTA6",
+  "#게임뉴스",
+  "#신작게임",
+  "#테크",
+  "#문화",
+  "#글로벌툰",
+  "#게임추천",
+  "#콘솔게임",
+  "#PS5",
+  "#출시",
+  "#기대작",
+  "#게임스타그램",
+  "#이슈",
+  "#소식"
+ ],
+ "verify": {
+  "verdict": "fix",
+  "issues": [
+   "근거에는 '출시 전 15억 달러 이상 수익'과 '마스터피스' 등의 내용이 있으나, 대본의 '이번 주 정식 출시'나 '내 통장이 위험해지는 날' 같은 특정 시점/표현은 근거 기사의 문구('upcoming release', 'After a 13-year wait')에 비해 구체적 확정이 과도할 수 있음. 특히 '이번 주 정식 출시'는 근거에 명시된 요일이나 날짜가 없으므로 근거 범위 내로 수정함."
+  ]
+ },
+ "source": {
+  "title": "After a 13-year wait, ‘Grand Theft Auto VI’ arrives with enormous hype and expectations",
+  "source": "AP News",
+  "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNU5oVy1LNFdSWUFIbTV3RkNqQlJNWWdlb3pJNUxOV3ZRMU02TjFOV0VBUGVoRDhLOEU0SHpSTl9YMEwtN1pVSV9rQ0I0cUZvRFptd1NGUks3ci0zekpiSmZKMmJobUZfcTZpS1YyVkZCbVR4U3RKQ1F6TUlXU2x5VmdDZ2V1empCQVViM3NNVDhPc1NtMU5IeENVZWlNQQ?oc=5",
+  "category": "technology",
+  "n_sources": 22,
+  "sources": [
+   "9to5Mac",
+   "AP News",
+   "Ars Technica",
+   "Bleacher Report",
+   "Bloomberg.com",
+   "CNET",
+   "CNN",
+   "CineD"
+  ],
+  "summary": "",
+  "related_titles": [
+   "After a 13-year wait, ‘Grand Theft Auto VI’ arrives with enormous hype and expectations",
+   "‘Grand Theft Auto VI’ earns more than $1.5 billion before release | CNN Business",
+   "Grand Theft Auto VI Review: It Will Steal Your Heart",
+   "The long wait is almost over. Here's what to know about the upcoming release of 'Grand Theft Auto VI'",
+   "Grand Theft Auto VI Is a Masterpiece"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "slot": "evening",
+ "created": "2026-11-18T20:23:57.069435+09:00",
+ "files": [
+  "output/2026-11-18/evening/reel.mp4",
+  "output/2026-11-18/evening/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-18/evening/feed_01.jpg",
+  "output/2026-11-18/evening/feed_02.jpg",
+  "output/2026-11-18/evening/feed_03.jpg",
+  "output/2026-11-18/evening/feed_04.jpg",
+  "output/2026-11-18/evening/feed_05.jpg",
+  "output/2026-11-18/evening/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/xbox-play-game-controller-7986823/",
+  "https://pixabay.com/photos/asia-rain-street-illumination-3713473/",
+  "https://pixabay.com/photos/japan-asia-neon-streetm-city-4141581/",
+  "https://pixabay.com/photos/controller-analogue-watch-time-7714412/",
+  "https://pixabay.com/photos/game-strategy-computer-289470/"
+ ],
+ "title": "13년 만의 귀환!",
+ "publishable": true
+}
