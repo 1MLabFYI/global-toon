@@ -3,14 +3,12 @@ name: Global Toon Daily
 on:
   schedule:
     # GitHub cron은 UTC 기준 (KST = UTC+9). 정각은 지연이 잦아 분을 비켜 둠
-    - cron: "41 22 * * *"   # KST 07:41  morning (국내)
-    - cron: "13 3 * * *"    # KST 12:13  noon    (세계)
-    - cron: "23 10 * * *"   # KST 19:23  evening (테크·트렌드)
+    - cron: "23 10 * * *"   # KST 19:23  하루 1편 (daily: 국내·세계·경제·테크 중 오늘의 주요 이슈)
   workflow_dispatch:
     inputs:
       slot:
-        description: "morning | noon | evening"
-        default: "noon"
+        description: "daily(기본) | morning | noon | evening"
+        default: "daily"
       publish:
         description: "인스타그램에 게시할까요? (false면 이미지만 생성)"
         default: "true"
@@ -47,10 +45,8 @@ jobs:
         id: slot
         run: |
           case "${{ github.event.schedule }}" in
-            "41 22 * * *") S=morning ;;
-            "13 3 * * *")  S=noon ;;
-            "23 10 * * *") S=evening ;;
-            *) S="${{ github.event.inputs.slot || 'noon' }}" ;;
+            "23 10 * * *") S=daily ;;
+            *) S="${{ github.event.inputs.slot || 'daily' }}" ;;
           esac
           echo "slot=$S" >> $GITHUB_OUTPUT
 
