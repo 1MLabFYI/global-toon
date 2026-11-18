@@ -1,0 +1,33 @@
+{
+ "slot": "noon",
+ "created": "2026-11-18T12:59:28.394077+09:00",
+ "files": [
+  "output/2026-11-18/noon/reel.mp4",
+  "output/2026-11-18/noon/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-18/noon/feed_01.jpg",
+  "output/2026-11-18/noon/feed_02.jpg",
+  "output/2026-11-18/noon/feed_03.jpg",
+  "output/2026-11-18/noon/feed_04.jpg",
+  "output/2026-11-18/noon/feed_05.jpg",
+  "output/2026-11-18/noon/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/stair-windows-glass-door-net-7509394/",
+  "https://pixabay.com/photos/temple-stairs-mountains-buildings-5893180/",
+  "https://pixabay.com/photos/boardroom-london-office-5453288/",
+  "https://pixabay.com/photos/new-york-city-skyline-usa-2830092/",
+  "https://pixabay.com/photos/meeting-conference-business-office-10222194/"
+ ],
+ "title": "무역 장벽 낮추자!",
+ "publishable": true
+}

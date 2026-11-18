@@ -1,0 +1,140 @@
+{
+ "selected_index": 3,
+ "topic_title": "무역 장벽 낮추자!",
+ "-": "시진핑 주석의 개방 목소리",
+ "hook": "APEC 앞두고 나온 메시지",
+ "category_tag": "경제",
+ "music_mood": "calm",
+ "cover_photo": [
+  "modern convention center interior glass facade",
+  "global business summit architecture"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "international summit stage architecture",
+    "business forum conference hall"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "시진핑 중국 국가주석이 주요 회의를 앞두고 무역과 투자 장벽을 제거하자고 강조했어요."
+    },
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "모두가 귀를 쫑긋 세울 만한 발언이네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "global economic forum meeting room",
+    "modern commercial building interior"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "자유롭고 개방된 시장을 지지하며 다자무역 체제를 수호해야 한다는 입장을 밝혔습니다."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "글로벌 통상 환경에 어떤 영향을 줄지 주목돼요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "international trade financial district",
+    "modern cityscape bridge view"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "이번 발언은 각국 정상들의 중요 만남을 앞둔 시점에 나와 더욱 관심을 모으고 있어요."
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "타이밍이 아주 절묘하군요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "global business handshake silhouette",
+    "modern architecture skyline at sunset"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "앞으로 이어질 외교 무대에서 실질적인 논의가 이뤄질지 지켜봐야겠습니다."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "세계 경제의 흐름을 바꿀 소식, 계속 전해드릴게요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "시진핑 중국 국가주석이 무역 및 투자 장벽 제거를 촉구함 (China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin)",
+  "자유롭고 개방된 시장 지지 및 다자무역체제 수호 입장 표명 (China's Xi calls for free and open trade at APEC summit)"
+ ],
+ "summary": [
+  "시진핑 주석, 무역·투자 장벽 제거 촉구",
+  "자유롭고 개방된 시장과 다자무역 강조",
+  "주요 정상 회의 앞두고 나와 이목 집중"
+ ],
+ "question": "글로벌 무역 환경이 어떻게 변화할지 여러분의 의견은 어떠신가요?",
+ "caption": "🌍 APEC 정상회의를 앞두고 시진핑 중국 국가주석이 무역 및 투자 장벽 제거를 강조했습니다! 자유롭고 개방된 시장 지지와 다자무역체제 수호의 필요성을 언급하며 이목이 집중되고 있는데요. 글로벌 통상 흐름에 어떤 변화를 가져올지 함께 살펴보아요! 👀✨\n\n#글로벌툰 #세계뉴스 #시진핑 #APEC #경제뉴스 #무역 #국제뉴스 #시사 #글로벌경제 #통상 #투자 #뉴스토마토 #세계경제",
+ "hashtags": [
+  "#글로벌툰",
+  "#세계뉴스",
+  "#시진핑",
+  "#APEC",
+  "#경제뉴스",
+  "#무역",
+  "#국제뉴스",
+  "#시사",
+  "#글로벌경제",
+  "#통상",
+  "#투자",
+  "#뉴스"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin",
+  "source": "CNBC",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9kN1VQeHRmSWJFQ2NzTW9IS1hUczJuM0Fqa01jMW1ZRkwxT2JVV2xLbllJRVBoc1gtQklCT2FRNVpNWElEeFpneDlaTDdHOVhsZGtHRXZJSEUyQjE1OUpFY2FvbDFKbk15OFdaZFI4ZjRSN3laTkFRQ3BLQdIBgAFBVV95cUxOeUtIeUtSU29VbDRRbWlQclJXOW5jVmNpbW8zYlFNbmRhem8yN1lDWU5adEhraFlXUjFCZlZDeEExUVJaRG9WZGl4bTlNUEw3Y2xvemg4V2RvZmsxREZFNWNGXzE4Z3VIUGNEeWducjZaSkpGYUxpbXNsekdIeW9jUw?oc=5",
+  "category": "world",
+  "n_sources": 14,
+  "sources": [
+   "AP News",
+   "Al Jazeera",
+   "BBC",
+   "Bloomberg.com",
+   "CNBC",
+   "CNN",
+   "Financial Times",
+   "Kyiv Post"
+  ],
+  "summary": "",
+  "related_titles": [
+   "China’s Xi calls for removing trade and investment barriers ahead of his meeting with Trump and Putin",
+   "China's Xi calls for free and open trade at APEC summit",
+   "Hi-tech Shenzhen takes centre stage as Xi sends ‘Chinamaxxing’ message at Apec summit",
+   "‘Witness the Wonders’: China touts miracle city for Trump summit",
+   "Xi Warns Against ‘Rampant’ Protectionism Ahead of Trump Talks"
+  ]
+ }
+}

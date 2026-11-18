@@ -195,5 +195,15 @@
   "status": "published",
   "music": "calm_02.mp3",
   "media_id": "17983034997138860"
+ },
+ {
+  "date": "2026-11-18",
+  "slot": "noon",
+  "title": "무역 장벽 낮추자!",
+  "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9kN1VQeHRmSWJFQ2NzTW9IS1hUczJuM0Fqa01jMW1ZRkwxT2JVV2xLbllJRVBoc1gtQklCT2FRNVpNWElEeFpneDlaTDdHOVhsZGtHRXZJSEUyQjE1OUpFY2FvbDFKbk15OFdaZFI4ZjRSN3laTkFRQ3BLQdIBgAFBVV95cUxOeUtIeUtSU29VbDRRbWlQclJXOW5jVmNpbW8zYlFNbmRhem8yN1lDWU5adEhraFlXUjFCZlZDeEExUVJaRG9WZGl4bTlNUEw3Y2xvemg4V2RvZmsxREZFNWNGXzE4Z3VIUGNEeWducjZaSkpGYUxpbXNsekdIeW9jUw?oc=5",
+  "dir": "output/2026-11-18/noon",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "18080833997429705"
  }
 ]
