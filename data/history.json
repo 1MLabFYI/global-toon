@@ -215,5 +215,15 @@
   "status": "published",
   "music": "bright_01.mp3",
   "media_id": "17905064682378036"
+ },
+ {
+  "date": "2026-11-19",
+  "slot": "daily",
+  "title": "드디어 수정 가능?",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYVZkZnlsSEpDdElSZGdQYTBPaW5SU3dERHd1ZGtRVzRBQzd3Qk1fUnVHcERodFlOVHl0LWRUaVVGbm5FYXY3dkdYdkJVUHg4RXRHd3VpdVItVVZoTkRDelVSVmFoZEQ1SHNHelVEZk9FNVJPejNWUlN0VFpMVEUtRUtkWTgteXRQMVp4U043SklkT2Fxdkg2MWphTzhERkw2T1FGTTMzRlhaZVBYelE?oc=5",
+  "dir": "output/2026-11-19/daily",
+  "status": "published",
+  "music": "calm_01.mp3",
+  "media_id": "17980703367158172"
  }
 ]

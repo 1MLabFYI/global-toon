@@ -1,0 +1,139 @@
+{
+ "selected_index": 9,
+ "topic_title": "드디어 수정 가능?",
+ "hook": "인스타 스토리에 생긴 변화",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "smartphone screen social media feed",
+  "mobile app display"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "smartphone mockup pink background",
+    "mobile device flat lay"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "인스타그램 스토리에 드디어 게시 후 수정 기능이 추가됐어요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "올리자마자 오탈자 발견해서 울던 날들 안녕이네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "digital interface design elements",
+    "app screen mockup"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "수년 동안 기다렸던 기능이지만, 사용하려면 한 가지 조건이 붙는다고 해요."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "조건이요? 어떤 게 숨어 있을까요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "abstract code screen technology",
+    "software interface dark mode"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "올린 뒤에 수정할 수는 있지만, 그 과정에 약간의 제약이 있다고 하네요."
+    },
+    {
+     "who": "M",
+     "pose": "shrug",
+     "text": "역시 완벽하게 한 번에 내는 게 속 편할지도요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "minimalist desk setup with phone",
+    "modern workspace interior"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "앞으로는 스토리를 올릴 때 조금 더 마음의 여유가 생기겠어요!"
+    },
+    {
+     "who": "F",
+     "pose": "laugh",
+     "text": "다들 오타 없는 완벽한 스토리 생활 하자고요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "인스타그램이 게시 후 스토리 수정 기능을 도입했다 (Instagram finally lets users edit Stories after publishing, but there’s a catch)",
+  "수정 기능에 일종의 조건이나 제약이 존재한다 (Instagram finally lets users edit Stories after publishing, but there’s a catch)"
+ ],
+ "summary": [
+  "인스타 스토리 게시 후 수정 기능 도입",
+  "기다리던 기능이나 약간의 제약 존재",
+  "오탈자 걱정을 덜어줄 유용한 업데이트"
+ ],
+ "question": "여러분은 스토리에 오타가 나서 지운 적 있으신가요?",
+ "caption": "인스타그램 스토리에 드디어 게시 후 수정 기능이 추가되었습니다! 📱✨\n\n그동안 올리자마자 발견한 오타 때문에 눈물 흘리며 지웠던 기억, 다들 있으시죠? 이제는 수정이 가능해졌지만 소소한 제약도 함께 있다고 하네요!\n\n자세한 내용은 넘겨서 확인해보세요 👆\n\n#인스타그램 #인스타스토리에디트 #SNS기능 #테크뉴스 #IT정보 #글로벌툰 #디지털생활 #앱동향 #인스타꿀팁 #일상테크 #소셜미디어",
+ "hashtags": [
+  "#인스타그램",
+  "#인스타스토리",
+  "#SNS기능",
+  "#테크뉴스",
+  "#IT정보",
+  "#글로벌툰",
+  "#디지털생활",
+  "#앱동향",
+  "#인스타업데이트",
+  "#일상테크",
+  "#소셜미디어",
+  "#IT트렌드"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Instagram finally lets users edit Stories after publishing, but there’s a catch",
+  "source": "9to5Mac",
+  "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYVZkZnlsSEpDdElSZGdQYTBPaW5SU3dERHd1ZGtRVzRBQzd3Qk1fUnVHcERodFlOVHl0LWRUaVVGbm5FYXY3dkdYdkJVUHg4RXRHd3VpdVItVVZoTkRDelVSVmFoZEQ1SHNHelVEZk9FNVJPejNWUlN0VFpMVEUtRUtkWTgteXRQMVp4U043SklkT2Fxdkg2MWphTzhERkw2T1FGTTMzRlhaZVBYelE?oc=5",
+  "category": "technology",
+  "n_sources": 20,
+  "sources": [
+   "9to5Google",
+   "9to5Mac",
+   "AP News",
+   "CNN",
+   "CTV News",
+   "Engadget",
+   "Fox News",
+   "GamesRadar+"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Instagram finally lets users edit Stories after publishing, but there’s a catch",
+   "Instagram now lets you edit your stories after you post them",
+   "You Can Finally Edit An Instagram Story Without Deleting It",
+   "Instagram finally fixes the most annoying aspect of using the app – here’s what I want next",
+   "Instagram introduces editing option for published Stories"
+  ]
+ }
+}
