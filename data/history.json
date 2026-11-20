@@ -225,5 +225,15 @@
   "status": "published",
   "music": "calm_01.mp3",
   "media_id": "17980703367158172"
+ },
+ {
+  "date": "2026-11-20",
+  "slot": "daily",
+  "title": "GTA 6 맵의 비밀?",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbktBajlLWDJRN01kZ0pDb0RvWXNob0RfZTdEbmh2YWpVSGxMSFhCeHp0a3Y0dTVFWVJkZWswRVBGY3UtQWZRVDhLZ2Zra1Nva1pKZVBDZHZPTXBHM2JZNTd4NXlZTkdFMWIzWmtUb09XSW9ZQWhyTEo1dzBsUy01Z1F4b004ZDR4ZEpBYjhyUFgxV0kzNFNJSWtGWXZOQVUyV084ajQ3MA?oc=5",
+  "dir": "output/2026-11-20/daily",
+  "status": "published",
+  "music": "bright_02.mp3",
+  "media_id": "18081637595415755"
  }
 ]
