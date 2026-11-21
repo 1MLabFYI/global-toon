@@ -235,5 +235,15 @@
   "status": "published",
   "music": "bright_02.mp3",
   "media_id": "18081637595415755"
+ },
+ {
+  "date": "2026-11-21",
+  "slot": "daily",
+  "title": "구글 검색의 대변신",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVDhwMzkzejNZQ1AtREVxR3l5d0lFS0phdjhnR002T1JjYmVQT2NULUdvd3Y2YnBTR2Nhb3BMZEt3VUdPSDk0Zzd5YmxtVTUxRGZoZ2Izeno4X3podnQ5c05SOEo0N3ZKQlB3ZWJqLU9USEFmMzhvWFYyTUhKZ1dvdS1UMlFXMHVhVWdyTXotbTRZWGtzMVU4SGRFbjVpb1Y5S0l1RkQwY0s0Q3ZHWTJZTg?oc=5",
+  "dir": "output/2026-11-21/daily",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "18150723376491219"
  }
 ]

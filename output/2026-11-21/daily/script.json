@@ -1,0 +1,140 @@
+{
+ "selected_index": 4,
+ "topic_title": "구글 검색의 대변신",
+ "hook": "검색창이 사라지고 AI가 찾아온다!",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "modern minimalist computer workspace",
+  "clean tech desk setup"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "empty computer screen on a clean desk",
+    "minimalist tech desk"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "구글이 검색 홈페이지 디자인을 전면 개편했어요."
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "잠깐, 상징적인 검색창이 사라졌다고요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "futuristic artificial intelligence interface concept",
+    "digital glowing chat screen"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "맞아요! 이제 검색창 대신 AI 채팅 기록이 중심이 됩니다."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "검색 버튼도 없어지고 AI 대화형 화면으로 바뀐 거죠."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "person using modern tablet computer",
+    "digital notebook on desk"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "사이드바도 접을 수 있어서 화면을 더 넓게 쓸 수 있어요."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "더 자연스럽게 대화하며 정보를 찾겠네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "clean minimalist home office interior",
+    "bright workspace"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "이제 구글 홈 화면에서 AI랑 수다만 떨지도 몰라요~"
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "새로운 검색 경험, 지금 바로 확인해보세요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "구글이 AI 채팅 기록이 포함된 새로운 검색 홈페이지를 출시했다 (Google rolls out new search homepage with AI chat history and no search button)",
+  "기존의 검색 버튼이 사라지고 AI 중심 디자인으로 개편되었다 (Google rolls out new search homepage with AI chat history and no search button)",
+  "접을 수 있는 사이드바 등 새로운 UI가 도입되었다 (Google Search Officially Rolls Out Collapsible Sidebar)"
+ ],
+ "summary": [
+  "구글 검색 홈페이지가 전면 개편됐어요",
+  "상징적인 검색창이 사라지고 AI 채팅이 중심이 됩니다",
+  "접을 수 있는 사이드바로 편의성이 높아졌어요"
+ ],
+ "question": "여러분은 검색창 없는 구글 홈 화면, 어색하신가요?",
+ "caption": "구글이 검색 홈페이지를 새롭게 개편했어요! 🖥️\n\n상징적이던 검색창 대신 AI 채팅 기록과 대화형 화면이 그 자리를 채웠는데요, 접을 수 있는 사이드바까지 더해져 훨씬 깔끔해졌답니다.\n\n과연 우리들의 검색 습관에 어떤 변화를 가져올까요? 지금 바로 확인해 보세요! ✨\n\n#구글 #구글검색 #테크뉴스 #인공지능 #IT뉴스 #글로벌툰",
+ "hashtags": [
+  "#구글",
+  "#구글검색",
+  "#테크뉴스",
+  "#인공지능",
+  "#IT뉴스",
+  "#글로벌툰",
+  "#AI",
+  "#구글홈",
+  "#신기술",
+  "#테크트렌드",
+  "#뉴스툰",
+  "#인스타뉴스"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Google rolls out new search homepage with AI chat history and no search button",
+  "source": "Ars Technica",
+  "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVDhwMzkzejNZQ1AtREVxR3l5d0lFS0phdjhnR002T1JjYmVQT2NULUdvd3Y2YnBTR2Nhb3BMZEt3VUdPSDk0Zzd5YmxtVTUxRGZoZ2Izeno4X3podnQ5c05SOEo0N3ZKQlB3ZWJqLU9USEFmMzhvWFYyTUhKZ1dvdS1UMlFXMHVhVWdyTXotbTRZWGtzMVU4SGRFbjVpb1Y5S0l1RkQwY0s0Q3ZHWTJZTg?oc=5",
+  "category": "technology",
+  "n_sources": 27,
+  "sources": [
+   "9to5Google",
+   "AP News",
+   "Al Jazeera",
+   "Ars Technica",
+   "BBC",
+   "Business Insider",
+   "CBS News",
+   "CNET"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Google rolls out new search homepage with AI chat history and no search button",
+   "Google's New Homepage Redesign Makes AI Search Even More Like Gemini",
+   "Google Search Officially Rolls Out Collapsible Sidebar",
+   "Even the Iconic Google Home Page Can’t Survive the Push for More AI",
+   "Temporary threads are now available in AI Mode in Search."
+  ]
+ }
+}

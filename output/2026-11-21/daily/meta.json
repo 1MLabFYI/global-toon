@@ -1,0 +1,33 @@
+{
+ "slot": "daily",
+ "created": "2026-11-21T20:11:29.919345+09:00",
+ "files": [
+  "output/2026-11-21/daily/reel.mp4",
+  "output/2026-11-21/daily/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-21/daily/feed_01.jpg",
+  "output/2026-11-21/daily/feed_02.jpg",
+  "output/2026-11-21/daily/feed_03.jpg",
+  "output/2026-11-21/daily/feed_04.jpg",
+  "output/2026-11-21/daily/feed_05.jpg",
+  "output/2026-11-21/daily/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/interior-design-bedroom-table-chair-6012873/",
+  "https://pixabay.com/photos/adult-annoyed-blur-burnout-1850268/",
+  "https://pixabay.com/photos/woman-artificial-intelligence-8026954/",
+  "https://pixabay.com/photos/ipad-wifi-device-mobile-ereader-2202228/",
+  "https://pixabay.com/photos/plant-design-home-house-lamp-4243898/"
+ ],
+ "title": "구글 검색의 대변신",
+ "publishable": true
+}
