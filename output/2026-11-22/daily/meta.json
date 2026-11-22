@@ -1,0 +1,33 @@
+{
+ "slot": "daily",
+ "created": "2026-11-22T20:07:16.632465+09:00",
+ "files": [
+  "output/2026-11-22/daily/reel.mp4",
+  "output/2026-11-22/daily/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-22/daily/feed_01.jpg",
+  "output/2026-11-22/daily/feed_02.jpg",
+  "output/2026-11-22/daily/feed_03.jpg",
+  "output/2026-11-22/daily/feed_04.jpg",
+  "output/2026-11-22/daily/feed_05.jpg",
+  "output/2026-11-22/daily/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/girl-street-walk-person-mono-4820225/",
+  "https://pixabay.com/photos/video-games-game-console-controller-10225432/",
+  "https://pixabay.com/photos/architecture-building-white-space-2746846/",
+  "https://pixabay.com/photos/woman-model-silhouette-star-8035746/",
+  "https://pixabay.com/photos/asia-rain-street-illumination-3713473/"
+ ],
+ "title": "GTA6, 첫날 37억 달러?",
+ "publishable": true
+}
