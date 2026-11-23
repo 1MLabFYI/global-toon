@@ -1,0 +1,140 @@
+{
+ "selected_index": 1,
+ "topic_title": "맥북 네오 2 출격 대기?",
+ "hook": "내년 3월, 새로운 컬러로 돌아온다!",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "modern laptop on desk minimalist setup",
+  "minimalist desk workspace"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "modern desk with laptop and coffee cup",
+    "clean office desk top view"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "애플의 신제품 맥북 네오 2가 내년 3월쯤 출시될 거란 전망이 나왔어요!"
+    },
+    {
+     "who": "M",
+     "pose": "surprised",
+     "text": "벌써 후속작 소식이라니 시간 참 빠르네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "colorful laptop keyboards flatlay",
+    "modern tech gadgets on desk"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "이번 제품에는 새로운 컬러들이 추가될 가능성이 크다고 합니다."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "디자인에 어떤 변화가 생길지 벌써 기대가 되네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "computer chip macro shot technology",
+    "microprocessor semiconductor"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "성능 면에서는 12GB RAM과 A19 Pro 칩이 탑재될 것으로 예상됩니다."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "알찬 업그레이드가 될 것 같군요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "futuristic workspace soft lighting",
+    "minimalist interior design"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "봄철 출시 일정을 앞두고 관련 보도가 이어지고 있어요."
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "지갑 열릴 준비만 하면 되겠네요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "맥북 네오 2가 3월 경에 출시될 것으로 예상된다 (MacBook Neo 2 likely to launch around March)",
+  "새로운 컬러가 추가될 수 있다는 보도가 나왔다 (could feature new colors: report)",
+  "12GB RAM과 A19 Pro 칩이 탑재될 것으로 기대된다 (MacBook Neo 2 Expected to Get 12GB RAM and A19 Pro Chip)"
+ ],
+ "summary": [
+  "맥북 네오 2 내년 3월 출시 전망",
+  "새로운 컬러와 디자인 변화 기대",
+  "12GB RAM 및 A19 Pro 칩 탑재 예상"
+ ],
+ "question": "여러분이 가장 좋아하는 노트북 색상은 무엇인가요?",
+ "caption": "애플의 차세대 신제품 소식입니다! 💻\n\n맥북 네오 2가 내년 3월경 출시될 것이라는 전망이 나왔는데요, 새로운 컬러 추가와 함께 12GB RAM, A19 Pro 칩 탑재 가능성이 거론되며 기대를 모으고 있습니다.\n\n새로운 맥북을 기다리셨던 분들께 반가운 소식이 되겠네요! ✨\n\n#맥북네오2 #애플신제품 #테크뉴스 #글로벌툰",
+ "hashtags": [
+  "#맥북네오2",
+  "#애플",
+  "#맥북",
+  "#테크뉴스",
+  "#IT소식",
+  "#신제품",
+  "#노트북",
+  "#애플워치",
+  "#전자기기",
+  "#트렌드",
+  "#글로벌툰",
+  "#뉴스툰"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "MacBook Neo 2 likely to launch around March, could feature new colors: report",
+  "source": "9to5Mac",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORFQ1UmdDbFZLYnVRRXQ5ekFDLXRGeE9tZnFPZjVmbGFBRzl0MW0tTnVrd2h5MVRpZkxqVjB1UmE3M0JmcGROYzE4YWRCdXhYM09MYkZRUk83UnIwU0FLbGIxZnBnaWVsaDNtcXdfQVNjOEpPQWduRWlNTUdTelZOamNCbWtxTUprOHB4X3JrOFcyNXdfa0trU0VOejdGMTVUMm9BbnVoVDM0SGs?oc=5",
+  "category": "technology",
+  "n_sources": 21,
+  "sources": [
+   "9to5Google",
+   "9to5Mac",
+   "Android Police",
+   "AppleInsider",
+   "CNN",
+   "Fox News",
+   "Gizmodo",
+   "MacRumors"
+  ],
+  "summary": "",
+  "related_titles": [
+   "MacBook Neo 2 likely to launch around March, could feature new colors: report",
+   "MacBook Neo 2 Reportedly Launching Before the End of March 2027",
+   "Apple puts grand plans for the MacBook Neo into action",
+   "MacBook Neo 2 Expected to Get 12GB RAM and A19 Pro Chip [Gurman]",
+   "New MacBook Neo now expected in spring 2027"
+  ]
+ }
+}

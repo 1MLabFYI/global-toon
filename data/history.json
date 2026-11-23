@@ -255,5 +255,15 @@
   "status": "published",
   "music": "bright_01.mp3",
   "media_id": "18125112487946045"
+ },
+ {
+  "date": "2026-11-23",
+  "slot": "daily",
+  "title": "맥북 네오 2 출격 대기?",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORFQ1UmdDbFZLYnVRRXQ5ekFDLXRGeE9tZnFPZjVmbGFBRzl0MW0tTnVrd2h5MVRpZkxqVjB1UmE3M0JmcGROYzE4YWRCdXhYM09MYkZRUk83UnIwU0FLbGIxZnBnaWVsaDNtcXdfQVNjOEpPQWduRWlNTUdTelZOamNCbWtxTUprOHB4X3JrOFcyNXdfa0trU0VOejdGMTVUMm9BbnVoVDM0SGs?oc=5",
+  "dir": "output/2026-11-23/daily",
+  "status": "published",
+  "music": "calm_01.mp3",
+  "media_id": "17960436456294672"
  }
 ]
