@@ -1,0 +1,142 @@
+{
+ "selected_index": 7,
+ "topic_title": "새로운 웹 브라우저 등장!",
+ "hook": "4년 개발 끝에 알파 버전 공개",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "modern computer desk with code on screen",
+  "minimalist desk setup"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "empty computer monitor screen in office",
+    "tech workspace"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "수년 만에 처음으로 새로운 브라우저 엔진 '레이디버드'가 테스트를 시작했어요."
+    },
+    {
+     "who": "F",
+     "pose": "surprised",
+     "text": "새로운 브라우저 엔진이라니 궁금하네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern software developer workspace",
+    "coding screen"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "4년간의 개발 끝에 알파 버전이 출시되어 맥OS와 리눅스에서 테스트할 수 있습니다."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "기존 코드를 복사하지 않고 독자적으로 만들었대요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "software testing environment on screen",
+    "code editor"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "오랜 기간 준비된 만큼 웹 환경에 어떤 변화를 가져올지 주목받고 있어요."
+    },
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "직접 테스트해본 사용자들의 반응도 이어지고 있습니다."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "futuristic glowing data stream",
+    "digital background"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "앞으로 웹 브라우저 선택지가 더 다양해지겠네요!"
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "저도 한번 써보러 가야겠습니다!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "새로운 브라우저 엔진 레이디버드가 테스트를 시작함 (Ladybird, the first new browser engine in years, is now available to test)",
+  "4년 개발 끝에 알파 버전이 출시되어 맥OS와 리눅스에서 지원됨 (Ladybird Browser Alpha Lands on macOS and Linux, With an Engine Nobody Forked)",
+  "기존 코드를 포크하지 않고 독자적으로 개발됨 (Engine Nobody Forked)"
+ ],
+ "summary": [
+  "새로운 브라우저 엔진 레이디버드 공개",
+  "4년 개발 거쳐 알파 버전 테스트 시작",
+  "맥OS와 리눅스 환경에서 이용 가능"
+ ],
+ "question": "여러분은 주로 어떤 웹 브라우저를 쓰시나요?",
+ "caption": "새로운 웹 브라우저 엔진 '레이디버드'가 알파 버전을 공개하고 테스트에 돌입했습니다! 🌐 4년 동안 독자적으로 개발된 만큼 앞으로의 행보가 주목되는데요. 여러분의 최애 브라우저는 무엇인가요? 💻\n\n#글로벌툰 #테크뉴스 #웹브라우저 #레이디버드 #개발 #IT뉴스 #신기술 #맥OS #리눅스 #테크트렌드 #소프트웨어 #알파버전 #IT정보 #트렌드",
+ "hashtags": [
+  "#글로벌툰",
+  "#테크뉴스",
+  "#웹브라우저",
+  "#레이디버드",
+  "#개발",
+  "#IT뉴스",
+  "#신기술",
+  "#맥OS",
+  "#리눅스",
+  "#테크트렌드",
+  "#소프트웨어",
+  "#알파버전",
+  "#IT정보",
+  "#트렌드"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "Ladybird, the first new browser engine in years, is now available to test",
+  "source": "The Verge",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdmszMm5kRVpkclQzX0dVaDZzd3l6TXNsVWlET1c2dUkzYll0ZjBDdEZQN2stbGMwQ0VpVHJJMkRKcVhjTmNQZVhldllpalY1UW9tMnBJaEJMTXFrTWEtNnFwUk80Y1BOWUF0WTk2VFBrWVVrZzhwVVJWT3JuSExVQWZYTTMtODlm?oc=5",
+  "category": "technology",
+  "n_sources": 25,
+  "sources": [
+   "9to5Google",
+   "9to5Mac",
+   "AP News",
+   "CTech",
+   "Droid Life",
+   "Engadget",
+   "Eurogamer.net",
+   "Euromaidan Press"
+  ],
+  "summary": "",
+  "related_titles": [
+   "Ladybird, the first new browser engine in years, is now available to test",
+   "Independent Web Browser/Engine \"Ladybird\" Goes Into Alpha Release",
+   "Ladybird browser reaches alpha after four years of development",
+   "Ladybird Browser Alpha Lands on macOS and Linux, With an Engine Nobody Forked",
+   "Ladybird Web Browser/Engine Reaches Alpha"
+  ]
+ }
+}

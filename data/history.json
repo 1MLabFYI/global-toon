@@ -265,5 +265,15 @@
   "status": "published",
   "music": "calm_01.mp3",
   "media_id": "17960436456294672"
+ },
+ {
+  "date": "2026-11-24",
+  "slot": "daily",
+  "title": "새로운 웹 브라우저 등장!",
+  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdmszMm5kRVpkclQzX0dVaDZzd3l6TXNsVWlET1c2dUkzYll0ZjBDdEZQN2stbGMwQ0VpVHJJMkRKcVhjTmNQZVhldllpalY1UW9tMnBJaEJMTXFrTWEtNnFwUk80Y1BOWUF0WTk2VFBrWVVrZzhwVVJWT3JuSExVQWZYTTMtODlm?oc=5",
+  "dir": "output/2026-11-24/daily",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "17998957386024439"
  }
 ]

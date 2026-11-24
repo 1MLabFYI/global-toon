@@ -1,0 +1,33 @@
+{
+ "slot": "daily",
+ "created": "2026-11-24T20:17:43.207353+09:00",
+ "files": [
+  "output/2026-11-24/daily/reel.mp4",
+  "output/2026-11-24/daily/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-24/daily/feed_01.jpg",
+  "output/2026-11-24/daily/feed_02.jpg",
+  "output/2026-11-24/daily/feed_03.jpg",
+  "output/2026-11-24/daily/feed_04.jpg",
+  "output/2026-11-24/daily/feed_05.jpg",
+  "output/2026-11-24/daily/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/adult-annoyed-blur-burnout-1850268/",
+  "https://pixabay.com/photos/imac-keyboard-mouse-computer-2568270/",
+  "https://pixabay.com/photos/planner-flat-lay-keyboard-watch-4233900/",
+  "https://pixabay.com/photos/biology-research-laboratory-science-220005/",
+  "https://pixabay.com/photos/water-sun-reflection-flow-lake-7555693/"
+ ],
+ "title": "새로운 웹 브라우저 등장!",
+ "publishable": true
+}
