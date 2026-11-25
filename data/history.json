@@ -275,5 +275,15 @@
   "status": "published",
   "music": "calm_02.mp3",
   "media_id": "17998957386024439"
+ },
+ {
+  "date": "2026-11-25",
+  "slot": "daily",
+  "title": "에어태그 2 출격 대기?",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRW1kVC1QZGJ6QXdEeUZpbUVTUHBOM01BMnFHbDcwLVRnTVRBTURuVFk1dVdRSlREdjNjSm5sRVY4NmlHb3dOX01VUGZCMXZpOHlENFNsQzd2T1A3eFNNM0VXWFlKM2NmMGZEbmd5UHpfcEFLTzdnSWJpYzdoOWxxMnRaMS14MkNTOGJwODdFeUdoRXF6WTM5QUVnMXU?oc=5",
+  "dir": "output/2026-11-25/daily",
+  "status": "published",
+  "music": "calm_02.mp3",
+  "media_id": "18188790142424953"
  }
 ]

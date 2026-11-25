@@ -1,0 +1,33 @@
+{
+ "slot": "daily",
+ "created": "2026-11-25T20:25:53.723884+09:00",
+ "files": [
+  "output/2026-11-25/daily/reel.mp4",
+  "output/2026-11-25/daily/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-25/daily/feed_01.jpg",
+  "output/2026-11-25/daily/feed_02.jpg",
+  "output/2026-11-25/daily/feed_03.jpg",
+  "output/2026-11-25/daily/feed_04.jpg",
+  "output/2026-11-25/daily/feed_05.jpg",
+  "output/2026-11-25/daily/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/girl-portrait-school-student-10377109/",
+  "https://pixabay.com/photos/sofa-side-table-aesthetic-wall-9181557/",
+  "https://pixabay.com/photos/person-hat-girl-adventure-2178868/",
+  "https://pixabay.com/photos/airport-board-flying-scoreboard-1890944/",
+  "https://pixabay.com/photos/kitchen-interior-design-modern-home-9288111/"
+ ],
+ "title": "에어태그 2 출격 대기?",
+ "publishable": true
+}

@@ -1,0 +1,139 @@
+{
+ "selected_index": 6,
+ "topic_title": "에어태그 2 출격 대기?",
+ "hook": "더 강력해진 기능으로 돌아온다!",
+ "category_tag": "테크",
+ "music_mood": "calm",
+ "cover_photo": [
+  "minimalist white tech desk interior",
+  "modern gadget display background"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "modern keychain on a wooden table",
+    "small electronic tracker device"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "잃어버린 물건을 찾을 때 쓰던 에어태그의 후속작 소식이 나왔어요!"
+    },
+    {
+     "who": "F",
+     "pose": "surprised",
+     "text": "벌써 2버전이라니, 어떤 점이 좋아졌을까요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "travel backpack zipper close up",
+    "keys and wallet on a table"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "외신에 따르면 에어태그 2는 성능을 높여줄 두 가지 큰 개선점이 담겼다고 해요."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "건망증 치트키가 더 강력해지네요!"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "bright airport departure board",
+    "travel accessories on a counter"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "여행이나 외출할 때 물건을 자주 깜빡하는 분들에게 큰 도움이 될 수 있죠."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "가방이나 차 키에 달아두면 마음이 편해지겠어요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern electronic store interior shelf",
+    "tech gadget packaging box"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "새로운 기능으로 무장한 에어태그 2가 사용자들의 일상을 얼마나 편하게 바꿀지 기대됩니다!"
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "제 지갑에도 하나 꼭 달아놔야겠어요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "AirTag 2 has two big improvements that make it worth the upgrade (AirTag 2 관련 보도)",
+  "Apple's AirTag 2 hits a record-low price and offers useful tracking features (AirTag 관련 보도)"
+ ],
+ "summary": [
+  "에어태그 2 출시 임박 소식 화제",
+  "두 가지 큰 기능적 개선 포함",
+  "물건 분실 방지 편의성 향상 기대"
+ ],
+ "question": "여러분은 평소에 물건을 자주 잃어버리시나요?",
+ "caption": "물건 잘 깜빡하는 분들 주목! 🧐\n\n더 강력한 성능으로 돌아올 예정인 에어태그 2 소식을 가져왔어요.\n어떤 새로운 기능이 담길지 함께 알아볼까요? ✈️\n\n#글로벌툰 #테크소식 #에어태그 #애플 #IT뉴스 #gadgets #apple",
+ "hashtags": [
+  "#글로벌툰",
+  "#테크",
+  "#IT",
+  "#에어태그",
+  "#애플",
+  "#AirTag",
+  "#전자기기",
+  "#뉴스",
+  "#트렌드",
+  "#테크뉴스",
+  "#스마트기기",
+  "#애플소식"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "AirTag 2 has two big improvements that make it worth the upgrade",
+  "source": "9to5Mac",
+  "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRW1kVC1QZGJ6QXdEeUZpbUVTUHBOM01BMnFHbDcwLVRnTVRBTURuVFk1dVdRSlREdjNjSm5sRVY4NmlHb3dOX01VUGZCMXZpOHlENFNsQzd2T1A3eFNNM0VXWFlKM2NmMGZEbmd5UHpfcEFLTzdnSWJpYzdoOWxxMnRaMS14MkNTOGJwODdFeUdoRXF6WTM5QUVnMXU?oc=5",
+  "category": "technology",
+  "n_sources": 19,
+  "sources": [
+   "9to5Mac",
+   "AP News",
+   "AppleInsider",
+   "BBC",
+   "CBS News",
+   "CNN",
+   "Engadget",
+   "Eurogamer.net"
+  ],
+  "summary": "",
+  "related_titles": [
+   "AirTag 2 has two big improvements that make it worth the upgrade",
+   "Your Older, Discontinued AirTags Can Still Serve A Purpose",
+   "Apple's AirTag 2 hits a record-low $18, making the 4-pack a worse deal",
+   "Apple’s AirTags can save you from a travel nightmare. Here’s what you should know",
+   "Chipolo POP 4-pack drops to $66.75, $22.25 off and $12.25 under four AirTag 2s"
+  ]
+ }
+}
