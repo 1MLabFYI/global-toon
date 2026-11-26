@@ -285,5 +285,15 @@
   "status": "published",
   "music": "calm_02.mp3",
   "media_id": "18188790142424953"
+ },
+ {
+  "date": "2026-11-26",
+  "slot": "daily",
+  "title": "카톡 말고 왓츠앱?",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQi1zbFNYSnc2M2djcktDZ0RrZ282b0QxbkVwRnpnQkVXRE1yazZVbVFHMHY2RjE1RXZDS29oU0RnYzNBX29hcFNZNlhDdzgtTzc3c1VLUXNXTFJuM2s1ZG5jNHdpVDRweGo1cExhMzRnRHRHNXNQUk9Ja0JaWTlUSkk4MGRiNFluSllWSGdoQ0xIdTU5NTA1dEtNLTBmNmlRUWg5V0JUMA?oc=5",
+  "dir": "output/2026-11-26/daily",
+  "status": "published",
+  "music": "bright_01.mp3",
+  "media_id": "18098792897163031"
  }
 ]

@@ -1,0 +1,142 @@
+{
+ "selected_index": 2,
+ "topic_title": "카톡 말고 왓츠앱?",
+ "hook": "이제 메시지 예약 전송이 가능해진다!",
+ "category_tag": "테크",
+ "music_mood": "bright",
+ "cover_photo": [
+  "smartphone screen with chat app",
+  "mobile messaging interface"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "person typing on smartphone screen",
+    "mobile phone messaging"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "왓츠앱에 드디어 메시지 예약 전송 기능이 도입되었어요!"
+    },
+    {
+     "who": "F",
+     "pose": "surprised",
+     "text": "설마 메시지를 예약해서 보낼 수 있나요?"
+    }
+   ]
+  },
+  {
+   "photo": [
+    "smartphone interface with clock icon",
+    "timer on mobile screen"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "point",
+     "text": "맞아요! 왓츠앱에서 이제 단체 채팅방과 개인 채팅 모두 메시지 예약 전송을 지원합니다."
+    },
+    {
+     "who": "M",
+     "pose": "thumbsup",
+     "text": "원하는 시간에 맞춰 메시지를 보낼 수 있겠네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "group chat screen on mobile phone",
+    "chat application UI"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "think",
+     "text": "원하는 시간에 딱 맞춰서 보낼 수 있으니 편리하겠어요."
+    },
+    {
+     "who": "F",
+     "pose": "smile",
+     "text": "올바른 전송 시간을 선택할 수 있어 편의성이 좋아졌죠."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "modern smartphone on wooden table",
+    "phone gadget close up"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "메시지 예약 기능을 기다리던 분들에게 반가운 소식이 되겠네요!"
+    },
+    {
+     "who": "M",
+     "pose": "laugh",
+     "text": "예약 메시지 기능 바로 써봐야겠어요!"
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "WhatsApp now lets you schedule messages in group and individual chats (WhatsApp now lets you schedule messages in group and individual chats)",
+  "Meta brings scheduled messaging feature to WhatsApp; here's how to do it (Meta brings scheduled messaging feature to WhatsApp; here's how to do it)"
+ ],
+ "summary": [
+  "왓츠앱에 메시지 예약 전송 기능 도입",
+  "개인 채팅과 단체 채팅방 모두 지원",
+  "원하는 시간에 맞춰 메시지 발송 가능"
+ ],
+ "question": "여러분은 예약 메시지 기능이 가장 필요했던 순간이 언제인가요?",
+ "caption": "📱 왓츠앱에서 이제 메시지 예약 전송이 가능해졌습니다!\n\n개인 채팅은 물론 단체 채팅방에서도 원하는 시간에 맞춰 메시지를 보낼 수 있는데요.\n\n올바른 전송 시간을 선택하여 메시지를 보낼 수 있는 기능이 추가되었습니다! ✨\n\n댓글로 여러분의 생각을 알려주세요! 👇",
+ "hashtags": [
+  "#글로벌툰",
+  "#왓츠앱",
+  "#메시지예약",
+  "#테크뉴스",
+  "#IT소식",
+  "#스마트폰",
+  "#메신저",
+  "#신기능",
+  "#앱추천",
+  "#트렌드",
+  "#글로벌IT",
+  "#소통"
+ ],
+ "verify": {
+  "verdict": "fix",
+  "issues": [
+   "근거에 '2 Weeks in Advance'라는 예약 제한 기간이 언급되어 있으나, 대본 및 요약에는 구체적 기간이 누락되었거나 근거를 완벽히 반영하기 위해 보완할 수 있음 (다만 본질적인 오류는 아니며 경미함)",
+   "대본 내 '아침 인사나 깜빡하기 쉬운 일정 알리기', '밤늦게 연락하기 애매할 때' 등의 구체적 활용 예시는 근거(보도 제목)의 범위를 살짝 벗어날 수 있으므로 근거에 부합하도록 정제"
+  ]
+ },
+ "source": {
+  "title": "WhatsApp now lets you schedule messages in group and individual chats",
+  "source": "TechCrunch",
+  "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQi1zbFNYSnc2M2djcktDZ0RrZ282b0QxbkVwRnpnQkVXRE1yazZVbVFHMHY2RjE1RXZDS29oU0RnYzNBX29hcFNZNlhDdzgtTzc3c1VLUXNXTFJuM2s1ZG5jNHdpVDRweGo1cExhMzRnRHRHNXNQUk9Ja0JaWTlUSkk4MGRiNFluSllWSGdoQ0xIdTU5NTA1dEtNLTBmNmlRUWg5V0JUMA?oc=5",
+  "category": "technology",
+  "n_sources": 23,
+  "sources": [
+   "AP News",
+   "Al Jazeera",
+   "BBC",
+   "CNET",
+   "Deccan Herald",
+   "Euronews.com",
+   "Financial Times",
+   "Forbes"
+  ],
+  "summary": "",
+  "related_titles": [
+   "WhatsApp now lets you schedule messages in group and individual chats",
+   "WhatsApp’s new scheduled messages let you choose the right time to send",
+   "WhatsApp finally gets a feature that beats Google Messages at one thing, and I'm here for it",
+   "Meta brings scheduled messaging feature to WhatsApp; here's how to do it",
+   "WhatsApp Now Lets You Schedule Messages Up to 2 Weeks in Advance"
+  ]
+ }
+}

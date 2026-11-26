@@ -1,0 +1,33 @@
+{
+ "slot": "daily",
+ "created": "2026-11-26T20:21:11.614197+09:00",
+ "files": [
+  "output/2026-11-26/daily/reel.mp4",
+  "output/2026-11-26/daily/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-26/daily/feed_01.jpg",
+  "output/2026-11-26/daily/feed_02.jpg",
+  "output/2026-11-26/daily/feed_03.jpg",
+  "output/2026-11-26/daily/feed_04.jpg",
+  "output/2026-11-26/daily/feed_05.jpg",
+  "output/2026-11-26/daily/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/screen-smartphone-mobile-phone-569515/",
+  "https://pixabay.com/photos/sunset-phone-capture-view-scenery-8544672/",
+  "https://pixabay.com/photos/sunset-nature-twilight-landscape-10318482/",
+  "https://pixabay.com/photos/smartphone-screen-room-wall-sunset-8057248/",
+  "https://pixabay.com/photos/asian-woman-fashion-museum-art-7276658/"
+ ],
+ "title": "카톡 말고 왓츠앱?",
+ "publishable": true
+}
