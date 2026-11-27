@@ -1,0 +1,142 @@
+{
+ "selected_index": 7,
+ "topic_title": "미국 관세 폭탄 예고?",
+ "hook": "주요 경제국의 강력 반발",
+ "category_tag": "세계",
+ "music_mood": "serious",
+ "cover_photo": [
+  "global trade map commerce logistics",
+  "international trade shipping containers"
+ ],
+ "panels": [
+  {
+   "photo": [
+    "international trade meeting room",
+    "global economy conference hall"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "미국이 새로운 관세 인상안을 발표하면서 국제 사회에 긴장감이 돌고 있어요."
+    },
+    {
+     "who": "M",
+     "pose": "worried",
+     "text": "세계 경제에 큰 파장이 예상되네요."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "busy container port shipping cargo",
+    "international shipping logistics terminal"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "point",
+     "text": "이번 조치로 주요 무역 파트너들이 직접적인 영향을 받게 되었습니다."
+    },
+    {
+     "who": "F",
+     "pose": "think",
+     "text": "공급망 전반에 변화가 생길 수 있죠."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "large modern conference room meeting",
+    "business leaders discussion table"
+   ],
+   "lines": [
+    {
+     "who": "F",
+     "pose": "explain",
+     "text": "중국과 유럽연합(EU) 등 주요 경제국들은 이번 조치를 수용하기 어렵다는 입장을 밝혔습니다."
+    },
+    {
+     "who": "M",
+     "pose": "worried",
+     "text": "반발 목소리가 상당히 거셉니다."
+    }
+   ]
+  },
+  {
+   "photo": [
+    "financial graph screen and stock market",
+    "global economic trend chart"
+   ],
+   "lines": [
+    {
+     "who": "M",
+     "pose": "explain",
+     "text": "전문가들은 이로 인해 향후 금리 정책 등 글로벌 경제 흐름에도 영향을 줄 것으로 보고 있습니다."
+    },
+    {
+     "who": "F",
+     "pose": "thumbsup",
+     "text": "앞으로의 통상 협상 과정을 계속 지켜봐야겠어요."
+    }
+   ]
+  }
+ ],
+ "facts": [
+  "미국이 EU, 중국 등 주요 무역 파트너를 상대로 새로운 관세 제안을 발표함 (''Unacceptable': China, EU among major economies against new US tariffs')",
+  "중국과 EU를 비롯한 주요 경제국들이 미국의 신규 관세 제안에 대해 수용할 수 없다고 반발함 (''Unacceptable': China, EU among major economies against new US tariffs')",
+  "새로운 관세 제안으로 인해 연방준비제도가 금리를 더 오래 높게 유지할 가능성이 커졌다는 분석이 나옴 (Newly proposed tariffs raise chances of the Fed keeping interest rates higher for longer)"
+ ],
+ "summary": [
+  "미국, EU·중국 등 상대 신규 관세안 발표",
+  "중국과 EU 등 주요 경제국들은 즉각 반발",
+  "향후 글로벌 금리 및 무역 흐름에 관심 집중"
+ ],
+ "question": "글로벌 무역 갈등이 우리 경제에 미칠 영향에 대해 어떻게 생각하시나요?",
+ "caption": "미국의 새로운 관세 제안을 둘러싸고 국제 사회의 움직임이 분주합니다. 🌍\n\n중국과 EU 등 주요 경제국들이 강력한 반대 입장을 표명한 가운데, 향후 글로벌 통상 환경과 금리 정책에 어떤 변화가 생길지 주목되고 있습니다. 📈\n\n글로벌 경제 뉴스를 쉽고 빠르게 확인해 보세요! ✨\n\n#글로벌툰 #국제뉴스 #미국관세 #세계경제 #무역갈등 #경제이슈 #글로벌경제 #뉴스툰 #시사상식 #경제공부 #세계이슈 #트렌드",
+ "hashtags": [
+  "#글로벌툰",
+  "#국제뉴스",
+  "#미국관세",
+  "#세계경제",
+  "#무역갈등",
+  "#경제이슈",
+  "#글로벌경제",
+  "#뉴스툰",
+  "#시사상식",
+  "#경제공부",
+  "#세계이슈",
+  "#트렌드",
+  "#뉴스요약",
+  "#상식토론"
+ ],
+ "verify": {
+  "verdict": "pass",
+  "issues": []
+ },
+ "source": {
+  "title": "'Unacceptable': China, EU among major economies against new US tariffs",
+  "source": "France 24",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSzlzNkVzNEdFVU9tanZOU0tVbWJxVW9oV2VueklTWlU5bDNSbFFLNkRzbEZlRGVJVnkzWjk5cGdLZzdmXy1PNmtHTHROU0VPY1ZSdk1QUmVZWVYzQ0xSWXhHUWxtVXd4M0xvSHRpNFNiNkdWMm9sRW16ZjktcEg5dnl6bWx1a0pKRlo2bXl4VE1yNTlqTVpnTFF6WVJhd2dWSlhXQVhMek55Nkk?oc=5",
+  "category": "world",
+  "n_sources": 22,
+  "sources": [
+   "Al Jazeera",
+   "BBC",
+   "Buttondown",
+   "CBS News",
+   "CNBC",
+   "CNN",
+   "Financial Times",
+   "France 24"
+  ],
+  "summary": "",
+  "related_titles": [
+   "'Unacceptable': China, EU among major economies against new US tariffs",
+   "US announces new tariff proposals on EU, China, and other trade partners",
+   "Newly proposed tariffs raise chances of the Fed keeping interest rates higher for longer",
+   "China hits back at Trump tariff threat",
+   "U.S. tariff-hike threats pile pressure on partners to sign trade deals"
+  ]
+ }
+}

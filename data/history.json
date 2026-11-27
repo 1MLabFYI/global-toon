@@ -295,5 +295,15 @@
   "status": "published",
   "music": "bright_01.mp3",
   "media_id": "18098792897163031"
+ },
+ {
+  "date": "2026-11-27",
+  "slot": "daily",
+  "title": "미국 관세 폭탄 예고?",
+  "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSzlzNkVzNEdFVU9tanZOU0tVbWJxVW9oV2VueklTWlU5bDNSbFFLNkRzbEZlRGVJVnkzWjk5cGdLZzdmXy1PNmtHTHROU0VPY1ZSdk1QUmVZWVYzQ0xSWXhHUWxtVXd4M0xvSHRpNFNiNkdWMm9sRW16ZjktcEg5dnl6bWx1a0pKRlo2bXl4VE1yNTlqTVpnTFF6WVJhd2dWSlhXQVhMek55Nkk?oc=5",
+  "dir": "output/2026-11-27/daily",
+  "status": "published",
+  "music": "serious_01.mp3",
+  "media_id": "18121708661320775"
  }
 ]

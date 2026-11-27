@@ -1,0 +1,33 @@
+{
+ "slot": "daily",
+ "created": "2026-11-27T20:16:51.499175+09:00",
+ "files": [
+  "output/2026-11-27/daily/reel.mp4",
+  "output/2026-11-27/daily/01.jpg"
+ ],
+ "format": "reels",
+ "pages": [
+  "output/2026-11-27/daily/feed_01.jpg",
+  "output/2026-11-27/daily/feed_02.jpg",
+  "output/2026-11-27/daily/feed_03.jpg",
+  "output/2026-11-27/daily/feed_04.jpg",
+  "output/2026-11-27/daily/feed_05.jpg",
+  "output/2026-11-27/daily/feed_06.jpg"
+ ],
+ "photo_sources": [
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay",
+  "pixabay"
+ ],
+ "photo_urls": [
+  "https://pixabay.com/photos/india-market-flower-kolkata-4054551/",
+  "https://pixabay.com/photos/boardroom-london-office-5453288/",
+  "https://pixabay.com/photos/dock-container-export-cargo-port-441990/",
+  "https://pixabay.com/photos/meeting-conference-business-office-10222194/",
+  "https://pixabay.com/photos/trading-stock-chart-finance-8774164/"
+ ],
+ "title": "미국 관세 폭탄 예고?",
+ "publishable": true
+}
